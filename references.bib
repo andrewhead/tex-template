@@ -1,0 +1,2706 @@
+% Guidelines for references:
+% * Don't show 'n.d.' if there's no date
+% * Include all authors' full names
+% * Proceedings format: Names. Title. Venue, publisher (Year). Pages.
+% * Journal format: Names. Title. Journal Volume Issue (Year), Pages.
+% * Online attributed: Author. Title. URL.
+% * Online non-attributed: Title. URL.
+%
+% Formatting changes:
+% * Try to remove 'Retrieved from' and 'pp'
+% 
+% Checks to perform:
+% * Are author names correct?
+% * Are conference names consistent?
+% * Are page numbers right?
+% * Are years correct?
+% * Is the title correct, with the right casing?
+%
+% Should probably have a urldate or a year for each one.
+@preamble{"
+\def\articleno#1{Article #1}
+\def\paperno#1{Paper #1}
+\def\toappear{To appear}
+\def\pubmit{The MIT Press}
+\def\pubieee{IEEE}
+\def\pubacm{ACM}
+\def\pubwiley{John Wiley \& Sons, Ltd.}
+\def\journalspae{Software---Practice and Experience}
+\def\journalsoftware{IEEE Software}
+\def\journalcacm{Communications of the ACM}
+\def\journaljvlc{Journal of Visual Languages and Computing}
+\def\journalmms{International Journal of Man-Machine Studies}
+\def\journaltosem{ACM Transactions on Software Engineering and Methodology}
+\def\journaltse{IEEE Transactions on Software Engineering}
+\def\journaltochi{ACM Transactions on Computer-Human Interaction}
+\def\journalsigplan{ACM SIGPLAN Notices}
+\def\confinteract{Proceedings of the International Conference on Human-Computer Interaction}
+\def\confoopsla{Proceedings of the Conference on Object-Oriented Programming Systems, Languages, and Applications}
+\def\confpldi{Proceedings of the Conference on Programming Language Design and Implementation}
+\def\confcscw{Proceedings of the Conference on Computer-Supported Cooperative Work and Social Computing}
+\def\confpopl{Proceedings of SIGPLAN Symposium on Principles of Programming Languages}
+\def\conficsme{Proceedings of the International Conference on Software Maintenance and Evolution}
+\def\conffsesymposium{Proceedings of the International Symposium on Foundations of Software Engineering}
+\def\conffsemeeting{Proceedings of the Joint Meeting on Foundations of Software Engineering}
+\def\conficsm{Proceedings of the International Conference on Software Maintenance}
+\def\confcgit{Proceedings of the International Conference on Computer Graphics and Interactive Techniques}
+\def\confaaai{Proceedings of the AAAI Conference on Artificial Intelligence}
+\def\confchi{Proceedings of the CHI Conference on Human Factors in Computing Systems}
+\def\confemnlp{Proceedings of the Conference on Empirical Methods in Natural Language Processing}
+\def\confiui{Proceedings of the International Conference on Intelligent User Interfaces}
+\def\confuist{Proceedings of the Symposium on User Interface Software and Technology}
+\def\confase{Proceedings of the International Conference on Automated Software Engineering}
+\def\conffase{Proceedings of the International Conference on Fundamental Approaches to Software Engineering}
+\def\conficpc{Proceedings of the International Conference on Program Comprehension}
+\def\conficse{Proceedings of the International Conference on Software Engineering}
+\def\confchase{Proceedings of the International Workshop on Cooperative and Human Aspects of Software Engineering}
+\def\confacl{Proceedings of the Annual Meeting of the Association for Computational Linguistics}
+\def\confvlhcc{Proceedings of the Symposium on Visual Languages and Human-Centric Computing}
+\def\conflas{Proceedings of the Conference on Learning at Scale}
+\def\confisese{Proceedings of the International Symposium on Empirical Software Engineering}
+\def\confsigcse{Proceedings of the Technical Symposium on Computer Science Education}
+\def\confwcre{Proceedings of the Working Conference on Reverse Engineering}
+"}
+%%% ARTICLES
+% Don't bother including publisher
+@article{ref:allen1999mixed,
+  title = {Mixed-initiative interaction},
+  author = {Allen, James F.},
+  volume = {14},
+  number = {5},
+  pages = {14--16},
+  date = {1999},
+  journaltitle = {IEEE Intelligent Systems and their Applications}
+}
+
+@article{ref:anderson1984learning,
+  title = {Learning to program in LISP},
+  author = {Anderson, John R. and Farrell, Robert and Sauers, Ron},
+  volume = {8},
+  number = {2},
+  pages = {87--129},
+  date = {1984},
+  journaltitle = {Cognitive Science}
+}
+
+@article{ref:antlr,
+  title = {ANTLR: A Predicated-{\textit{LL(k)}} Parser Generator},
+  author = {Parr, T. J. and Quong, R. W.},
+  volume = {25},
+  number = {7},
+  pages = {789--810},
+  date = {1995},
+  journaltitle = {\journalspae}
+}
+
+@article{ref:baltes2019usage,
+  title = {Usage and attribution of Stack Overflow code snippets in GitHub projects},
+  author = {Baltes, Sebastian and Diehl, Stephan},
+  year = {2019},
+  journaltitle = {Empirical Software Engineering},
+  volume = {24},
+  pages = {1259--1295}
+}
+
+@article{ref:bazerman1985physicists,
+  title = {Physicists Reading Physics: Schema-Laden Purposes and Purpose-Laden Schema},
+  author = {Bazerman, Charles},
+  volume = {2},
+  number = {1},
+  pages = {3--23},
+  date = {1985},
+  journaltitle = {Written Communication}
+}
+
+@article{ref:beck2001aim,
+  title = {Aim, fire},
+  author = {Beck, Kent},
+  volume = {18},
+  number = {5},
+  pages = {87--89},
+  date = {2001},
+  journaltitle = {\journalsoftware}
+}
+
+@article{ref:bentley1986programming,
+  title = {Programming pearls: A literate program},
+  author = {Bentley, Jon and Knuth, Don and McIlroy, Doug},
+  volume = {29},
+  number = {6},
+  pages = {471--483},
+  date = {1986},
+  journaltitle = {Communications of the ACM}
+}
+
+@article{ref:binkley2004survey,
+  title = {A Survey of Empirical Results on Program Slicing},
+  author = {Binkley, David and Harman, Mark},
+  volume = {62},
+  pages = {105--178},
+  date = {2004},
+  journaltitle = {Advances in Computers},
+  editor = {Marvin V. Zelkowitz},
+  journaltitle = {Advances in Computers}
+}
+
+@article{ref:binkley2013impact,
+  title = {The impact of identifier style on effort and comprehension},
+  author = {Binkley, Dave and Davis, Marcia and Lawrie, Dawn and Maletic, Jonathan I. and Morrell, Christopher and Sharif, Bonita},
+  volume = {18},
+  pages = {219--276},
+  date = {2013},
+  journaltitle = {Empirical Software Engineering}
+}
+
+@article{ref:boehmdavis1992role,
+  title = {The role of program structure in software maintenance},
+  author = {Boehm-Davis, Deborah A. and Holt, Robert W. and Schultz, Alan C.},
+  volume = {36},
+  number = {1},
+  pages = {21--63},
+  date = {1992},
+  journaltitle = {\journalmms}
+}
+
+@article{ref:brooks1983towards,
+  title = {Towards a theory of the comprehension of computer programs},
+  author = {Brooks, Ruven},
+  volume = {18},
+  number = {6},
+  pages = {543--554},
+  date = {1983},
+  journaltitle = {\journalmms}
+}
+
+@article{ref:buse2009learning,
+  title = {Learning a Metric for Code Readability},
+  author = {Buse, Raymond P.L. and Weimer, Westley R.},
+  volume = {36},
+  number = {4},
+  pages = {546--558},
+  date = {2010},
+  journaltitle = {\journaltse}
+}
+
+@article{ref:card1991morphological,
+  title = {A Morphological Analysis of the Design Space of Input Devices},
+  author = {Card, Stuart K. and Mackinlay, Jock D. and Robertson, George G.},
+  volume = {9},
+  number = {2},
+  pages = {99--122},
+  date = {1991},
+  journaltitle = {Transactions on Information Systems}
+}
+
+@article{ref:childs1992literate,
+  title = {Literate Programming, A Practioner's View},
+  author = {Childs, Bart},
+  volume = {13},
+  number = {3},
+  journaltitle = {TUGboat},
+  date = {1992}
+}
+
+@article{ref:childs1995teaching,
+  title = {Teaching CS/1 Courses in a Literate Manner},
+  author = {Childs, Bart and Dunn, Deborah and Lively, William},
+  volume = {16},
+  number = {3},
+  pages = {8},
+  date = {1995},
+  journaltitle = {TUGboat}
+}
+
+@article{ref:clancy1992case,
+  title = {Case Studies in the Classroom},
+  author = {Clancy, Michael J. and Linn, Marcia C.},
+  volume = {24},
+  number = {1},
+  pages = {220--224},
+  date = {1992},
+  journaltitle = {SIGCSE Bulletin}
+}
+
+@article{ref:dagenais2014using,
+  title = {Using Traceability Links to Recommend Adaptive Changes for Documentation Evolution},
+  author = {Dagenais, Barth\'{e}l\'{e}my and Robillard, Martin P.},
+  publisher = {IEEE},
+  volume = {40},
+  number = {11},
+  pages = {1126--1146},
+  date = {2014},
+  journaltitle = {\journaltse}
+}
+
+@article{ref:feigenspan2013background,
+  title = {Do background colors improve program comprehension in the \#ifdef hell?},
+  author = {Feigenspan, Janet and K\"{a}stner, Christian and Apel, Sven and Liebig, J\"{o}rg and Schulze, Michael and Dachselt, Raimund and Papendieck, Maria and Leich, Thomas and Saake, Gunter},
+  publisher = {Springer},
+  volume = {18},
+  pages = {699--745},
+  date = {2013},
+  journaltitle = {Empirical Software Engineering}
+}
+
+@article{ref:glassman2015overcode,
+  title = {OverCode: Visualizing Variation in Student Solutions to Programming Problems at Scale},
+  author = {Glassman, Elena L. and Scott, Jeremy and Singh, Rishabh and Guo, Philip J. and Miller, Robert C.},
+  volume = {22},
+  number = {2},
+  pages = {7:1--7:35},
+  date = {2015},
+  journaltitle = {\journaltochi}
+}
+
+@article{ref:goldman2009codetrail,
+  title = {Codetrail: Connecting source code and web resources},
+  author = {Goldman, Max and Miller, Robert C.},
+  publisher = {Elsevier},
+  volume = {20},
+  pages = {223--235},
+  date = {2009},
+  journaltitle = {\journaljvlc}
+}
+
+@article{ref:goues2019automated,
+  title = {Automated Program Repair},
+  author = {Le Goues, Claire and Pradel, Michael and Roychoudhury, Abhik},
+  volume = {62},
+  number = {12},
+  pages = {56--65},
+  date = {2019},
+  journaltitle = {\journalcacm}
+}
+
+@article{ref:gulwani2017program,
+  title = {Program synthesis},
+  author = {Gulwani, Sumit and Polozov, Oleksandr and Singh, Rishabh},
+  publisher = {now Publishers Inc.},
+  volume = {4},
+  number = {1-2},
+  pages = {1--119},
+  date = {2017},
+  journaltitle = {Foundations and Trends in Programming Languages}
+}
+
+@article{ref:hannebauer2018does,
+  title = {Does syntax highlighting help programming novices?},
+  author = {Hannebauer, Christoph and Hesenius, Marc and Gruhn, Volker},
+  publisher = {Springer},
+  volume = {23},
+  pages = {2795--2828},
+  date = {2018},
+  journaltitle = {Empirical Software Engineering}
+}
+
+@article{ref:harman1997amorphous,
+  title = {Amorphous program slicing},
+  author = {Harman, Mark and Binkley, David and Danicic, Sebastian},
+  date = {2003},
+  volume = {68},
+  number = {1},
+  pages = {45--64},
+  journaltitle = {The Journal of Systems and Software},
+}
+
+@article{ref:holmes2012systematizing,
+  title = {Systematizing Pragmatic Software Reuse},
+  author = {Holmes, Reid and Walker, Robert J.},
+  volume = {21},
+  number = {4},
+  date = {2012},
+  journaltitle = {\journaltosem}
+}
+
+@article{ref:horwitz1990interprocedural,
+  title = {Interprocedural Slicing Using Dependence Graphs},
+  author = {Horwitz, Susan and Reps, Thomas and Binkley, David},
+  volume = {12},
+  number = {1},
+  pages = {26--60},
+  date = {1990},
+  journaltitle = {ACM Transactions on Programming Languages and Systems}
+}
+
+@article{ref:johnson2010learning,
+  title = {Learning to be a programmer in a complex organization},
+  author = {Johnson, Maggie and Senges, Max},
+  publisher = {Emerald Group Publishing Limited},
+  date = {2010},
+  volume = {22},
+  number = {3},
+  pages = {180--194},
+  journaltitle = {Journal of Workplace Learning}
+}
+
+@article{ref:kandel2012enterprise,
+  title = {Enterprise Data Analysis and Visualization: An Interview Study},
+  author = {Kandel, Sean and Paepcke, Andreas and Hellerstein, Joseph M. and Heer, Jeffrey},
+  publisher = {IEEE},
+  volume = {18},
+  number = {12},
+  pages = {2917--2926},
+  date = {2012},
+  journaltitle = {Transactions on Visualization and Computer Graphics}
+}
+
+@article{ref:knuth1984literate,
+  title = {Literate Programming},
+  author = {Knuth, Donald E.},
+  publisher = {Oxford University Press},
+  volume = {27},
+  number = {2},
+  pages = {97--111},
+  date = {1984},
+  journaltitle = {The Computer Journal}
+}
+
+@article{ref:lau2009programming,
+  title = {Why Programming by Demonstration Systems Fail: Lessons learned for Usable AI},
+  author = {Lau, Tessa},
+  volume = {30},
+  number = {4},
+  pages = {65--67},
+  date = {2009},
+  journaltitle = {AI Magazine}
+}
+
+@article{ref:lee2019automatic,
+  title = {Automatic Detection and Update Suggestion for Outdated API Names in Documentation},
+  author = {Lee, Seonah and Wu, Rongxin and Cheung, Shing-Chi and Kang, Sungwon},
+  publisher = {IEEE},
+  date = {2019},
+  note = {\toappear},
+  journaltitle = {\journaltse}
+}
+
+@article{ref:lethbridge2003software,
+  title = {How Software Engineers Use Documentation: The State of the Practice},
+  author = {Lethbridge, Timothy C. and Singer, Janice and Forward, Andrew},
+  publisher = {IEEE},
+  volume = {20},
+  number = {6},
+  pages = {35--39},
+  date = {2003},
+  journaltitle = {\journalsoftware}
+}
+
+@article{ref:letovsky1986delocalized,
+  title = {Delocalized Plans and Program Comprehension},
+  author = {Letovsky, Stanley and Soloway, Elliot},
+  publisher = {IEEE},
+  volume = {3},
+  number = {3},
+  pages = {41--49},
+  date = {1986},
+  journaltitle = {\journalsoftware}
+}
+
+@article{ref:lin2007suggestions,
+  title = {Suggestions for content selection and presentation in high school computer textbooks},
+  author = {Lin, Janet Mei-Chuen and Wu, Cheng-Chih},
+  publisher = {Elsevier},
+  volume = {48},
+  number = {3},
+  pages = {508--521},
+  date = {2007},
+  journaltitle = {Computers \& Education}
+}
+
+@article{ref:linn1992case,
+  title = {The case for case studies of programming problems},
+  author = {Linn, Marcia C. and Clancy, Michael J.},
+  volume = {35},
+  number = {3},
+  pages = {121--132},
+  date = {1992},
+  journaltitle = {\journalcacm}
+}
+
+@article{ref:littman1987mental,
+  title = {Mental Models and Software Maintenance},
+  author = {Littman, David C. and Pinto, Jeannine and Letovsky, Stanley and Soloway, Elliot},
+  publisher = {Elsevier},
+  volume = {7},
+  number = {4},
+  pages = {341--355},
+  date = {1987},
+  journaltitle = {The Journal of Systems and Software}
+}
+
+@article{ref:macleod2017documenting,
+  title = {Documenting and sharing software knowledge using screencasts},
+  author = {MacLeod, Laura and Bergen, Andreas and Storey, Margaret-Anne},
+  publisher = {Springer},
+  volume = {22},
+  pages = {1478--1507},
+  date = {2017},
+  journaltitle = {Empirical Software Engineering}
+}
+
+@article{ref:mahoney2018storyteller,
+  title = {Storyteller: a Tool for Creating Worked Examples},
+  author = {Mahoney, Mark},
+  volume = {34},
+  number = {1},
+  pages = {137--144},
+  date = {2018},
+  journaltitle = {Journal of Computing Sciences in Colleges}
+}
+
+@article{ref:miara1983program,
+  title = {Program indentation and comprehensibility},
+  author = {Miara, Richard J. and Musselman, Joyce A. and Navarro, Juan A. and Shneiderman, Ben},
+  volume = {26},
+  number = {11},
+  pages = {861--867},
+  date = {1983},
+  journaltitle = {\journalcacm}
+}
+
+@article{ref:murphyhill2008refactoring,
+  title = {Refactoring Tools: Fitness for Purpose},
+  author = {Murphy-Hill, Emerson and Black, Andrew P.},
+  volume = {25},
+  number = {5},
+  date = {2008},
+  journaltitle = {\journalsoftware}
+}
+
+@article{ref:myers2000programming,
+  title = {Intelligence in Demonstrational Interfaces},
+  author = {Myers, Brad A. and McDaniel, Richard and Wolber, David},
+  volume = {43},
+  number = {3},
+  pages = {82--89},
+  date = {2000},
+  journaltitle = {\journalcacm}
+}
+
+@article{ref:nielebock2019commenting,
+  title = {Commenting source code: is it worth it for small programming tasks?},
+  author = {Nielebock, Sebastian and Krolikowski, Dariusz and Kr\"{u}ger, Jacob and Leich, Thomas and Ortmeier, Frank},
+  volume = {24},
+  pages = {1418--1457},
+  date = {2019},
+  journaltitle = {Empirical Software Engineering}
+}
+
+@article{ref:oman1990typographic,
+  title = {Typographic Style is More than Cosmetic},
+  author = {Oman, Paul W. and Cook, Curtis R.},
+  year = {1990},
+  journal = {\journalcacm},
+  volume = {33},
+  number = {5},
+  pages = {506--520}
+}
+
+@article{ref:ottenstein1984program,
+  title = {The program dependence graph in a software development environment},
+  author = {Ottenstein, Karl J. and Ottenstein, Linda M.},
+  volume = {19},
+  number = {5},
+  pages = {177--184},
+  date = {1984},
+  journaltitle = {\journalsigplan}
+}
+
+@article{ref:pennington1987stimulus,
+  title = {Stimulus Structures and Mental Representations in Expert Comprehension of Computer Programs},
+  author = {Pennington, Nancy},
+  volume = {19},
+  number = {3},
+  pages = {295--341},
+  date = {1987},
+  journaltitle = {Cognitive Psychology}
+}
+
+@article{ref:pirolli1994learning,
+  title = {Learning Strategies and Transfer in the Domain of Programming},
+  author = {Pirolli, Peter and Recker, Margaret},
+  volume = {12},
+  number = {3},
+  pages = {235--275},
+  date = {1994},
+  journaltitle = {Cognition and Instruction}
+}
+
+@article{ref:ramsey1991literate,
+  title = {Literate Programming on a Team Project},
+  author = {Ramsey, Norman and Marceau, Carla},
+  volume = {21},
+  number = {7},
+  pages = {677--683},
+  date = {1991},
+  journaltitle = {\journalspae}
+}
+
+@article{ref:ramsey1994literate,
+  title = {Literate programming simplified},
+  author = {Ramsey, Norman},
+  volume = {11},
+  number = {5},
+  pages = {97--105},
+  date = {1994},
+  journaltitle = {\journalsoftware}
+}
+
+@article{ref:robillard2009makes,
+  title = {What Makes APIs Hard to Learn? Answers from Developers},
+  author = {Robillard, Martin P.},
+  volume = {26},
+  number = {6},
+  pages = {27--34},
+  date = {2009},
+  journaltitle = {\journalsoftware}
+}
+
+@article{ref:robillard2011field,
+  title = {A field study of API learning obstacles},
+  author = {Robillard, Martin P. and Deline, Robert},
+  volume = {16},
+  pages = {703--732},
+  date = {2011},
+  journaltitle = {Empirical Software Engineering}
+}
+
+@article{ref:rosson1996reuse,
+  title = {The Reuse of Uses in Smalltalk Programming},
+  author = {Rosson, Mary Beth and Carroll, John M.},
+  volume = {3},
+  number = {3},
+  pages = {219--253},
+  date = {1996},
+  journaltitle = {\journaltochi}
+}
+
+@article{ref:schmalhofer1986three,
+  title = {Three Components of Understanding a Programmer's manual: Verbatim, Propositional, and Situational Representations},
+  author = {Schmalhofer, Franz and Glavanov, Doris},
+  volume = {25},
+  number = {3},
+  pages = {279--294},
+  date = {1986},
+  journaltitle = {Journal of Memory and Language}
+}
+
+@article{ref:schulte2012orgmode,
+  title = {A Multi-Language Computing Environment for Literate Programming and Reproducible Research},
+  author = {Schulte, Eric and Davison, Dan and Dye, Thomas and Dominik, Carsten},
+  volume = {46},
+  number = {3},
+  pages = {1--24},
+  date = {2012},
+  journaltitle = {Journal of Statistical Software}
+}
+
+@article{ref:shneiderman1979syntactic,
+  title = {Syntactic/Semantic Interactions in Programmer Behavior: A Model and Experimental Results},
+  author = {Shneiderman, Ben and Mayer, Richard},
+  volume = {8},
+  number = {3},
+  pages = {219--238},
+  date = {1979},
+  journaltitle = {International Journal of Computer and Information Sciences}
+}
+
+@article{ref:silva2012vocabulary,
+  title = {A Vocabulary of Program Slicing-Based Techniques},
+  author = {Silva, Josep},
+  volume = {44},
+  number = {3},
+  pages = {12:1--12:41},
+  date = {2012},
+  journaltitle = {ACM Computing Surveys}
+}
+
+@article{ref:soloway1984empirical,
+  title = {Empirical Studies of Programming Knowledge},
+  author = {Soloway, Elliot and Ehrlich, Kate},
+  volume = {SE-10},
+  number = {5},
+  pages = {595--609},
+  date = {1984},
+  journaltitle = {\journaltse}
+}
+
+@article{ref:tanimoto1990viva,
+  title = {VIVA: A Visual Language for Image Processing},
+  author = {Tanimoto, Steven L.},
+  volume = {1},
+  number = {2},
+  pages = {127--139},
+  date = {1990},
+  journaltitle = {\journaljvlc}
+}
+
+@article{ref:tashtoush2013impact,
+  title = {Impact of Programming Features on Code Readability},
+  author = {Tashtoush, Yahya and Odat, Zeinab and Alsmadi, Izzat and Yatim, Maryan},
+  date = {2013},
+  volume = {7},
+  number = {6},
+  pages = {441--458},
+  journaltitle = {International Journal of Software Engineering and Its Applications}
+}
+
+@article{ref:thimbleby1986experiences,
+  title = {Experiences of `Literate Programming' using cweb (a variant of Knuth's WEB)},
+  author = {Thimbleby, H.},
+  volume = {29},
+  number = {3},
+  pages = {201--211},
+  date = {1986},
+  journaltitle = {The Computer Journal}
+}
+
+@article{ref:tip1995survey,
+  title = {A Survey of Program Slicing Techniques},
+  author = {Tip, Frank},
+  volume = {3},
+  number = {3},
+  pages = {121--189},
+  date = {1995},
+  journaltitle = {Journal of Programming Languages}
+}
+
+@article{ref:uddin2015api,
+  title = {How {API} Documentation Fails},
+  author = {Uddin, Gias and Robillard, Martin P.},
+  volume = {32},
+  number = {4},
+  pages = {68--75},
+  date = {2015},
+  journaltitle = {\journalsoftware}
+}
+
+@article{ref:vanderlindenimpact2020impact,
+  title = {The impact of surface features on choice of (in)secure answers by Stackoverflow readers},
+  author = {van der Linden, Dirk and Williams, Emma and Hallett, Joseph and Rashid, Awais},
+  date = {2020},
+  note = {To appear},
+  journaltitle = {\journaltse}
+}
+
+@article{ref:vandermeij2009three,
+  title = {Three Decades of Research and Professional Practice on Printed Software Tutorials for Novices},
+  author = {{van der Meij}, Hans and Karreman, Joyce and Steehouder, Micha\"{e}l},
+  volume = {56},
+  number = {3},
+  pages = {265--292},
+  date = {2009},
+  journaltitle = {Technical Communication}
+}
+
+@article{ref:vanwyck1990literate,
+  title = {Literate programming: An assessment},
+  author = {Van Wyk, Christopher J.},
+  volume = {33},
+  number = {3},
+  pages = {361--363},
+  date = {1990},
+  journaltitle = {\journalcacm}
+}
+
+@article{ref:wang2014automatic,
+  title = {Automatic Segmentation of Method Code into Meaningful Blocks: Design and Evaluation},
+  author = {Wang, Xiaoran and Pollock, Lori and Vijay-Shanker, K.},
+  volume = {26},
+  number = {1},
+  pages = {27--49},
+  date = {2014},
+  journaltitle = {Journal of Software: Evolution and Process}
+}
+
+@article{ref:wiedenbeck1993characteristics,
+  title = {Characteristics of the mental representations of novice and expert programmers: an empirical study},
+  author = {Wiedenbeck, Susan and Fix, Vikki and Scholtz, Jean},
+  volume = {39},
+  number = {5},
+  pages = {793--812},
+  date = {1993},
+  journaltitle = {\journalmms}
+}
+
+@article{ref:wobbrock2016research,
+  title = {Research Contributions in Human-Computer Interaction},
+  author = {Wobbrock, Jacob O. and Kientz, Julie A.},
+  volume = {23},
+  number = {3},
+  pages = {38--44},
+  date = {2016},
+  journaltitle = {ACM Interactions}
+}
+
+@article{ref:wu2019developers,
+  title = {How Do Developers Utilize Source Code from Stack Overflow?},
+  author = {Wu, Yuhao and Wang, Shaowei and Bezemer, Cor-Paul and Inoue, Katsuro},
+  volume = {24},
+  pages = {637--673},
+  date = {2019},
+  journaltitle = {Empirical Software Engineering}
+}
+
+@article{ref:xia2017developers,
+  title = {What do developers search for on the web?},
+  author = {Xia, Xin and Bao, Lingfeng and Lo, David and Kochhar, Pavneet Singh and Hassan, Ahmed E. and Xing, Zhenchang},
+  volume = {22},
+  pages = {3149--3185},
+  date = {2017},
+  journaltitle = {Empirical Software Engineering}
+}
+
+@article{ref:zeller2002simplifying,
+  title = {Simplifying and Isolating Failure-Inducing Input},
+  author = {Zeller, Andreas and Hildebrandt, Ralf},
+  volume = {28},
+  number = {2},
+  pages = {183--200},
+  date = {2002},
+  journaltitle = {\journaltse}
+}
+
+% Continue from here
+@book{ref:backus1956fortran,
+  title = {Fortran: Automatic Coding System for the IBM 704 EDPM},
+  author = {Backus, J. W. and Beeber, R. J. and Best, S. and Goldberg, R. and Herrick, H. L. and Hughes, R. A. and Mitchell, L. B. and Nelson, R. A. and Nutt, R. and Sayre, D. and Sheridan, P. B. and Stern, H. and Ziller, I.},
+  date = {1956}
+}
+
+@book{ref:booth1956automatic,
+  title = {Automatic digital calculators},
+  author = {Booth, Andrew D. and Booth, Kathleen H. V.},
+  publisher = {Butterworths},
+  edition = {3},
+  date = {1956}
+}
+
+@book{ref:carroll1990nurnberg,
+  title = {The Nurnberg Funnel: Designing Minimalist Instruction for Practical Computer Skill},
+  author = {Carroll, John M.},
+  publisher = {\pubmit},
+  date = {1990}
+}
+
+@book{ref:cooper2007face,
+  title = {About Face 3: The Essentials of Interaction Design},
+  author = {Cooper, Alan and Reimann, Robert and Cronin, David},
+  publisher = {Wiley Publishing, Inc.},
+  date = {2007}
+}
+
+@book{ref:cypher1993watch,
+  title = {Watch What I Do: Programming by Demonstration},
+  editor = {Cypher, Allen},
+  publisher = {\pubmit},
+  date = {1993}
+}
+
+@book{ref:detienne2001software,
+  title = {Software Design -- Cognitive Aspects},
+  author = {D{\'e}tienne, Fran\c{c}oise},
+  publisher = {Springer},
+  date = {2002}
+}
+
+@book{ref:felleisen2018design,
+  title = {How to Design Programs: an Introduction to Programming and Computing},
+  author = {Felleisen, Matthias and Findler, Robert Bruce and Flatt, Matthew and Krishnamurthi, Shriram},
+  publisher = {\pubmit},
+  edition = {2},
+  date = {2018}
+}
+
+@book{ref:fowler2018refactoring,
+  title = {Refactoring: Improving the Design of Existing Code},
+  author = {Fowler, Martin},
+  publisher = {Addison-Wesley Professional},
+  edition = {2},
+  date = {2018}
+}
+
+@book{ref:howtocodeinpython3,
+  title = {How to Code in Python 3},
+  author = {Tagliaferri, Lisa},
+  publisher = {DigitalOcean},
+  url = {https://www.digitalocean.com/community/tutorial_series/how-to-code-in-python-3},
+  urldate = {2020-05-06}
+}
+
+@book{ref:jones1992design,
+  title = {Design Methods},
+  author = {Jones, John Chris},
+  publisher = {\pubwiley},
+  edition = {2},
+  date = {1992}
+}
+
+@book{ref:knuth1986tex,
+  title = {\TeX: The Program},
+  author = {Knuth, Donald E.},
+  year = {1986},
+  publisher = {Addison-Wesley}
+}
+
+@book{ref:krippendorff2018content,
+  title = {Content Analysis: An Introduction to Its Methodology},
+  author = {Krippendorff, Klaus},
+  publisher = {SAGE Publications, Inc.},
+  date = {2013},
+  edition = {3}
+}
+
+@book{ref:sacks1994onthejob,
+  title = {On-the-Job Learning in the Software Industry: Corporate Culture and the Acquisition of Knowledge},
+  author = {Sacks, Marc},
+  publisher = {Quorum Books},
+  date = {1994}
+}
+
+@book{ref:stasko1998software,
+  title = {Software Visualization: Programming as a Multimedia Experience},
+  editor = {Stasko, John and Domingue, John and Brown, Marc H. and Price, Blaine A.},
+  publisher = {\pubmit},
+  date = {1998}
+}
+
+@book{ref:weiss1995learning,
+  title = {Learning from Strangers: The Art and Method of Qualitative Interview Studies},
+  author = {Weiss, Robert S.},
+  publisher = {The Free Press},
+  date = {1995}
+}
+
+@inproceedings{ref:agrawal1990dynamic,
+  title = {Dynamic Program Slicing},
+  author = {Agrawal, Hiralal and Horgan, Joseph R.},
+  booktitle = {\confpldi},
+  pages = {246--256},
+  publisher = {ACM},
+  date = {1990}
+}
+
+@inproceedings{ref:allamanis2014mining,
+  title = {Mining Idioms from Source Code},
+  author = {Allamanis, Miltiadis and Sutton, Charles},
+  booktitle = {\conffsesymposium},
+  pages = {472--483},
+  date = {2014}
+}
+
+@inproceedings{ref:anderson2001software,
+  title = {Software Inspection using CodeSurfer},
+  author = {Anderson, Paul and Teitelbaum, Tim},
+  booktitle = {Workshop on Inspection in Software Engineering},
+  pages = {4--11},
+  date = {2001}
+}
+
+@inproceedings{ref:barik2016quick,
+  title = {From Quick Fixes to Slow Fixes: Reimagining Static Analysis Resolutions to Enable Design Space Exploration},
+  author = {Barik, Titus and Song, Yoonki and Johnson, Brittany and Murphy-Hill, Emerson},
+  booktitle = {\conficsme},
+  publisher = {IEEE},
+  pages = {211--221},
+  date = {2016}
+}
+
+@inproceedings{ref:beltagy2019scibert,
+  title = {SciBERT: A Pretrained Language Model for Scientific Text},
+  author = {Beltagy, Iz and Lo, Kyle and Cohan, Arman},
+  date = {2019},
+  booktitle = {\confemnlp},
+  publisher = {Association for Computational Linguistics},
+  pages = {3615--3620}
+}
+
+@inproceedings{ref:boshernitsan2007aligning,
+  title = {Aligning Development Tools with the Way Programmers Think About Code Changes},
+  author = {Boshernitsan, Marat and Graham, Susan L. and Hearst, Marti A.},
+  booktitle = {\confchi},
+  pages = {567--576},
+  publisher = {ACM},
+  date = {2007}
+}
+
+@inproceedings{ref:bragdon2010code,
+  title = {Code Bubbles: A Working Set-based Interface for Code Understanding and Maintenance},
+  author = {Bragdon, Andrew and Zeleznik, Robert and Reiss, Steven P. and Karumuri, Suman and Cheung, William and Kaplan, Joshua and Coleman, Christopher and Adeputra, Ferdi and LaViola Jr., Joseph J.},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {2503--2512},
+  date = {2010}
+}
+
+@inproceedings{ref:brandt2009two,
+  title = {Two Studies of Opportunistic Programming: Interleaving Web Foraging, Learning, and Writing Code},
+  author = {Brandt, Joel and Guo, Philip J. and Lewenstein, Joel and Dontcheva, Mira and Klemmer, Scott R.},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {1589--1598},
+  date = {2009}
+}
+
+@inproceedings{ref:brandt2011example,
+  title = {Example-Centric Programming: Integrating Web Search into the Development Environment},
+  author = {Brandt, Joel and Dontcheva, Mira and Weskamp, Marcos and Klemmer, Scott R.},
+  publisher = {ACM},
+  booktitle = {\confchi},
+  pages = {513--522},
+  date = {2010}
+}
+
+@inproceedings{ref:burden2011natural,
+  title = {Natural Language Generation from Class Diagrams},
+  author = {Burden, H\r{a}kan and Heldal, Rogardt},
+  booktitle = {Proceedings of the International Workshop on Model-Driven Engineering, Verification and Validation},
+  publisher = {ACM},
+  note = {\articleno{8}},
+  date = {2011}
+}
+
+@inproceedings{ref:burg2013record,
+  title = {Interactive Record/Replay for Web Application Debugging},
+  author = {Burg, Brian and Bailey, Richard and Ko, Amy J. and Ernst, Michael D.},
+  booktitle = {\confuist},
+  publisher = {ACM},
+  pages = {473--483},
+  date = {2013}
+}
+
+@inproceedings{ref:burg2015explaining,
+  title = {explaining visual changes in web interfaces},
+  author = {burg, brian and ko, amy j. and ernst, michael d.},
+  booktitle = {\confuist},
+  publisher = {acm},
+  pages = {259--269},
+  date = {2015}
+}
+
+@inproceedings{ref:burkhardt1995empirical,
+  title = {An empirical study of software reuse by experts in object-oriented design},
+  author = {Burkhardt, Jean-Marie and Detienne, Fran\c{c}oise},
+  booktitle = {\confinteract},
+  publisher = {Springer},
+  pages = {133--138},
+  date = {1995}
+}
+
+@inproceedings{ref:buse2012synthesizing,
+  title = {Synthesizing API Usage Examples},
+  author = {Buse, Raymond P.L. and Weimer, Westley},
+  booktitle = {\conficse},
+  pages = {782--792},
+  publisher = {IEEE},
+  date = {2012}
+}
+
+@inproceedings{ref:busjahn2015eye,
+  title = {Eye Movements in Code Reading: Relaxing the Linear Order},
+  author = {Busjahn, Teresa and Bednarik, Roman and Begel, Andrew and Crosby, Martha and Paterson, James H. and Schulte, Carsten and Sharif, Bonita and Tamm, Sascha},
+  booktitle = {\conficpc},
+  pages = {255--265},
+  publisher = {IEEE},
+  date = {2015}
+}
+
+@inproceedings{ref:chasins2018rousillon,
+  title = {Rousillon: Scraping Distributed Hierarchical Web Data},
+  author = {Chasins, Sarah E. and Mueller, Maria and Bodik, Rastislav},
+  booktitle = {\confuist},
+  pages = {963--975},
+  publisher = {ACM},
+  date = {2018}
+}
+
+@inproceedings{ref:chen2014dynamic,
+  title = {Dynamic Slicing of Python Programs},
+  author = {Chen, Zhifei and Chen, Lin and Zhou, Yuming and Xu, Zhaogui and Chu, William C. and Xu, Baowen},
+  booktitle = {Proceedings of the International Computers, Software and Applications Conference},
+  pages = {219--228},
+  publisher = {IEEE},
+  date = {2014}
+}
+
+@inproceedings{ref:chen2019improv,
+  title = {Improv: Teaching Programming at Scale via Live Coding},
+  author = {Chen, Charles H. and Guo, Philip J.},
+  booktitle = {\conflas},
+  note = {\articleno{9}},
+  publisher = {ACM},
+  date = {2019}
+}
+
+@inproceedings{ref:chi2018doppio,
+  title = {Doppio: Tracking UI Flows and Code Changes for App Development},
+  author = {Chi, Pei-Yu (Peggy) and Hu, Sen-Po and Li, Yang},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  note = {\paperno{455}},
+  date = {2018}
+}
+
+@inproceedings{ref:conlen2018idyll,
+  title = {Idyll: A Markup Language for Authoring and Publishing Interactive Articles on the Web},
+  author = {Conlen, Matthew and Heer, Jeffrey},
+  booktitle = {\confuist},
+  publisher = {ACM},
+  pages = {977--989},
+  date = {2018}
+}
+
+@inproceedings{ref:conlen2019capture,
+  title = {Capture \& Analysis of Active Reading Behaviors for Interactive Articles on the Web},
+  author = {Conlen, Matthew and Kale, Alex and Heer, Jeffrey},
+  year = {2019},
+  booktitle = {Proceedings of the Eurographics Conference on Visualization},
+  pages = {687--698},
+  publisher = {\pubwiley}
+}
+
+@inproceedings{ref:conlen2019launching,
+  title = {Launching the Parametric Press},
+  author = {Conlen, Matthew and Hohman, Fred},
+  booktitle = {Visualization for Communication Workshop},
+  date = {2019}
+}
+
+@inproceedings{ref:cuoq2012framac,
+  title = {Frama-C: A Software Analysis Perspective},
+  author = {Cuoq, Pascal and Kirchner, Florent and Kosmatov, Nikolai and Prevosto, Virgile and Signoles, Julien and Yakobowski, Boris},
+  booktitle = {Proceedings of the International Conference on Software Engineering and Formal Methods},
+  pages = {233--247},
+  publisher = {Springer},
+  date = {2012}
+}
+
+@inproceedings{ref:dagenais2010creating,
+  title = {Creating and Evolving Developer Documentation: Understanding the Decisions of Open Source Contributors},
+  author = {Dagenais, Barth\'{e}l\'{e}my and Robillard, Martin P.},
+  booktitle = {\conffsesymposium},
+  pages = {127--136},
+  publisher = {ACM},
+  date = {2010}
+}
+
+@inproceedings{ref:daka2015modeling,
+  title = {Modeling Readability to Improve Unit Tests},
+  author = {Daka, Ermira and Campos, Jos\'{e} and Fraser, Gordon and Dorn, Jonathan and Weimer, Westley},
+  booktitle = {\conffsemeeting},
+  pages = {107--118},
+  publisher = {ACM},
+  date = {2015}
+}
+
+@inproceedings{ref:deline2015supporting,
+  title = {Supporting Exploratory Data Analysis with Live Programming},
+  author = {DeLine, Robert and Fisher, Danyel},
+  booktitle = {\confvlhcc},
+  pages = {111--119},
+  publisher = {IEEE},
+  date = {2015}
+}
+
+@inproceedings{ref:deline2015tempe,
+  title = {Tempe: Live Scripting for Live Data},
+  author = {DeLine, Robert and Fisher, Danyel and Chandramouli, Badrish and Goldstein, Jonathan and Barnett, Michael and Terwilliger, James and Wernsing, John},
+  booktitle = {\confvlhcc},
+  publisher = {IEEE},
+  pages = {137--141},
+  date = {2015}
+}
+
+@inproceedings{ref:dewit2009managing,
+  title = {Managing Code Clones Using Dynamic Change Tracking and Resolution},
+  author = {de Wit, Michiel and Zaidman, Andy and van Deursen, Arie},
+  booktitle = {\conficsm},
+  pages = {169--178},
+  publisher = {IEEE},
+  date = {2009}
+}
+
+@inproceedings{ref:dorn2010learning,
+  title = {Learning on the Job: Characterizing the Programming Knowledge and Learning Strategies of Web Designers},
+  author = {Dorn, Brian and Guzdial, Mark},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {703--712},
+  date = {2010}
+}
+
+@inproceedings{ref:drosos2020wrex,
+  title = {Wrex: A Unifed Programming-by-Example Interaction for Synthesizing Readable Code for Data Scientists},
+  author = {Drosos, Ian and Barik, Titus and Guo, Philip J. and DeLine, Robert and Gulwani, Sumit},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  date = {2020},
+  note = {\paperno{315}} 
+}
+
+@inproceedings{ref:dunsmore2000object,
+  title = {Object-Oriented Inspection in the Face of Delocalisation},
+  author = {Dunsmore, Alastair and Roper, Marc and Wood, Murray},
+  booktitle = {\conficse},
+  pages = {467--476},
+  publisher = {ACM},
+  date = {2000}
+}
+
+@inproceedings{ref:fast2014emergent,
+  title = {Emergent, Crowd-scale Programming Practice in the IDE},
+  author = {Fast, Ethan and Steffee, Daniel and Wang, Lucy and Brandt, Joel and Bernstein, Michael S.},
+  booktitle = {\confchi},
+  pages = {2491--2500},
+  publisher = {ACM},
+  date = {2014}
+}
+
+@inproceedings{ref:fast2016meta,
+  title = {Meta: Enabling Programming Languages to Learn from the Crowd},
+  author = {Fast, Ethan and Bernstein, Michael S.},
+  booktitle = {\confuist},
+  pages = {259--270},
+  publisher = {ACM},
+  date = {2016}
+}
+
+@inproceedings{ref:feng2017component,
+  title = {Component-Based Synthesis for Complex APIs},
+  author = {Feng, Yu and Martins, Ruben and Wang, Yuepeng and Dillig, Isil and Reps, Thomas W.},
+  booktitle = {\confpopl},
+  publisher = {ACM},
+  pages = {599--612},
+  date = {2017}
+}
+
+@inproceedings{ref:fitzmaurice1995bricks,
+  title = {Bricks: Laying the Foundations for Graspable User Interfaces},
+  author = {Fitzmaurice, George W. and Ishii, Hiroshi and Buxton, William},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {442--449},
+  date = {1995}
+}
+
+@inproceedings{ref:ford2016paradise,
+  title = {Paradise Unplugged: Identifying Barriers for Female Participation on Stack Overflow},
+  author = {Ford, Denae and Smith, Justin and Guo, Philip J. and Parnin, Chris},
+  booktitle = {\conffsesymposium},
+  pages = {846--857},
+  publisher = {ACM},
+  date = {2016}
+}
+
+@inproceedings{ref:fourney2013enhancing,
+  title = {Enhancing Technical Q\&A Forums with CiteHistory},
+  author = {Fourney, Adam and Morris, Meredith Ringel},
+  publisher = {The AAAI Press},
+  booktitle = {Proceedings of the International Conference on Weblogs and Social Media},
+  date = {2013}
+}
+
+@inproceedings{ref:fraser2011exploiting,
+  title = {Exploiting Common Object Usage in Test Case Generation},
+  author = {Fraser, Gordon and Zeller, Andreas},
+  booktitle = {Proceedings of the International Conference on Software Testing, Verification and Validation},
+  pages = {80--89},
+  publisher = {IEEE},
+  date = {2011}
+}
+
+@inproceedings{ref:galenson2014codehint,
+  title = {CodeHint: Dynamic and Interactive Synthesis of Code Snippets},
+  author = {Galenson, Joel and Reames, Philip and Bodik, Rastislav and Hartmann, Bj\"{o}rn and Sen, Koushik},
+  booktitle = {\conficse},
+  pages = {653--663},
+  publisher = {ACM},
+  date = {2014}
+}
+
+@inproceedings{ref:gatys2016image,
+  title = {Image style transfer using convolutional neural networks},
+  author = {Gatys, Leon A. and Ecker, Alexander S. and Bethge, Matthias},
+  booktitle = {Proceedings of the Conference on Computer Vision and Pattern Recognition},
+  pages = {2414--2423},
+  publisher = {IEEE},
+  date = {2016}
+}
+
+@inproceedings{ref:ginosar2013authoring,
+  title = {Authoring Multi-Stage Code Examples with Editable Code Histories},
+  author = {Ginosar, Shiry and De Pombo, Luis Fernando and Agrawala, Maneesh and Hartmann, Bj\"{o}rn},
+  booktitle = {\confuist},
+  publisher = {ACM},
+  pages = {485--494},
+  date = {2013}
+}
+
+@inproceedings{ref:glassman2018visualizing,
+  title = {Visualizing API Usage Examples at Scale},
+  author = {Glassman, Elena L. and Zhang, Tianyi and Hartmann, Bj\"{o}rn and Kim, Miryung},
+  booktitle = {\confchi},
+  note = {\paperno{580}},
+  publisher = {ACM},
+  date = {2018}
+}
+
+@inproceedings{ref:goffi2014search,
+  title = {Search-Based Synthesis of Equivalent Method Sequences},
+  author = {Goffi, Alberto and Gorla, Alessandra and Mattavelli, Andrea and Pezz\`{e}, Mauro and Tonella, Paolo},
+  booktitle = {\conffsesymposium},
+  pages = {366--376},
+  publisher = {ACM},
+  date = {2014}
+}
+
+@inproceedings{ref:gordon2015codepourri,
+  title = {Codepourri: Creating Visual Coding Tutorials Using a Volunteer Crowd of Learners},
+  author = {Gordon, Mitchell and Guo, Philip J.},
+  booktitle = {\confvlhcc},
+  pages = {13--21},
+  publisher = {IEEE},
+  date = {2015}
+}
+
+@inproceedings{ref:gross2010code,
+  title = {A Code Reuse Interface for Non-Programmer Middle School Students},
+  author = {Gross, Paul A. and Herstand, Micah S. and Hodges, Jordana W. and Kelleher, Caitlin L.},
+  booktitle = {\confiui},
+  pages = {219--228},
+  publisher = {ACM},
+  date = {2010}
+}
+
+@inproceedings{ref:guo2013online,
+  title = {Online Python Tutor: Embeddable Web-Based Program Visualization for CS Education},
+  author = {Guo, Philip J.},
+  booktitle = {\confsigcse},
+  publisher = {ACM},
+  pages = {579--584},
+  date = {2013}
+}
+
+@inproceedings{ref:gvero2011interactive,
+  title = {Interactive synthesis of code snippets},
+  author = {Gvero, Tihomir and Kuncak, Viktor and Piskac, Ruzica},
+  booktitle = {Proceedings of the International Conference on Computer Aided Verification},
+  pages = {418--423},
+  publisher = {Springer},
+  date = {2011}
+}
+
+@inproceedings{ref:hartmann2008design,
+  title = {Design as Exploration: Creating Interface Alternatives through Parallel Authoring and Runtime Tuning},
+  author = {Hartmann, Bj\"{o}rn and Yu, Loren and Allison, Abel and Yang, Yeonsoo and Klemmer, Scott R.},
+  booktitle = {\confuist},
+  pages = {91--100},
+  publisher = {ACM},
+  date = {2008}
+}
+
+@inproceedings{ref:hartmann2011hypersource,
+  title = {HyperSource: Bridging the Gap Between Source and Code-Related Web Sites},
+  author = {Hartmann, Bj\"{o}rn and Dhillon, Mark and Chan, Matthew K.},
+  booktitle = {\confchi},
+  pages = {2207--2210},
+  publisher = {ACM},
+  date = {2011}
+}
+
+@inproceedings{ref:head2015tutorons,
+  title = {Tutorons: Generating Context-Relevant, On-Demand Explanations and Demonstrations of Online Code},
+  author = {Head, Andrew and Appachu, Codanda and Hearst, Marti A. and Hartmann, Bj\"{o}rn},
+  booktitle = {\confvlhcc},
+  pages = {3--12},
+  publisher = {IEEE},
+  date = {2015}
+}
+
+@inproceedings{ref:head2018interactive,
+  title = {Interactive Extraction of Examples from Existing Code},
+  author = {Head, Andrew and Glassman, Elena L. and Hartmann, Bj\"{o}rn and Hearst, Marti A.},
+  booktitle = {\confchi},
+  note = {\paperno{85}},
+  publisher = {ACM},
+  date = {2018}
+}
+
+@inproceedings{ref:head2019managing,
+  title = {Managing Messes in Computational Notebooks},
+  author = {Head, Andrew and Hohman, Fred and Barik, Titus and Drucker, Steven M. and DeLine, Robert},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  note = {\paperno{270}},
+  date = {2019}
+}
+
+@inproceedings{ref:head2020composing,
+  title = {Composing Flexibly-Organized Step-by-Step Tutorials from Linked Source Code, Snippets, and Outputs},
+  author = {Head, Andrew and Jiang, Jason and Smith, James and Hearst, Marti A. and Hartmann, Bj\"{o}rn},
+  note = {\toappear},
+  publisher = {ACM},
+  booktitle = {\confchi},
+  date = {2020}
+}
+
+@inproceedings{ref:hempel2018deuce,
+  title = {Deuce: A Lightweight User Interface for Structured Editing},
+  author = {Hempel, Brian and Lubin, Justin and Lu, Grace and Chugh, Ravi},
+  booktitle = {\conficse},
+  pages = {654--664},
+  publisher = {ACM},
+  date = {2018}
+}
+
+@inproceedings{ref:hempel2019sketch,
+  title = {Sketch-n-Sketch: Output-Directed Programming for SVG},
+  author = {Hempel, Brian and Lubin, Justin and Chugh, Ravi},
+  booktitle = {\confuist},
+  pages = {281--292},
+  publisher = {ACM},
+  date = {2019}
+}
+
+@inproceedings{ref:heo2018effective,
+  title = {Effective Program Debloating via Reinforcement Learning},
+  author = {Heo, Kihong and Lee, Woosuk and Pashakhanloo, Pardis and Naik, Mayur},
+  booktitle = {Proceedings of the SIGSAC Conference on Computer and Communications Security},
+  publisher = {ACM},
+  pages = {380--394},
+  date = {2018}
+}
+
+@inproceedings{ref:hibschman2015unravel,
+  title = {Unravel: Rapid Web Application Reverse Engineering via Interaction Recording, Source Tracing, and Library Detection},
+  author = {Hibschman, Joshua and Zhang, Haoqi},
+  booktitle = {\confuist},
+  pages = {270--279},
+  publisher = {ACM},
+  date = {2015}
+}
+
+@inproceedings{ref:hibschman2016telescope,
+  title = {Telescope: Fine-Tuned Discovery of Interactive Web UI Feature Implementation},
+  author = {Hibschman, Joshua and Zhang, Haoqi},
+  booktitle = {\confuist},
+  pages = {233--245},
+  publisher = {ACM},
+  date = {2016}
+}
+
+@inproceedings{ref:hoffmann2007assieme,
+  title = {Assieme: Finding and Leveraging Implicit References in a Web Search Interface for Programmers},
+  author = {Hoffmann, Raphael and Fogarty, James and Weld, Daniel S.},
+  booktitle = {\confuist},
+  pages = {13--22},
+  publisher = {ACM},
+  date = {2007}
+}
+
+@inproceedings{ref:hoffswell2018augmenting,
+  title = {Augmenting Code with In Situ Visualizations to Aid Program Understanding},
+  author = {Hoffswell, Jane and Satyanarayan, Arvind and Heer, Jeffrey},
+  booktitle = {\confchi},
+  note = {\paperno{532}},
+  publisher = {ACM},
+  date = {2018}
+}
+
+@inproceedings{ref:horton2018gistable,
+  title = {Gistable: Evaluating the Executability of Python Code Snippets on GitHub},
+  author = {Horton, Eric and Parnin, Chris},
+  booktitle = {\conficsme},
+  pages = {217--227},
+  publisher = {IEEE},
+  date = {2018}
+}
+
+@inproceedings{ref:hou2009cnp,
+  title = {CnP: Towards an Environment for the Proactive Management of Copy-and-Paste Programming},
+  author = {Hou, Daqing and Jablonski, Patricia and Jacob, Ferosh},
+  booktitle = {\conficpc},
+  publisher = {IEEE},
+  pages = {238--242},
+  date = {2009}
+}
+
+@inproceedings{ref:iyer2016summarizing,
+  title = {Summarizing Source Code using a Neural Attention Model},
+  author = {Iyer, Srinivasan and Konstas, Ioannis and Cheung, Alvin and Zettlemoyer, Luke},
+  publisher = {Association for Computational Linguistics},
+  booktitle = {\confacl},
+  pages = {2073--2083},
+  date = {2016}
+}
+
+@inproceedings{ref:jayaraman2005kaveri,
+  title = {Kaveri: Delivering the Indus Java Program Slicer to Eclipse},
+  author = {Jayaraman, Ganeshan and Ranganath, Venkatesh Prasad and Hatcliff, John},
+  booktitle = {\conffase},
+  publisher = {Springer},
+  date = {2005},
+  pages = {269--272}
+}
+
+@inproceedings{ref:kamimura2013towards,
+  title = {Towards Generating Human-Oriented Summaries of Unit Test Cases},
+  author = {Kamimura, Manabu and Murphy, Gail C.},
+  booktitle = {\conficpc},
+  publisher = {IEEE},
+  pages = {215--218},
+  date = {2013}
+}
+
+@inproceedings{ref:kang2017omnicode,
+  title = {Omnicode: A Novice-Oriented Live Programming Environment with Always-On Run-Time Value Visualizations},
+  author = {Kang, Hyeonsu and Guo, Philip J.},
+  booktitle = {\confuist},
+  publisher = {ACM},
+  pages = {737--745},
+  date = {2017}
+}
+
+@inproceedings{ref:kelley2017jupyter,
+  title = {Jupyter Frontends: From the Classic Jupyter Notebook to JupyterLab, nteract, and Beyond},
+  author = {Kelley, Kyle and Granger, Brian},
+  booktitle = {JupyterCon},
+  url = {https://www.youtube.com/watch?v=YKmJvHjTGAM},
+  date = {2017},
+  note = {Video}
+}
+
+@inproceedings{ref:kery2017exploring,
+  title = {Exploring Exploratory Programming},
+  author = {Kery, Mary Beth and Myers, Brad A.},
+  booktitle = {\confvlhcc},
+  pages = {25--29},
+  publisher = {IEEE},
+  date = {2017}
+}
+
+@inproceedings{ref:kery2017variolite,
+  title = {Variolite: Supporting Exploratory Programming by Data Scientists},
+  author = {Kery, Mary Beth and Horvath, Amber and Myers, Brad},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {1265--1276},
+  date = {2017}
+}
+
+@inproceedings{ref:kery2018interactions,
+  title = {Interactions for Untangling Messy History in a Computational Notebook},
+  author = {Kery, Mary Beth and Myers, Brad A.},
+  year = 2018,
+  booktitle = {\confvlhcc},
+  pages = {147--155},
+  publisher = {IEEE}
+}
+
+@inproceedings{ref:kery2018story,
+  title = {The Story in the Notebook: Exploratory Data Science using a Literate Programming Tool},
+  author = {Kery, Mary Beth and Radensky, Marissa and Arya, Mahima and John, Bonnie E. and Myers, Brad A.},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  note = {\paperno{174}},
+  date = {2018}
+}
+
+@inproceedings{ref:kery2019towards,
+  title = {Towards Effective Foraging by Data Scientists to Find Past Analysis Choices},
+  author = {Kery, Mary Beth and John, Bonnie E. and O'Flaherty, Patrick and Horvath, Amber and Myers, Brad A.},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  note = {\paperno{92}},
+  date = {2019}
+}
+
+@inproceedings{ref:khandwala2018codemotion,
+  title = {Codemotion: Expanding the Design Space of Learner Interactions with Computer Programming Tutorial Videos},
+  author = {Khandwala, Kandarp and Guo, Philip J.},
+  booktitle = {\conflas},
+  note = {\articleno{57}},
+  publisher = {ACM},
+  date = {2018}
+}
+
+@inproceedings{ref:kim2004ethnographic,
+  title = {An Ethnographic Study of Copy and Paste Programming Practices in OOPL},
+  author = {Kim, Miryung and Bergman, Lawrence and Lau, Tessa and Notkin, David},
+  booktitle = {\confisese},
+  pages = {83--92},
+  publisher = {IEEE},
+  date = {2004}
+}
+
+@inproceedings{ref:kim2009adding,
+  title = {Adding Examples into Java Documents},
+  author = {Kim, Jinhan and Lee, Sanghoon and Hwang, Seung-won and Kim, Sunghun},
+  booktitle = {\confase},
+  pages = {540--544},
+  publisher = {IEEE},
+  date = {2009}
+}
+
+@inproceedings{ref:kim2010towards,
+  title = {Towards an Intelligent Code Search Engine},
+  author = {Kim, Jinhan and Lee, Sanghoon and Hwang, Seung-won and Kim, Sunghun},
+  booktitle = {\confaaai},
+  pages = {1358--1363},
+  publisher = {The AAAI Press},
+  date = {2010}
+}
+
+@inproceedings{ref:kim2017pedagogical,
+  title = {A Pedagogical Analysis of Online Coding Tutorials},
+  author = {Kim, Ada S. and Ko, Amy J.},
+  booktitle = {\confsigcse},
+  pages = {321--326},
+  publisher = {ACM},
+  date = {2017}
+}
+
+@inproceedings{ref:ko2009finding,
+  title = {Finding Causes of Program Output with the Java Whyline},
+  author = {Ko, Amy and Myers, Brad A.},
+  booktitle = {\confchi},
+  pages = {1569--1578},
+  publisher = {ACM},
+  date = {2009}
+}
+
+@inproceedings{ref:koenemann1991expert,
+  title = {Expert problem solving strategies for program comprehension},
+  author = {Koenemann, J\"{u}rgen and Robertson, Scott P.},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {125--130},
+  date = {1991}
+}
+
+@inproceedings{ref:kojouharov2004jtutor,
+  title = {JTutor: An Eclipse Plug-in Suite for Creation and Replay of Code-based Tutorials},
+  author = {Kojouharov, Chris and Solodovnik, Aleksey and Naumovich, Gleb},
+  booktitle = {Proceedings of the Eclipse Technology eXchange Workshop},
+  pages = {27--31},
+  publisher = {ACM},
+  date = {2004}
+}
+
+@inproceedings{ref:kramer2016using,
+  title = {Using Runtime Traces to Improve Documentation and Unit Test Authoring for Dynamic Languages},
+  author = {Kr\"{a}mer, Jan-Peter and Brandt, Joel and Borchers, Jan},
+  booktitle = {\confchi},
+  pages = {3232--3237},
+  publisher = {ACM},
+  date = {2016}
+}
+
+@inproceedings{ref:lange1989some,
+  title = {Some strategies of reuse in an object-oriented programming environment},
+  author = {Lange, Beth M. and Moher, Thomas G.},
+  booktitle = {\confchi},
+  pages = {69--73},
+  publisher = {ACM},
+  date = {1989}
+}
+
+@inproceedings{ref:lawrie2006whats,
+  title = {What's in a Name? A Study of Identifiers},
+  author = {Lawrie, Dawn and Morrell, Christopher and Feild, Henry and Binkley, David},
+  booktitle = {\conficpc},
+  pages = {3--12},
+  publisher = {IEEE},
+  date = {2006}
+}
+
+@inproceedings{ref:lee2013draganddrop,
+  title = {Drag-and-Drop Refactoring: Intuitive and Efficient Program Transformation},
+  author = {Lee, Yun Young and Chen, Nicholas and Johnson, Ralph E.},
+  booktitle = {\conficse},
+  pages = {23--32},
+  publisher = {IEEE},
+  date = {2013}
+}
+
+@inproceedings{ref:leshed2008coscripter,
+  title = {CoScripter: Automating \& Sharing How-To Knowledge in the Enterprise},
+  author = {Leshed, Gilly and Haber, Eben M. and Matthews, Tara and Lau, Tessa},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {1719--1728},
+  date = {2008}
+}
+
+@inproceedings{ref:lieber2014addressing,
+  title = {Addressing Misconceptions About Code with Always-On Programming Visualizations},
+  author = {Lieber, Tom and Brandt, Joel and Miller, Robert C.},
+  booktitle = {\confchi},
+  pages = {2481--2490},
+  publisher = {ACM},
+  date = {2014}
+}
+
+@inproceedings{ref:little2007koala,
+  title = {Koala: Capture, Share, Automate, Personalize Business Processes on the Web},
+  author = {Little, Greg and Lau, Tessa A. and Cypher, Allen and Lin, James and Haber, Eben M. and Kandogan, Eser},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {943--946},
+  note = {This paper describes an earlier version of the \textit{CoScripter} tool called \textit{Koala}},
+  date = {2007}
+}
+
+@inproceedings{ref:malan2004examples,
+  title = {Examples that can do Harm in Learning Programming},
+  author = {Malan, Katherine and Halland, Ken},
+  booktitle = {Companion to the Conference on Object-Oriented Programming Systems, Languages, and Applications},
+  pages = {83--87},
+  publisher = {ACM},
+  date = {2004}
+}
+
+@inproceedings{ref:mamykina2011design,
+  title = {Design Lessons from the Fastest Q\&A Site in the West},
+  author = {Mamykina, Lena and Manoim, Bella and Mittal, Manas and Hripcsak, George and Hartmann, Bj{\"o}rn},
+  year = 2011,
+  booktitle = {\confchi},
+  pages = {2857--2866},
+  publisher = {ACM}
+}
+
+@inproceedings{ref:mandelin2005jungloid,
+  title = {Jungloid Mining: Helping to Navigate the API Jungle},
+  author = {Mandelin, David and Xu, Lin and Bod\'{i}k, Rastislav and Kimelman, Doug},
+  publisher = {ACM},
+  pages = {48--61},
+  date = {2005},
+  booktitle = {\confpldi}
+}
+
+@inproceedings{ref:marks1997design,
+  title = {Design Galleries: A General Approach to Setting Parameters for Computer Graphics and Animation},
+  author = {Marks, J. and Andalman, B. and Beardsley, P.A. and Freeman, W. and Gibson, S. and Hodgins, J. and Kang, T. and Mirtich, B. and Pfister, H. and Ruml, W. and Ryall, K. and Seims, J. and Shieber, S.},
+  booktitle = {\confcgit},
+  publisher = {ACM},
+  pages = {389--400},
+  date = {1997}
+}
+
+@inproceedings{ref:mayer2015user,
+  title = {User Interaction Models for Disambiguation in Programming by Example},
+  author = {Mayer, Mika\"{e}l and Soares, Gustavo and Grechkin, Maxim and Le, Vu and Marron, Mark and Polozov, Oleksandr and Singh, Rishabh and Zorn, Benjamin and Gulwani, Sumit},
+  booktitle = {\confuist},
+  publisher = {ACM},
+  pages = {291--301},
+  date = {2015}
+}
+
+@inproceedings{ref:mcburney2014automatic,
+  title = {Automatic Documentation Generation via Source Code Summarization of Method Context},
+  author = {McBurney, Paul W. and McMillan, Collin},
+  booktitle = {\conficpc},
+  publisher = {ACM},
+  pages = {279--290},
+  date = {2014}
+}
+
+@inproceedings{ref:mcdirmid2013usable,
+  title = {Usable Live Programming},
+  author = {McDirmid, Sean},
+  booktitle = {Proceedings of the International Symposium on New Ideas, New Paradigms, and Reflections on Programming \& Software},
+  pages = {53--62},
+  date = {2013}
+}
+
+@inproceedings{ref:miltner2019fly,
+  title = {On the Fly Synthesis of Edit Suggestions},
+  author = {Miltner, Anders and Gulwani, Sumit and Le, Vu and Leung, Alan and Radhakrishna, Arjun and Soares, Gustavo and Tiwari, Ashish and Udupa, Abhishek},
+  publisher = {ACM},
+  pages = {143:1--143:29},
+  note = {\articleno{143}},
+  date = {2019},
+  booktitle = {Proceedings of the SIGPLAN Conference on Systems, Programming, Languages, and Applications: Software for Humanity}
+}
+
+@inproceedings{ref:montandon2013documenting,
+  title = {Documenting APIs with Examples: Lessons Learned with the APIMiner Platform},
+  author = {Montandon, Jo\~{a}o Eduardo and Borges, Hudson and Felix, Daniel and Valente, Marco Tulio},
+  booktitle = {\confwcre},
+  pages = {401--408},
+  publisher = {IEEE},
+  date = {2013}
+}
+
+@inproceedings{ref:moreno2013automatic,
+  title = {Automatic Generation of Natural Language Summaries for Java Classes},
+  author = {Moreno, Laura and Aponte, Jairo and Sridhara, Giriprasad and Marcus, Andrian and Pollock, Lori and Vijay-Shanker, K.},
+  booktitle = {\conficpc},
+  publisher = {IEEE},
+  pages = {23--32},
+  date = {2013}
+}
+
+@inproceedings{ref:moreno2015how,
+  title = {How Can I Use This Method?},
+  author = {Moreno, Laura and Bavota, Gabriele and Di Penta, Massimiliano and Oliveto, Rocco and Marcus, Andrian},
+  booktitle = {\conficse},
+  pages = {880--890},
+  publisher = {IEEE},
+  date = {2015}
+}
+
+@inproceedings{ref:mysore2017torta,
+  title = {Torta: Generating Mixed-Media GUI and Command-Line App Tutorials Using Operating-System-Wide Activity Tracing},
+  author = {Mysore, Alok and Guo, Philip J.},
+  booktitle = {\confuist},
+  publisher = {ACM},
+  pages = {703--714},
+  date = {2017}
+}
+
+@inproceedings{ref:nasehi2010unit,
+  title = {Unit Tests as API Usage Examples},
+  author = {Nasehi, Seyed Mehdi and Maurer, Frank},
+  booktitle = {\conficsm},
+  publisher = {IEEE},
+  date = {2010}
+}
+
+@inproceedings{ref:nasehi2012what,
+  title = {What Makes a Good Code Example? A Study of Programming Q\&A in StackOverflow},
+  author = {Nasehi, Seyed Mehdi and Sillito, Jonathan and Maurer, Frank and Burns, Chris},
+  booktitle = {\conficsm},
+  publisher = {IEEE},
+  pages = {25--34},
+  date = {2012}
+}
+
+@inproceedings{ref:neal1989system,
+  title = {A System for Example-Based Programming},
+  author = {Neal, Lisa Rubin},
+  publisher = {ACM},
+  pages = {63--68},
+  date = {1989},
+  booktitle = {\confchi}
+}
+
+@inproceedings{ref:nguyen2016t2api,
+  title = {T2API: Synthesizing API Code Usage Templates from English texts with Statistical Translation},
+  author = {Nguyen, Thanh and Rigby, Peter C, and Nguyen, Anh Tuan and Karanfil, Mark and Nguyen, Tien N.},
+  booktitle = {\conffsesymposium},
+  publisher = {ACM},
+  pages = {1013--1017},
+  date = {2016}
+}
+
+@inproceedings{ref:norcio1982indentation,
+  title = {Indentation, documentation and programmer comprehension},
+  author = {Norcio, A. F.},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {118--120},
+  date = {1982}
+}
+
+@inproceedings{ref:nykaza2002what,
+  title = {What Programmers Really Want: Results of a Needs Assessment for SDK Documentation},
+  author = {Nykaza, Janet and Messinger, Rhonda and Boehme, Fran and Norman, Cherie L. and Mace, Matthew and Gordon, Manuel},
+  booktitle = {Proceedings of the International Conference on the Design of Communication},
+  pages = {133--141},
+  publisher = {ACM},
+  date = {2002}
+}
+
+@inproceedings{ref:oezbek2007jtourbus,
+  title = {JTourBus: Simplifying Program Understanding by Documentation that Provides Tours through the Source Code},
+  author = {Oezbek, Christopher and Prechelt, Lutz},
+  booktitle = {\conficsm},
+  pages = {64--73},
+  publisher = {IEEE},
+  date = {2007}
+}
+
+@inproceedings{ref:olsen2007evaluating,
+  title = {Evaluating User Interface Systems Research},
+  author = {Olsen Jr., Dan R.},
+  booktitle = {\confuist},
+  publisher = {ACM},
+  pages = {251--258},
+  date = {2007}
+}
+
+@inproceedings{ref:oney2009firecrystal,
+  title = {FireCrystal: Understanding Interactive Behaviors in Dynamic Web Pages},
+  author = {Oney, Stephen and Myers, Brad},
+  booktitle = {\confvlhcc},
+  pages = {105--108},
+  publisher = {IEEE},
+  date = {2009}
+}
+
+@inproceedings{ref:oney2012codelets,
+  title = {Codelets: Linking Interactive Documentation and Example Code in the Editor},
+  author = {Oney, Stephen and Brandt, Joel},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {2697--2706},
+  date = {2012}
+}
+
+@inproceedings{ref:oney2018creating,
+  title = {Creating Guided Code Explanations with chat.codes},
+  author = {Oney, Steve and Brooks, Christopher and Resnick, Paul},
+  publisher = {ACM},
+  date = {2018},
+  note = {\articleno{39}},
+  booktitle = {\confcscw}
+}
+
+@inproceedings{ref:ou2015interactive,
+  title = {An Interactive System for Data Structure Development},
+  author = {Ou, Jibin and Vechev, Martin and Hilliges, Otmar},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  pages = {3053--3062},
+  date = {2015}
+}
+
+@inproceedings{ref:parnin2013blogging,
+  title = {Blogging Developer Knowledge: Motivations, Challenges, and Future Directions},
+  author = {Parnin, Chris and Treude, Christoph and Storey, Margaret-Anne},
+  booktitle = {\conficpc},
+  pages = {211--214},
+  publisher = {IEEE},
+  date = {2013}
+}
+
+@inproceedings{ref:polozov2015flashmeta,
+  title = {FlashMeta: A Framework for Inductive Program Synthesis},
+  author = {Polozov, Oleksandr and Gulwani, Sumit},
+  booktitle = {\confoopsla},
+  publisher = {ACM},
+  pages = {107--126},
+  date = {2015}
+}
+
+@inproceedings{ref:rambally1986influence,
+  title = {The influence of color on program readability and comprehensibility},
+  author = {Rambally, Gerard K.},
+  booktitle = {\confsigcse},
+  publisher = {ACM},
+  pages = {173--181},
+  date = {1986}
+}
+
+@inproceedings{ref:rissland1980overview,
+  title = {Overview of an Example Generation System},
+  author = {Rissland, Edwina L. and Soloway, Elliot M.},
+  publisher = {The AAAI Press},
+  booktitle = {\confaaai},
+  pages = {256--258},
+  date = {1980}
+}
+
+@inproceedings{ref:robertson1990program,
+  title = {Program comprehension beyond the line},
+  author = {Robertson, Scott P. and Davis, Erle F. and Okabe, Kyoko and Fitz-Randolf, Douglas},
+  booktitle = {\confinteract},
+  publisher = {North-Holland Publishing Co.},
+  pages = {959--963},
+  date = {1990}
+}
+
+@inproceedings{ref:robillard2017ondemand,
+  title = {On-Demand Developer Documentation},
+  author = {Robillard, Martin P. and Marcus, Andrian and Treude, Christoph and Bavota, Gabriele and Chaparro, Oscar and Ernst, Neil and Gerosa, Marco Aur\'{e}lio and Godfrey, Michael and Lanza, Michele and Linares-V\'{a}squez, Mario and Murphy, Gail C. and Moreno, Laura and Shepherd, David and Wong, Edmund},
+  booktitle = {\conficsme},
+  pages = {479--483},
+  publisher = {IEEE},
+  date = {2017}
+}
+
+@inproceedings{ref:rule2018aiding,
+  title = {Aiding Collaborative Reuse of Computational Notebooks with Annotated Cell Folding},
+  author = {Rule, Adam and Drosos, Ian and Tabard, Aur\'{e}lien and Hollan, James D.},
+  booktitle = {\confcscw},
+  publisher = {ACM},
+  note = {\articleno{150}},
+  date = {2018}
+}
+
+@inproceedings{ref:rule2018exploration,
+  title = {Exploration and Explanation in Computational Notebooks},
+  author = {Rule, Adam and Tabard, Aur\'{e}lien and Hollan, James D.},
+  booktitle = {\confchi},
+  publisher = {ACM},
+  note = {\paperno{32}},
+  date = {2018}
+}
+
+@inproceedings{ref:sadowski2015developers,
+  title = {How Developers Search for Code: A Case Study},
+  author = {Sadowski, Caitlin and Stolee, Kathryn T. and Elbaum, Sebastian},
+  booktitle = {\conffsemeeting},
+  pages = {191--201},
+  publisher = {ACM},
+  date = {2015}
+}
+
+@inproceedings{ref:sanchez2016multistaging,
+  title = {Multistaging to Understand: Distilling the Essence of Java Code Examples},
+  author = {Sanchez, Huascar and Whitehead, Jim and Sch\"{a}f, Martin},
+  booktitle = {\conficpc},
+  publisher = {IEEE},
+  date = {2016}
+}
+
+@inproceedings{ref:shum1994using,
+  title = {Using Literate Programming to Teach Good Programming Practices},
+  author = {Shum, Stephen and Cook, Curtis},
+  booktitle = {\confsigcse},
+  publisher = {ACM},
+  pages = {66--70},
+  date = {1994}
+}
+
+@inproceedings{ref:siegel2018extracting,
+  title = {Extracting Scientific Figures with Distantly Supervised Neural Networks},
+  author = {Siegel, Noah and Lourie, Nicholas and Power, Russell and Ammar, Waleed},
+  booktitle = {Proceedings of the Joint Conference on Digital Libraries},
+  pages = {223--232},
+  publisher = {ACM},
+  date = {2018}
+}
+
+@inproceedings{ref:sillito2013app,
+  title = {App-Directed Learning: An Exploratory Study},
+  author = {Sillito, Jonathan and Begel, Andrew},
+  booktitle = {\confchase},
+  pages = {81--84},
+  publisher = {IEEE},
+  date = {2013}
+}
+
+@inproceedings{ref:sohan2015spyrest,
+  title = {SpyREST: Automated RESTful API Documentation using an HTTP Proxy Server},
+  author = {Sohan, S M and Anslow, Craig and Maurer, Frank},
+  booktitle = {\confase},
+  publisher = {IEEE},
+  pages = {271--276},
+  date = {2015}
+}
+
+@inproceedings{ref:sridhara2010towards,
+  title = {Towards Automatically Generating Summary Comments for Java Methods},
+  author = {Sridhara, Giriprasad and Hill, Emily and Muppaneni, Divya and Pollock, Lori and Vijay-Shanker, K.},
+  booktitle = {\confase},
+  publisher = {ACM},
+  pages = {43--52},
+  date = {2010}
+}
+
+@inproceedings{ref:sridhara2011automatically,
+  title = {Automatically Detecting and Describing High Level Actions within Methods},
+  author = {Sridhara, Giriprasad and Pollock, Lori and Vijay-Shanker, K.},
+  booktitle = {\conficse},
+  publisher = {ACM},
+  pages = {101--110},
+  date = {2011}
+}
+
+@inproceedings{ref:sridhara2011generating,
+  title = {Generating Parameter Comments and Integrating with Method Summaries},
+  author = {Sridhara, Giriprasad and Pollock, Lori and Vijay-Shanker, K.},
+  booktitle = {\conficpc},
+  publisher = {IEEE},
+  pages = {71--80},
+  date = {2011}
+}
+
+@inproceedings{ref:srinivasa2016foraging,
+  title = {Foraging among an Overabundance of Similar Variants},
+  author = {Ragavan, Sruti Srinivasa and Kuttal, Sandeep Kaur and Hill, Charles and Sarma, Anita and Piorkowski, David and Burnett, Margaret},
+  booktitle = {\confchi},
+  pages = {3509--3521},
+  publisher = {ACM},
+  date = {2016}
+}
+
+@inproceedings{ref:stylos2006mica,
+  title = {Mica: A Web-Search Tool for Finding API Components and Examples},
+  author = {Stylos, Jeffrey and Myers, Brad A.},
+  booktitle = {\confvlhcc},
+  publisher = {IEEE},
+  pages = {195--202},
+  date = {2006}
+}
+
+@inproceedings{ref:subramanian2014live,
+  title = {Live API Documentation},
+  author = {Subramanian, Siddharth and Inozemtseva, Laura and Holmes, Reid},
+  booktitle = {\conficse},
+  publisher = {ACM},
+  pages = {643--652},
+  date = {2014}
+}
+
+@inproceedings{ref:sulir2017generating,
+  title = {Generating Method Documentation Using Concrete Values from Executions},
+  author = {Sul\'{i}r, Mat\'{u}\v{s} and Porub\"{a}n, Jaroslav},
+  booktitle = {Proceedings of the Symposium on Languages, Applications and Technologies},
+  pages = {3:1--3:13},
+  publisher = {Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+  date = {2017}
+}
+
+@inproceedings{ref:suzuki2015interactive,
+  title = {Interactive and Collaborative Source Code Annotation},
+  author = {Suzuki, Ryo},
+  booktitle = {\conficse},
+  publisher = {IEEE},
+  pages = {799--800},
+  date = {2015}
+}
+
+@inproceedings{ref:tanimoto2013perspective,
+  title = {A Perspective on the Evolution of Live Programming},
+  author = {Tanimoto, Steven L.},
+  booktitle = {Proceedings of the International Workshop on Live Programming},
+  pages = {31--34},
+  publisher = {IEEE},
+  date = {2013}
+}
+
+@inproceedings{ref:tapp1994determining,
+  title = {Determining the Usefulness of Colour and Fonts in a Programming Task},
+  author = {Tapp, Riston and Kazman, Rick},
+  booktitle = {Proceedings of the Workshop on Program Comprehension},
+  publisher = {IEEE},
+  pages = {154--161},
+  date = {1994}
+}
+
+@inproceedings{ref:terragni2016csnippex,
+  title = {CSNIPPEX: Automated Synthesis of Compilable Code Snippets from Q\&A Sites},
+  author = {Terragni, Valerio and Liu, Yepang and Cheung, Shing-Chi},
+  booktitle = {Proceedings of the International Symposium on Software Testing and Analysis},
+  publisher = {ACM},
+  pages = {118--129},
+  date = {2016}
+}
+
+@inproceedings{ref:tiarks2014does,
+  title = {How Does a Typical Tutorial for Mobile Development Look Like?},
+  author = {Tiarks, Rebecca and Maalej, Walid},
+  booktitle = {Proceedings of the Working Conference on Mining Software Repositories},
+  publisher = {ACM},
+  pages = {272--281},
+  date = {2014}
+}
+
+@inproceedings{ref:tip1999practical,
+  title = {Practical Experience with an Application Extractor for Java},
+  author = {Tip, Frank and Laffra, Chris and Sweeney, Peter F. and Streeter, David},
+  publisher = {ACM},
+  booktitle = {\confoopsla},
+  pages = {292--305},
+  date = {1999}
+}
+
+@inproceedings{ref:toomim2004managing,
+  title = {Managing Duplicated Code with Linked Editing},
+  author = {Toomim, Michael and Begel, Andrew and Graham, Susan L.},
+  booktitle = {\confvlhcc},
+  publisher = {IEEE},
+  pages = {173--180},
+  date = {2004}
+}
+
+@inproceedings{ref:treude2011programmers,
+  title = {How Do Programmers Ask and Answer Questions on the Web?},
+  author = {Treude, Christoph and Barzilay, Ohad and Storey, Margaret-Anne},
+  booktitle = {\conficse},
+  publisher = {IEEE},
+  pages = {804--807},
+  date = {2011}
+}
+
+@inproceedings{ref:treude2017understanding,
+  title = {Understanding Stack Overflow Code Fragments},
+  author = {Treude, Christoph and Robillard, Martin P.},
+  booktitle = {\conficsme},
+  pages = {509--513},
+  publisher = {IEEE},
+  date = {2017}
+}
+
+@inproceedings{ref:uwano2006analyzing,
+  title = {Analyzing Individual Performance of Source Code Review Using Reviewers' Eye Movement},
+  author = {Uwano, Hidetake and Nakamura, Masahide and Monden, Akito and Matsumoto, Ken-ichi},
+  booktitle = {Proceedings of the Symposium on Eye Tracking Research \& Applications},
+  publisher = {ACM},
+  pages = {133--140},
+  date = {2006}
+}
+
+@inproceedings{ref:valleerai1999soot,
+  title = {Soot -- A Java Bytecode Optimization Framework},
+  author = {Vall\'{e}e-Rai, Raja and Co, Phong and Gagnon, Etienne and {Sable Research Group}},
+  booktitle = {Proceedings of the Conference of the Centre for Advanced Studies on Collaborative Research},
+  publisher = {IBM Press},
+  date = {1999}
+}
+
+@inproceedings{ref:weiser1981program,
+  title = {Program slicing},
+  author = {Weiser, Mark},
+  booktitle = {\conficse},
+  pages = {439--449},
+  publisher = {IEEE},
+  date = {1981}
+}
+
+@inproceedings{ref:wightman2012snipmatch,
+  title = {SnipMatch: Using Source Code Context to Enhance Snippet Retrieval and Parameterization},
+  author = {Wightman, Doug and Ye, Zi and Brandt, Joel and Vertegaal, Roel},
+  booktitle = {\confuist},
+  publisher = {ACM},
+  pages = {219--228},
+  date = {2012}
+}
+
+@inproceedings{ref:yang2016query,
+  title = {From Query to Usable Code: An Analysis of Stack Overflow Code Snippets},
+  author = {Yang, Di and Hussain, Aftab and Lopes, Cristina Videira},
+  year = {2016},
+  booktitle = {Proceedings of the Working Conference on Mining Software Repositories},
+  pages = {391--401},
+  publisher = {ACM}
+}
+
+@inproceedings{ref:yin2017syntactic,
+  title = {A Syntactic Neural Model for General-purpose Code Generation},
+  author = {Yin, Pengcheng and Neubig, Graham},
+  publisher = {Association for Computational Linguistics},
+  date = {2017},
+  pages = {440--450},
+  booktitle = {\confacl}
+}
+
+@inproceedings{ref:ying2014selection,
+  title = {Selection and Presentation Practices for Code Example Summarization},
+  author = {Ying, Annie T. T. and Robillard, Martin P.},
+  booktitle = {\conffsesymposium},
+  publisher = {ACM},
+  pages = {460--471},
+  date = {2014}
+}
+
+@inproceedings{ref:yoon2012exploratory,
+  title = {An Exploratory Study of Backtracking Strategies Used by Developers},
+  author = {Yoon, YoungSeok and Myers, Brad A.},
+  booktitle = {\confchase},
+  pages = {138--144},
+  publisher = {IEEE},
+  date = {2012}
+}
+
+@inproceedings{ref:zhang2006pruning,
+  title = {Pruning Dynamic Slices with Confidence},
+  author = {Zhang, Xiangyu and Gupta, Neelam and Gupta, Rajiv},
+  publisher = {ACM},
+  pages = {169--180},
+  date = {2006},
+  booktitle = {\confpldi}
+}
+
+@inproceedings{ref:zhang2017dsjs,
+  title = {DS.js: Turn Any Webpage into an Example-Centric Live Programming Environment for Learning Data Science},
+  author = {Zhang, Xiong and Guo, Philip J.},
+  booktitle = {\confuist},
+  publisher = {ACM},
+  pages = {691--702},
+  date = {2017}
+}
+
+@inproceedings{ref:zhang2018code,
+  title = {Are Code Examples on an Online Q\&A Forum Reliable? A Study of API Misuse on Stack Overflow},
+  author = {Zhang, Tianyi and Upadhyaya, Ganesha and Reinhardt, Anastasia and Rajan, Hridesh and Kim, Miryung},
+  booktitle = {\conficse},
+  pages = {886--896},
+  publisher = {IEEE},
+  date = {2018}
+}
+
+@inproceedings{ref:zhang2019analyzing,
+  title = {Analyzing and Supporting Adaptation of Online Code Examples},
+  author = {Zhang, Tianyi and Yang, Di and Lopes, Crista and Kim, Miryung},
+  booktitle = {\conficse},
+  pages = {316--327},
+  publisher = {IEEE},
+  date = {2019}
+}
+
+@inproceedings{ref:zwicky1967morphological,
+  title = {The Morphological Approach to Discovery, Invention, Research and Construction},
+  author = {Zwicky, F.},
+  booktitle = {New Methods of Thought and Procedure: Contributions to the Symposium on Methodologies},
+  publisher = {Springer},
+  pages = {273--297},
+  date = {1967}
+}
+
+% ONLINE, ATTRIBUTED
+% Must have author and either date or urldate
+@online{ref:codewalkhowtowrite,
+  title = {Codewalk: How to write a Codewalk},
+  author = {Google},
+  url = {https://golang.org/doc/codewalk/codewalk/},
+  urldate = {2020-05-06},
+}
+
+@online{ref:codewalksharemem,
+  title = {Codewalk: Share Memory By Communicating},
+  author = {Google},
+  url = {https://golang.org/doc/codewalk/sharemem/},
+  urldate = {2020-05-06},
+}
+
+@online{ref:denero2014composing,
+  title = {Composing Programs},
+  author = {DeNero, John},
+  url = {https://composingprograms.com/},
+  urldate = {2020-05-05},
+}
+
+@online{ref:distill,
+  title = {Distill},
+  url = {https://distill.pub/},
+  editor = {Carter, Shan and Olah, Chris and Satyanarayan, Arvind},
+  urldate = {2020-05-06}
+}
+
+@online{ref:eclipse,
+  title = {Quick Fix and Quick Assist},
+  author = {{Eclipse Foundation}},
+  url = {https://help.eclipse.org/2020-03/topic/org.eclipse.jdt.doc.user/concepts/concept-quickfix-assist.htm?cp=1_2_5},
+  urldate = {2020-05-06}
+}
+
+@online{ref:javadoc,
+  title = {How to Write Doc Comments for the Javadoc Tool},
+  author = {Oracle},
+  url = {http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html},
+  urldate = {2018-02-12},
+}
+
+@online{ref:jonskeetshortcompleteprograms,
+  title = {Short but complete programs},
+  author = {Skeet, Jon},
+  url = {https://jonskeet.uk/csharp/complete.html},
+  urldate = {2020-05-06}
+}
+
+@online{ref:jupyterextensions,
+  title = {Unofficial Jupyter Notebook Extensions},
+  author = {{Jupyter Contrib Team}},
+  note = {https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/},
+  urldate = {2020-05-06}
+}
+
+@online{ref:rule2018explorationdata,
+  title = {Data from: Exploration and Explanation in Computational Notebooks},
+  author = {Rule, Adam and Tabard, Aur\'{e}lien and Hollan, James D.},
+  organization = {UC San Diego Library Digital Collections},
+  url = {https://doi.org/10.6075/J0JW8C39},
+  date = {2018}
+}
+
+@online{ref:sscce,
+  title = {The SSCCE},
+  author = {Thompson, Andrew},
+  url = {http://www.sscce.org/},
+  urldate = {2020-05-06}
+}
+
+@online{ref:stackoverflowhow,
+  title = {How to create a Minimal, Reproducible Example},
+  author = {{Stack Overflow Help Center}},
+  url = {https://stackoverflow.com/help/minimal-reproducible-example},
+  urldate = {2020-05-06}
+}
+
+% ONLINE, ATTRIBUTED
+@online{ref:mariotutorial,
+  title = {Let's make a Mario game.},
+  author = {Kamermans, Mike ``Pomax''},
+  url = {http://processingjs.nihongoresources.com/test/PjsGameEngine/docs/tutorial/mario.html},
+  urldate = {2020-05-06}
+}
+
+@online{ref:mozillaguidelines,
+  title = {Code example guidelines},
+  url = {https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines},
+  author = {{MDN contributors}},
+  urldate = {2020-05-06}
+}
+
+@online{ref:pombo2019build,
+  title = {Build Your Own React},
+  author = {Pombo, Rodrigo},
+  url = {https://pomb.us/build-your-own-react/},
+  date = {2019-11-13}
+}
+
+@online{ref:pombo2019waves,
+  title = {Gatsby Waves},
+  author = {Pombo, Rodrigo},
+  url = {https://github.com/pomber/gatsby-waves},
+  urldate = {2020-05-06}
+}
+
+@online{ref:perez2015project,
+  title = {Project Jupyter: Computational Narratives as the Engine of Collaborative Data Science},
+  author = {Perez, Fernando and Granger, Brian E.},
+  note = {Grant proposal},
+  url = {http://archive.ipython.org/JupyterGrantNarrative-2015.pdf},
+  date = {2015}
+}
+
+@online{ref:punchedcards,
+  title = {Punched card program deck.agr.jpg},
+  author = {Reinhold, Arnold},
+  url = {https://en.wikipedia.org/wiki/File:Punched_card_program_deck.agr.jpg},
+  note = {This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license},
+  date = {2006}
+}
+
+@online{ref:sweigart2015automate,
+  title = {Automate the Boring Stuff with Python},
+  author = {Sweigart, Al},
+  url = {https://automatetheboringstuff.com/},
+  urldate = {2020-05-06}
+}
+
+@online{ref:victor2011explorable,
+  title = {Explorable Explanations},
+  author = {Victor, Bret},
+  date = {2011},
+  url = {http://worrydream.com/ExplorableExplanations/}
+}
+
+@online{ref:victor2012learnable,
+  title = {Learnable programming},
+  author = {Victor, Bret},
+  date = {2012},
+  url = {http://worrydream.com/LearnableProgramming/}
+}
+
+@online{ref:wattenberger2019interactive,
+  title = {Interactive Charts with D3.js},
+  author = {Wattenberger, Amelia},
+  url = {https://wattenberger.com/blog/d3-interactive-charts},
+  urldate = {2019-06-04}
+}
+
+@online{ref:wikibooks2019beginners,
+  title = {A Beginner's Python Tutorial/Classes},
+  author = {{Wikibooks contributors}},
+  publisher = {Wikibooks, The Free Textbook Project},
+  url = {https://en.wikibooks.org/w/index.php?title=A_Beginner%27s_Python_Tutorial/Classes},
+  urldate = {2019-09-14}
+}
+
+% TOOL LINKS
+% ONLY meant to be referenced as an entity in and of itself; not meant to be
+% cited as a source of information. Each one should have an equivalent shorthand
+% and title, and a urldate. These should be cited with '\citetool'
+@online{tool:jdi,
+  title = {Java Debug Interface},
+  url = {https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/index.html},
+  urldate = {2020-05-06}
+}
+
+@online{tool:jison,
+  title = {Jison},
+  url = {http://jison.org},
+  urldate = {2020-05-06}
+}
+
+@online{tool:jupyter,
+  title = {Jupyter},
+  url = {https://jupyter.org/},
+  urldate = {2020-05-06}
+}
+
+@online{tool:knitr,
+  title = {Knitr},
+  url = {https://yihui.org/knitr/},
+  urldate = {2020-05-06}
+}
+
+@online{tool:markdownpreviewenhanced,
+  title = {Markdown Preview Enhanced},
+  url = {https://github.com/shd101wyy/markdown-preview-enhanced},
+  urldate = {2020-05-06}
+}
+
+@online{tool:observable,
+  title = {Observable},
+  url = {https://observablehq.com/},
+  urldate = {2020-05-06}
+}
+
+@online{tool:processing,
+  title = {Processing},
+  url = {https://processing.org/},
+  urldate = {2020-05-06}
+}
+
+@online{tool:raywenderlich,
+  title = {Ray Wenderlich},
+  url = {https://www.raywenderlich.com},
+  urldate = {2020-05-06}
+}
+
+@online{tool:rstudio,
+  title = {RStudio},
+  url = {https://rstudio.com/},
+  urldate = {2020-05-06}
+}
+
+@online{tool:streamlit,
+  title = {Streamlit},
+  url = {https://www.streamlit.io/about},
+  urldate = {2020-05-06}
+}
+
+@online{tool:stackoverflow,
+  title = {Stack Overflow},
+  url = {https://stackoverflow.com},
+  urldate = {2020-05-10}
+}
+
+@online{tool:swagger,
+  title = {Swagger},
+  url = {https://swagger.io/solutions/api-documentation/},
+  urldate = {2020-05-06}
+}
+
+@online{tool:vscode,
+  title = {VSCode},
+  url = {https://code.visualstudio.com/},
+  urldate = {2020-05-06}
+}
+
+@online{tool:wala,
+  title = {WALA},
+  url = {http://wala.sourceforge.net},
+  urldate = {2020-05-06}
+}
+
+% END OF ONLINE SOURCES
+@report{ref:brandt2010rehearse,
+  title = {Rehearse: Helping Programmers Adapt Examples by Visualizing Execution and Highlighting Related Code},
+  author = {Brandt, Joel and Pattamatta, Vignan and Choi, William and Hsieh, Ben and Klemmer, Scott R.},
+  institution = {Stanford University},
+  date = {2010},
+  type = {techreport}
+}
+
+@techreport{ref:hoare1973hints,
+  title = {Hints on Programming Language Design},
+  author = {Hoare, C. A. R.},
+  shortauthor = {{Tony Hoare}},
+  institution = {Stanford University},
+  date = {1973},
+  type = {techreport}
+}
+
+@report{ref:parnin2012crowd,
+  title = {Crowd Documentation: Exploring the Coverage and the Dynamics of API Discussions on Stack Overflow},
+  author = {Parnin, Chris and Treude, Christoph and Grammel, Lars and Storey, Margaret-Anne},
+  institution = {Georgia Institute of Technology},
+  date = {2012},
+  type = {techreport}
+}
+
+@thesis{ref:rule2018dissertation,
+  title = {Design and Use of Computational Notebooks},
+  author = {Rule, Adam},
+  institution = {University of California, San Diego},
+  date = {2018},
+  type = {phdthesis}
+}
+
+@thesis{ref:solarlezama2008program,
+  title = {Program Synthesis by Sketching},
+  author = {Solar-Lezama, Armando},
+  institution = {University of California, Berkeley},
+  date = {2008},
+  type = {phdthesis}
+}
+
+@thesis{ref:sorva2012visual,
+  title = {Visual Program Simulation in Introductory Programming Education},
+  author = {Sorva, Juha},
+  institution = {Aalto University},
+  date = {2012},
+  type = {phdthesis}
+}
+
+@thesis{ref:weiser1979program,
+  title = {Program Slices: Formal, Psychological, and Practical Investigations of an Automatic Program Abstraction Method},
+  author = {Weiser, Mark David},
+  institution = {University of Michigan},
+  date = {1979},
+  type = {phdthesis}
+}
+
+% Recent additions, need editing and sorting.
+@book{ref:holtzblatt1997contextual,
+  title={Contextual design: defining customer-centered systems},
+  author={Holtzblatt, Karen and Beyer, Hugh},
+  year={1997},
+  publisher={Elsevier}
+}
+
+@inproceedings{ref:suzuki2017tracediff,
+  title={Tracediff: Debugging unexpected code behavior using trace divergences},
+  author={Suzuki, Ryo and Soares, Gustavo and Head, Andrew and Glassman, Elena and Reis, Ruan and Mongiovi, Melina and D'Antoni, Loris and Hartmann, Bjoern},
+  booktitle={2017 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)},
+  pages={107--115},
+  year={2017},
+  organization={IEEE}
+}
+
+@inproceedings{ref:le2018deep,
+  title={Deep specification mining},
+  author={Le, Tien-Duy B and Lo, David},
+  booktitle={Proceedings of the 27th ACM SIGSOFT International Symposium on Software Testing and Analysis},
+  pages={106--117},
+  year={2018}
+}
+
+@article{ref:ammons2002mining,
+  title={Mining specifications},
+  author={Ammons, Glenn and Bodik, Rastislav and Larus, James R},
+  journal={ACM Sigplan Notices},
+  volume={37},
+  number={1},
+  pages={4--16},
+  year={2002},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{ref:claessen2010quickspec,
+  title={QuickSpec: Guessing formal specifications using testing},
+  author={Claessen, Koen and Smallbone, Nicholas and Hughes, John},
+  booktitle={International Conference on Tests and Proofs},
+  pages={6--21},
+  year={2010},
+  organization={Springer}
+}
+
+@article{ref:goldstein2022some,
+  title={Some Problems with Properties},
+  author={Goldstein, Harrison and Cutler, Joseph W. and Stein, Adam and Pierce, Benjamin C. and Head, Andrew},
+  booktitle={Proceedings of the ACM SPLASH Workshop on Human Aspects of Types and Reasoning Assistants},
+  year={2022}
+}
+
+@inproceedings{ref:head2017writing,
+  title={Writing reusable code feedback at scale with mixed-initiative program synthesis},
+  author={Head, Andrew and Glassman, Elena and Soares, Gustavo and Suzuki, Ryo and Figueredo, Lucas and D'Antoni, Loris and Hartmann, Bj{\"o}rn},
+  booktitle={Proceedings of the Fourth (2017) ACM Conference on Learning@ Scale},
+  pages={89--98},
+  year={2017}
+}
+
+@online{tool:jetbrains,
+  title = {JetBrains},
+  url = {https://www.jetbrains.com/},
+  urldate = {2022-12-14}
+}
+
+@inproceedings{ref:lim2018ply,
+  title={Ply: A visual web inspector for learning from professional webpages},
+  author={Lim, Sarah and Hibschman, Joshua and Zhang, Haoqi and O'Rourke, Eleanor},
+  booktitle={Proceedings of the 31st Annual ACM Symposium on User Interface Software and Technology},
+  pages={991--1002},
+  year={2018}
+}
+
+@inproceedings{ref:omar2012active,
+  title={Active code completion},
+  author={Omar, Cyrus and Yoon, Young Seok and LaToza, Thomas D and Myers, Brad A},
+  booktitle={2012 34th International Conference on Software Engineering (ICSE)},
+  pages={859--869},
+  year={2012},
+  organization={IEEE}
+}
+
+@inproceedings{ref:omar2021filling,
+  title={Filling typed holes with live GUIs},
+  author={Omar, Cyrus and Moon, David and Blinn, Andrew and Voysey, Ian and Collins, Nick and Chugh, Ravi},
+  booktitle={Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+  pages={511--525},
+  year={2021}
+}
+
+@inproceedings{ref:kery2020mage,
+  title={mage: Fluid moves between code and graphical work in computational notebooks},
+  author={Kery, Mary Beth and Ren, Donghao and Hohman, Fred and Moritz, Dominik and Wongsuphasawat, Kanit and Patel, Kayur},
+  booktitle={Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology},
+  pages={140--151},
+  year={2020}
+}
+
+@online{tool:lighttable,
+  title = {Light Table},
+  url = {http://lighttable.com/},
+  urldate = {2022-12-14}
+}
+
+@article{ref:omar2019live,
+  title={Live functional programming with typed holes},
+  author={Omar, Cyrus and Voysey, Ian and Chugh, Ravi and Hammer, Matthew A},
+  journal={Proceedings of the ACM on Programming Languages},
+  volume={3},
+  number={POPL},
+  pages={1--32},
+  year={2019},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{ref:hohman2019gamut,
+  title={Gamut: A design probe to understand how data scientists understand machine learning models},
+  author={Hohman, Fred and Head, Andrew and Caruana, Rich and DeLine, Robert and Drucker, Steven M},
+  booktitle={Proceedings of the 2019 CHI conference on human factors in computing systems},
+  pages={1--13},
+  year={2019}
+}
+
+@inproceedings{ref:hohman2020understanding,
+  title={Understanding and visualizing data iteration in machine learning},
+  author={Hohman, Fred and Wongsuphasawat, Kanit and Kery, Mary Beth and Patel, Kayur},
+  booktitle={Proceedings of the 2020 CHI conference on human factors in computing systems},
+  pages={1--13},
+  year={2020}
+}
+
+@article{ref:lee2021lux,
+  title={Lux: Always-on visualization recommendations for exploratory data science},
+  author={Lee, Doris Jung-Lin and Tang, Dixin and Agarwal, Kunal and Boonmark, Thyne and Chen, Caitlyn and Kang, Jake and Mukhopadhyay, Ujjaini and Song, Jerry and Yong, Micah and Hearst, Marti A and others},
+  journal={arXiv preprint arXiv:2105.00121},
+  year={2021}
+}
+
+@inproceedings{ref:head2018when,
+  title={When not to comment: questions and tradeoffs with api documentation for c++ projects},
+  author={Head, Andrew and Sadowski, Caitlin and Murphy-Hill, Emerson and Knight, Andrea},
+  booktitle={Proceedings of the 40th International Conference on Software Engineering},
+  pages={643--653},
+  year={2018}
+}
