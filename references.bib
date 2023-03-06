@@ -2,12 +2,9 @@
 % * Don't show 'n.d.' if there's no date
 % * Include all authors' full names
 % * Proceedings format: Names. Title. Venue, publisher (Year). Pages.
-% * Journal format: Names. Title. Journal Volume Issue (Year), Pages.
+% * Journal format: Names. Title. Journal Volume Issue (Year), Pages. [Publisher can sometimes be left out if already included in the journal name.]
 % * Online attributed: Author. Title. URL.
 % * Online non-attributed: Title. URL.
-%
-% Formatting changes:
-% * Try to remove 'Retrieved from' and 'pp'
 %
 % Checks to perform:
 % * Are author names correct?
@@ -16,7 +13,17 @@
 % * Are years correct?
 % * Is the title correct, with the right casing?
 %
-% Should probably have a urldate or a year for each one.
+% Guidelines relevant to specific types of documents:
+% - Articles
+%   - Often the publisher is not needed in the reference because it already appears in the name of the journal (e.g., "ACM Transactions on Computer-Human Interaction")
+% - Online
+%   - Online sources should generally use "online" (and not "misc")
+    - The listing should include an author and a 'urlyear' or date or urldate
+% - "Tool"
+%   - This bibliography file uses the convention of the "tool:" citation key prefix for
+%     entries meant to be referenced as an existing tool, and not as a publication about
+%     that tool.
+%   - Each tool should have a 'title' and a 'urlyear'.
 @preamble{"
 \def\articleno#1{Article #1}
 \def\paperno#1{Paper #1}
@@ -38,6 +45,8 @@
 \def\journaltse{IEEE Transactions on Software Engineering}
 \def\journaltochi{ACM Transactions on Computer-Human Interaction}
 \def\journalsigplan{ACM SIGPLAN Notices}
+\def\journaltog{ACM Transactions on Graphics}
+\def\journaltvcg{ACM Transactions of Visualization and Computer Graphics}
 \def\confinteract{Proceedings of the International Conference on Human-Computer Interaction}
 \def\confoopsla{Proceedings of the Conference on Object-Oriented Programming Systems, Languages, and Applications}
 \def\confpldi{Proceedings of the Conference on Programming Language Design and Implementation}
@@ -69,8 +78,6 @@
 \def\confonward{Proceedings the Symposium on New Ideas in Programming and Reflections on Software}
 \def\confvldb{Proceedings of the International Conference on Very Large Data Bases}
 "}
-%%% ARTICLES
-% Don't bother including publisher
 @article{ref:allen1999mixed,
   title = {Mixed-initiative interaction},
   author = {Allen, James F.},
@@ -198,7 +205,7 @@
   number = {2},
   pages = {99--122},
   year = {1991},
-  journaltitle = {Transactions on Information Systems}
+  journaltitle = {ACM Transactions on Information Systems}
 }
 
 @article{ref:childs1992literate,
@@ -770,7 +777,6 @@
   journaltitle = {\journaltse}
 }
 
-% Continue from here
 @book{ref:backus1956fortran,
   title = {Fortran: Automatic Coding System for the IBM 704 EDPM},
   author = {Backus, J. W. and Beeber, R. J. and Best, S. and Goldberg, R. and Herrick, H. L. and Hughes, R. A. and Mitchell, L. B. and Nelson, R. A. and Nutt, R. and Sayre, D. and Sheridan, P. B. and Stern, H. and Ziller, I.},
@@ -2260,8 +2266,6 @@
   year = {1967}
 }
 
-% ONLINE, ATTRIBUTED
-% Must have author and either date or urldate
 @online{ref:codewalkhowtowrite,
   title = {Codewalk: How to write a Codewalk},
   author = {Google},
@@ -2340,7 +2344,6 @@
   urlyear = {2020-05-06}
 }
 
-% ONLINE, ATTRIBUTED
 @online{ref:mariotutorial,
   title = {Let's make a Mario game.},
   author = {Kamermans, Mike ``Pomax''},
@@ -2421,10 +2424,6 @@
   urlyear = {2019-09-14}
 }
 
-% TOOL LINKS
-% ONLY meant to be referenced as an entity in and of itself; not meant to be
-% cited as a source of information. Each one should have an equivalent shorthand
-% and title, and a urldate. These should be cited with '\citetool'
 @online{tool:jdi,
   title = {Java Debug Interface},
   url = {https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/index.html},
@@ -2509,7 +2508,6 @@
   urlyear = {2020-05-06}
 }
 
-% END OF ONLINE SOURCES
 @techreport{ref:brandt2010rehearse,
   title = {Rehearse: Helping Programmers Adapt Examples by Visualizing Execution and Highlighting Related Code},
   author = {Brandt, Joel and Pattamatta, Vignan and Choi, William and Hsieh, Ben and Klemmer, Scott R.},
@@ -2967,7 +2965,7 @@
   journal={J. Educ. Technol. Soc.},
   year={2015},
   volume={18},
-  pages={70-77}
+  pages={70--77}
 }
 
 @inproceedings{ref:head2021augmenting,
@@ -2992,7 +2990,7 @@
   year={2017},
   volume={23},
   number={1},
-  pages={511-520}
+  pages={511--520}
 }
 
 @article{ref:landy2007formal,
@@ -3001,7 +2999,7 @@
   journal={Memory \& Cognition},
   year={2007},
   volume={35},
-  pages={2033-2040}
+  pages={2033--2040}
 }
 
 @phdthesis{ref:roy2014evaluating,
@@ -3039,7 +3037,7 @@
   journal={\journaltvcg},
   year={2019},
   volume={25},
-  pages={672-681}
+  pages={672--681}
 }
 
 @inproceedings{ref:ren2017chartaccent,
@@ -3047,17 +3045,17 @@
   author={Donghao Ren and M. Brehmer and Bongshin Lee and Tobias H{\"o}llerer and E. Choe},
   booktitle={Proceedings of the IEEE Pacific Visualization Symposium (PacificVis)},
   year={2017},
-  pages={230-239}
+  pages={230--239}
 }
 
 @article{ref:wege2020iconicity,
   title={Iconicity in Mathematical Notation: Commutativity and Symmetry},
    author={Wege, Theresa E. and Batchelor, Sophie and Inglis, Matthew and Mistry, Honali and Schlimm, Dirk},
-    journal={Journal of Numerical Cognition}, 
+  journal={Journal of Numerical Cognition}, 
   year={2020},
   volume={6},
   publisher={PsychOpen},
-  pages={378-392}
+  pages={378--392}
 }
 
 @inproceedings{ref:saquib2021constructing,
@@ -3073,13 +3071,13 @@
   journal={\journaltvcg},
   year={2011},
   volume={17},
-  pages={2231-2240}
+  pages={2231--2240}
 }
 
 @article{ref:ye2020penrose,
   title={Penrose: from mathematical notation to beautiful diagrams},
    author={Ye, Katherine and Ni, Wode and Krieger, Max and Ma'ayan, Dor and Wise, Jenna and Aldrich, Jonathan and Sunshine, Joshua and Crane, Keenan},
-    journal={ACM Transactions on Graphics (TOG)},
+  journal={\journaltog},
   year={2020},
   volume={39},
   pages={144}
@@ -3090,7 +3088,7 @@
   author={Carrie J. Cai and Philip J. Guo},
   booktitle={\confvlhcc},
   year={2019},
-  pages={25-34}
+  pages={25--34}
 }
 
 @inproceedings{ref:seyser2018scrollytelling,
@@ -3098,7 +3096,7 @@
   author={Doris Seyser and M. Zeiller},
   booktitle={2018 22nd International Conference Information Visualisation (IV)},
   year={2018},
-  pages={401-406}
+  pages={401--406}
 }
 
 @article{ref:osterholm2006characterizing,
@@ -3107,7 +3105,7 @@
   journal={Educational Studies in Mathematics},
   year={2006},
   volume={63},
-  pages={325-346}
+  pages={325--346}
 }
 
 @inproceedings{ref:lu2021automatic,
@@ -3115,7 +3113,7 @@
   author={Lu, Junhua and Chen, Wei and Ye, Hui and Wang, Jie and Mei, Honghui and Gu, Yuhui and Wu, Yingcai and Zhang, Xiaolong Luke and Ma, Kwan-Liu},
   booktitle={Proceedings of the IEEE Pacific Visualization Symposium (PacificVis)},
   year={2021},
-  pages={21-30}
+  pages={21--30}
 }
 
 @InProceedings{ref:kohlhase2018discourse,
@@ -3162,7 +3160,7 @@ pages="147--163",
   author={Kim, Hwiyeon and Oh, Juyoung and Han, Yunha and Ko, Sungahn and Brehmer, Matthew and Kwon, Bum Chul},
   booktitle={Proceedings of the IEEE Visualization Conference},
   year={2019},
-  pages={116-120}
+  pages={116--120}
 }
 
 @inproceedings{ref:kong2019understanding,
@@ -3200,7 +3198,7 @@ pages="147--163",
   year={2019},
   volume={25},
   number={1},
-  pages={661-671}
+  pages={661--671}
 }
 
 @article{ref:ge2020canis,
@@ -3218,22 +3216,13 @@ pages="147--163",
   journal={\journaltvcg},
   year={2019},
   volume={25},
-  pages={682-692}
-}
-
-@article{ref:shepherd2014reading,
-  title={Reading mathematics for understanding—From novice to expert},
-  author={Mary D. Shepherd and Carla V. D. Sande},
-  journal={The Journal of Mathematical Behavior},
-  year={2014},
-  volume={35},
-  pages={74-86}
+  pages={682--692}
 }
 
 @manual{tool:victortangle,
   title={Tangle: a JavaScript library for reactive documents},
   author={Victor, Bret},
-  note = {Last accessed August 15, 2021},
+  urlyear = {2021-08-15},
   url = {http://worrydream.com/Tangle/}
 }
 
@@ -3251,10 +3240,10 @@ pages="147--163",
   url = {https://github.com/fredhohman/awesome-mathematical-notation-design}
 }
 
-@misc{ref:3Blue1Brown,
+@online{ref:3Blue1Brown,
   title={3Blue1Brown},
   author={Sanderson, Grant},
-  note={Last accessed September 8, 2021},
+  urlyear = {2021-09-08},
   url = {https://www.youtube.com/c/3blue1brown}
 }
 
@@ -3282,7 +3271,7 @@ pages="147--163",
 @manual{tool:katex,
   author={Emily Eisenberg and Sophie Alpert},
   url = {https://katex.org},
-  note = {Last accessed September 16, 2020},
+  urlyear = {2020-09-16},
   title = {KaTeX}
 }
 
@@ -3292,14 +3281,14 @@ pages="147--163",
   booktitle={\journaltvcg},
   year={2017},
   volume={23},
-  pages={341-350}
+  pages={341--350}
 }
 
-@misc{ref:hall2021illustrated,
+@online{ref:hall2021illustrated,
   author = {Hall, Matt},
   url = {https://agilescientific.com/blog/2021/1/14/illuminated-equations},
   year = {2021},
-  note={Last accessed September 9, 2021}
+  urlyear = {2021-09-09}
 }
 
 @inproceedings{ref:kong2014extracting,
@@ -3314,14 +3303,14 @@ pages="147--163",
   author={Tali Benyon},
   url={https://taliesin.ai/projects/edu/indaba-2019/},
   organization={Deep Learning Indaba},
-  note = {Last accessed December 27, 2021},
+  urlyear = {2021-12-27},
   title = {Build your own Tensorflow}
 }
 
 @manual{ref:alexanderexponential,
   author={Alexander, Andrew M.H.},
   url = {http://www.andrusia.com/math/complex-numbers/eulers-identity.pdf},
-  note = {Last accessed December 27, 2021},
+  urlyear = {2021-12-27},
   title = {Exponential Improvements}
 }
 
@@ -3329,7 +3318,7 @@ pages="147--163",
   author={Basurco, Sergio},
   url = {https://chuckleplant.github.io/2017/05/28/light-shafts.html},
   date = {May 28, 2017},
-  note = {Last accessed December 27, 2021},
+  urlyear = {2021-12-27},
   title = {Isaac Hayes Wallpaper Generator - Volumetric light scattering, 1 of 2}
 }
 
@@ -3354,7 +3343,7 @@ pages="147--163",
 @manual{ref:rougeuxeuclid,
   author={Rougeux, Nicholas},
   url = {https://www.c82.net/euclid/book1},
-  note = {Last accessed December 30, 2021},
+  urlyear = {2021-12-30},
   title = {Byrne's Euclid},
 }
 
@@ -3425,7 +3414,7 @@ pages="147--163",
 @article{ref:landauer1993enhancing,
   title={Formative Design-Evaluation of SuperBook},
   author={Egan, Dennis E. and Remde, Joel R. and Gomez, Louis M. and Landauer, Thomas K. and Eberhardt, Jennifer and Lochbaum, Carol C.},
-  journal={ACM Transactions on Information Systems},
+  journal={Transactions on Information Systems},
   volume={7},
   number={1},
   pages={30--57},
@@ -3478,11 +3467,10 @@ pages="147--163",
   author = {Marti A. Hearst and Pedersen, Emily and Patil, Lekha and Lee, Elsie and Laskowski, Paul and Franconeri, Steven},
   month = {September},
   year = 2020,
-  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  journal = {\journaltvcg},
   volume = 26,
   number = 9,
-  pages = {2748--2761},
-  publisher = {IEEE}
+  pages = {2748--2761}
 }
 
 @article{holm79,
@@ -3522,7 +3510,7 @@ pages="147--163",
   author = {Badam, Sriram Karthik and Liu, Zhicheng and Elmqvist, Niklas},
   month = {January},
   year = 2019,
-  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  journal = {\journaltvcg},
   volume = 25,
   number = 1,
   pages = {661--671}
@@ -3841,10 +3829,10 @@ pages="147--163",
   month = {July},
   year = 2008,
   journal = {Journal for Research in Mathematics Education},
+  publisher={National Council of Teachers of Mathematics}
   volume = 39,
   number = 4,
-  pages = {431--459},
-  publisher={National Council of Teachers of Mathematics}
+  pages = {431--459}
 }
 
 @article{ref:yanagisawa2020different,
@@ -3853,6 +3841,7 @@ pages="147--163",
   month = {May},
   year = 2020,
   journal = {Studies in Second Language Acquisition},
+  publisher = {\pubemerald},
   volume = 42,
   number = 2,
   pages = {411--438}
@@ -4238,7 +4227,6 @@ pages="147--163",
   volume = 61,
   number = 1,
   booktitle = {Aslib Proceedings},
-  publisher = {Emerald Group Publishing Limited},
   pages = {5--32}
 }
 
@@ -4310,69 +4298,64 @@ pages="147--163",
   url = {https://elifesciences.org/inside-elife/0414db99/seeing- through-the-elife-lens-a-new-way-to-view-research}
 }
 
-@misc{ref:fermatslibrary,
+@online{tool:fermatslibrary,
   url = {https://fermatslibrary.com/},
-  note = {Last accessed September 16, 2020},
-  key = {Fermat's Library}
+  urlyear = {2020-09-16},
+  title = {Fermat's Library}
 }
 
-@misc{ref:katex,
-  url = {https://katex.org},
-  note = {Last accessed September 16, 2020},
-  key = {KaTeX}
-}
-
-@misc{ref:kindlewordwise,
+@online{tool:kindlewordwise,
   url = {https://www.amazon.com/b?ie=UTF8&node=17717476011},
-  note = {Last accessed September 16, 2020},
-  key = {Look Up Words, People, and Places While You Read}
+  urlyear = {2020-09-16},
+  title = {Look Up Words, People, and Places While You Read}
 }
 
-@misc{ref:labella,
+@online{tool:labella,
   url = {https://twitter.github.io/labella.js/},
-  note = {Last accessed September 16, 2020},
-  key = {Labella.js}
+  urlyear = {2020-09-16},
+  title = {Labella.js}
 }
 
-@misc{ref:materialui,
+@online{tool:materialui,
   url = {https://material-ui.com/},
-  note = {Last accessed September 16, 2020},
-  key = {Material-UI}
+  urlyear = {2020-09-16},
+  title = {Material-UI}
 }
 
-@misc{ref:mathjax,
-  key = {MathJax},
+@online{tool:mathjax,
+  title = {MathJax},
   url={https://mathjax.org/},
-  note={Last accessed January 8, 2021}
+  urlyear = {2021-01-08},
 }
 
-@misc{ref:mathml,
+@online{tool:mathml,
   title = {Mathematical Markup Language (MathML)},
   author = {Max Froumentin},
   url = {https://www.w3.org/Math/whatIsMathML.html},
-  note = {Last accessed September 16, 2020}
+  urlyear = {2020-09-16}
 }
 
-@misc{ref:pdfjs,
+@online{tool:pdfjs,
   title = {pdf.js},
   author = {{Mozilla and individual contributors}},
   url = {https://mozilla.github.io/pdf.js/},
-  note = {Last accessed September 16, 2020}
+  urlyear = {2020-09-16}
 }
 
-@misc{ref:peerlibrary,
+@online{tool:peerlibrary,
   url = {https://peerlibrary.org/},
-  note = {Last accessed September 16, 2020},
-  key = {PeerLibrary}
+  urlyear = {2020-09-16},
+  title = {PeerLibrary}
 }
 
-@misc{ref:pubmed,
+@online{tool:pubmed,
   url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765694/},
-  note = {Example document; Last accessed September 16, 2020},
-  key = {PubMed}
+  note = {Example document},
+  urlyear = {2020-09-16},
+  title = {PubMed}
 }
 
-@inproceedings{ref:pysbd,
+@inproceedings{tool:pysbd,
     title = "{P}y{SBD}: Pragmatic Sentence Boundary Disambiguation",
     author = "Sadvilkar, Nipun  and Neumann, Mark",
     booktitle = "Proceedings of the Second Workshop for NLP Open Source Software",
@@ -4381,28 +4364,30 @@ pages="147--163",
     pages = "110--114",
 }
 
-@misc{ref:scholarcy,
+@online{tool:scholarcy,
   url = {https://www.scholarcy.com/scholarcy-features/},
-  note = {Last accessed July 24, 2020},
-  key = {Scholarcy}
+  urlyear = {2020-07-24},
+  title = {Scholarcy}
 }
 
-@misc{ref:sciencedirect,
+@online{tool:sciencedirect,
   url={https://sciencedirect.com/science/article/pii/S0939388918301181},
-  note={Example document; Last accessed September 16, 2020},
-  key = {ScienceDirect}
+  note={Example document},
+  urlyear = {2020-09-16},
+  title = {ScienceDirect}
 }
 
-@misc{ref:scihive,
+@online{tool:scihive,
   url = {https://start.scihive.org/},
-  note = {Last accessed September 16, 2020},
-  key = {SciHive}
+  urlyear = {2020-09-16},
+  title = {SciHive}
 }
 
-@misc{ref:springer,
+@online{tool:springer,
   url = {https://link.springer.com/chapter/10.1007/978-3-030-01424-7_27},
-  note = {Example document; Last accessed September 16, 2020},
-  key = {Springer}
+  urlyear = {2020-09-16},
+  note = {Example document},
+  title = {Springer}
 }
 
 @inproceedings{ref:veyseh2020joint,
@@ -4426,9 +4411,9 @@ pages="147--163",
   pages = "3285--3301"
 }
 
-@simpleonline{ref:vscode,
+@online{tool:vscode,
   url = {https://code.visualstudio.com/},
-  note = {Last accessed September 16, 2020},
+  urlyear = {2020-09-16},
   key = {VSCode}
 }
 
@@ -4436,7 +4421,7 @@ pages="147--163",
   title = {Page Previews},
   author = {{MediaWiki contributors}},
   url = {https://www.mediawiki.org/wiki/Page_Previews},
-  note = {Last accessed September 16, 2020}
+  urlyear = {2020-09-16}
 }
 
 @inproceedings{ref:kang2020heddex,
