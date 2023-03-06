@@ -8,7 +8,7 @@
 %
 % Formatting changes:
 % * Try to remove 'Retrieved from' and 'pp'
-% 
+%
 % Checks to perform:
 % * Are author names correct?
 % * Are conference names consistent?
@@ -25,6 +25,10 @@
 \def\pubieee{IEEE}
 \def\pubacm{ACM}
 \def\pubwiley{John Wiley \& Sons, Ltd.}
+\def\pubspringer{Springer}
+\def\pubelsevier{Elsevier}
+\def\pubmorgankaufmann{Morgan Kaufmann}
+\def\pubemerald{Emerald Group Publishing Limited}
 \def\journalspae{Software---Practice and Experience}
 \def\journalsoftware{IEEE Software}
 \def\journalcacm{Communications of the ACM}
@@ -50,6 +54,7 @@
 \def\confiui{Proceedings of the International Conference on Intelligent User Interfaces}
 \def\confuist{Proceedings of the Symposium on User Interface Software and Technology}
 \def\confase{Proceedings of the International Conference on Automated Software Engineering}
+\def\confissta{Proceedings of the International Symposium on Software Testing and Analysis}
 \def\conffase{Proceedings of the International Conference on Fundamental Approaches to Software Engineering}
 \def\conficpc{Proceedings of the International Conference on Program Comprehension}
 \def\conficse{Proceedings of the International Conference on Software Engineering}
@@ -60,6 +65,9 @@
 \def\confisese{Proceedings of the International Symposium on Empirical Software Engineering}
 \def\confsigcse{Proceedings of the Technical Symposium on Computer Science Education}
 \def\confwcre{Proceedings of the Working Conference on Reverse Engineering}
+\def\confhatra{Proceedings the Workshop on Human Aspects of Types and Reasoning Assistants}
+\def\confonward{Proceedings the Symposium on New Ideas in Programming and Reflections on Software}
+\def\confvldb{Proceedings of the International Conference on Very Large Data Bases}
 "}
 %%% ARTICLES
 % Don't bother including publisher
@@ -69,7 +77,8 @@
   volume = {14},
   number = {5},
   pages = {14--16},
-  date = {1999},
+  year = {1999},
+  journal = {IEEE Intelligent Systems and their Applications},
   journaltitle = {IEEE Intelligent Systems and their Applications}
 }
 
@@ -79,7 +88,7 @@
   volume = {8},
   number = {2},
   pages = {87--129},
-  date = {1984},
+  year = {1984},
   journaltitle = {Cognitive Science}
 }
 
@@ -89,7 +98,7 @@
   volume = {25},
   number = {7},
   pages = {789--810},
-  date = {1995},
+  year = {1995},
   journaltitle = {\journalspae}
 }
 
@@ -108,7 +117,7 @@
   volume = {2},
   number = {1},
   pages = {3--23},
-  date = {1985},
+  year = {1985},
   journaltitle = {Written Communication}
 }
 
@@ -118,7 +127,7 @@
   volume = {18},
   number = {5},
   pages = {87--89},
-  date = {2001},
+  year = {2001},
   journaltitle = {\journalsoftware}
 }
 
@@ -128,7 +137,7 @@
   volume = {29},
   number = {6},
   pages = {471--483},
-  date = {1986},
+  year = {1986},
   journaltitle = {Communications of the ACM}
 }
 
@@ -137,7 +146,7 @@
   author = {Binkley, David and Harman, Mark},
   volume = {62},
   pages = {105--178},
-  date = {2004},
+  year = {2004},
   journaltitle = {Advances in Computers},
   editor = {Marvin V. Zelkowitz},
   journaltitle = {Advances in Computers}
@@ -148,7 +157,7 @@
   author = {Binkley, Dave and Davis, Marcia and Lawrie, Dawn and Maletic, Jonathan I. and Morrell, Christopher and Sharif, Bonita},
   volume = {18},
   pages = {219--276},
-  date = {2013},
+  year = {2013},
   journaltitle = {Empirical Software Engineering}
 }
 
@@ -158,7 +167,7 @@
   volume = {36},
   number = {1},
   pages = {21--63},
-  date = {1992},
+  year = {1992},
   journaltitle = {\journalmms}
 }
 
@@ -168,7 +177,7 @@
   volume = {18},
   number = {6},
   pages = {543--554},
-  date = {1983},
+  year = {1983},
   journaltitle = {\journalmms}
 }
 
@@ -178,7 +187,7 @@
   volume = {36},
   number = {4},
   pages = {546--558},
-  date = {2010},
+  year = {2010},
   journaltitle = {\journaltse}
 }
 
@@ -188,7 +197,7 @@
   volume = {9},
   number = {2},
   pages = {99--122},
-  date = {1991},
+  year = {1991},
   journaltitle = {Transactions on Information Systems}
 }
 
@@ -198,7 +207,7 @@
   volume = {13},
   number = {3},
   journaltitle = {TUGboat},
-  date = {1992}
+  year = {1992}
 }
 
 @article{ref:childs1995teaching,
@@ -207,7 +216,7 @@
   volume = {16},
   number = {3},
   pages = {8},
-  date = {1995},
+  year = {1995},
   journaltitle = {TUGboat}
 }
 
@@ -217,7 +226,7 @@
   volume = {24},
   number = {1},
   pages = {220--224},
-  date = {1992},
+  year = {1992},
   journaltitle = {SIGCSE Bulletin}
 }
 
@@ -228,17 +237,17 @@
   volume = {40},
   number = {11},
   pages = {1126--1146},
-  date = {2014},
+  year = {2014},
   journaltitle = {\journaltse}
 }
 
 @article{ref:feigenspan2013background,
   title = {Do background colors improve program comprehension in the \#ifdef hell?},
   author = {Feigenspan, Janet and K\"{a}stner, Christian and Apel, Sven and Liebig, J\"{o}rg and Schulze, Michael and Dachselt, Raimund and Papendieck, Maria and Leich, Thomas and Saake, Gunter},
-  publisher = {Springer},
+  publisher = {\pubspringer},
   volume = {18},
   pages = {699--745},
-  date = {2013},
+  year = {2013},
   journaltitle = {Empirical Software Engineering}
 }
 
@@ -248,17 +257,17 @@
   volume = {22},
   number = {2},
   pages = {7:1--7:35},
-  date = {2015},
+  year = {2015},
   journaltitle = {\journaltochi}
 }
 
 @article{ref:goldman2009codetrail,
   title = {Codetrail: Connecting source code and web resources},
   author = {Goldman, Max and Miller, Robert C.},
-  publisher = {Elsevier},
+  publisher = {\pubelsevier},
   volume = {20},
   pages = {223--235},
-  date = {2009},
+  year = {2009},
   journaltitle = {\journaljvlc}
 }
 
@@ -268,7 +277,7 @@
   volume = {62},
   number = {12},
   pages = {56--65},
-  date = {2019},
+  year = {2019},
   journaltitle = {\journalcacm}
 }
 
@@ -279,24 +288,24 @@
   volume = {4},
   number = {1-2},
   pages = {1--119},
-  date = {2017},
+  year = {2017},
   journaltitle = {Foundations and Trends in Programming Languages}
 }
 
 @article{ref:hannebauer2018does,
   title = {Does syntax highlighting help programming novices?},
   author = {Hannebauer, Christoph and Hesenius, Marc and Gruhn, Volker},
-  publisher = {Springer},
+  publisher = {\pubspringer},
   volume = {23},
   pages = {2795--2828},
-  date = {2018},
+  year = {2018},
   journaltitle = {Empirical Software Engineering}
 }
 
 @article{ref:harman1997amorphous,
   title = {Amorphous program slicing},
   author = {Harman, Mark and Binkley, David and Danicic, Sebastian},
-  date = {2003},
+  year = {2003},
   volume = {68},
   number = {1},
   pages = {45--64},
@@ -308,7 +317,7 @@
   author = {Holmes, Reid and Walker, Robert J.},
   volume = {21},
   number = {4},
-  date = {2012},
+  year = {2012},
   journaltitle = {\journaltosem}
 }
 
@@ -318,15 +327,15 @@
   volume = {12},
   number = {1},
   pages = {26--60},
-  date = {1990},
+  year = {1990},
   journaltitle = {ACM Transactions on Programming Languages and Systems}
 }
 
 @article{ref:johnson2010learning,
   title = {Learning to be a programmer in a complex organization},
   author = {Johnson, Maggie and Senges, Max},
-  publisher = {Emerald Group Publishing Limited},
-  date = {2010},
+  publisher = {\pubemerald},
+  year = {2010},
   volume = {22},
   number = {3},
   pages = {180--194},
@@ -340,7 +349,7 @@
   volume = {18},
   number = {12},
   pages = {2917--2926},
-  date = {2012},
+  year = {2012},
   journaltitle = {Transactions on Visualization and Computer Graphics}
 }
 
@@ -351,7 +360,7 @@
   volume = {27},
   number = {2},
   pages = {97--111},
-  date = {1984},
+  year = {1984},
   journaltitle = {The Computer Journal}
 }
 
@@ -361,7 +370,7 @@
   volume = {30},
   number = {4},
   pages = {65--67},
-  date = {2009},
+  year = {2009},
   journaltitle = {AI Magazine}
 }
 
@@ -369,7 +378,7 @@
   title = {Automatic Detection and Update Suggestion for Outdated API Names in Documentation},
   author = {Lee, Seonah and Wu, Rongxin and Cheung, Shing-Chi and Kang, Sungwon},
   publisher = {IEEE},
-  date = {2019},
+  year = {2019},
   note = {\toappear},
   journaltitle = {\journaltse}
 }
@@ -381,7 +390,7 @@
   volume = {20},
   number = {6},
   pages = {35--39},
-  date = {2003},
+  year = {2003},
   journaltitle = {\journalsoftware}
 }
 
@@ -392,18 +401,18 @@
   volume = {3},
   number = {3},
   pages = {41--49},
-  date = {1986},
+  year = {1986},
   journaltitle = {\journalsoftware}
 }
 
 @article{ref:lin2007suggestions,
   title = {Suggestions for content selection and presentation in high school computer textbooks},
   author = {Lin, Janet Mei-Chuen and Wu, Cheng-Chih},
-  publisher = {Elsevier},
+  publisher = {\pubelsevier},
   volume = {48},
   number = {3},
   pages = {508--521},
-  date = {2007},
+  year = {2007},
   journaltitle = {Computers \& Education}
 }
 
@@ -413,28 +422,28 @@
   volume = {35},
   number = {3},
   pages = {121--132},
-  date = {1992},
+  year = {1992},
   journaltitle = {\journalcacm}
 }
 
 @article{ref:littman1987mental,
   title = {Mental Models and Software Maintenance},
   author = {Littman, David C. and Pinto, Jeannine and Letovsky, Stanley and Soloway, Elliot},
-  publisher = {Elsevier},
+  publisher = {\pubelsevier},
   volume = {7},
   number = {4},
   pages = {341--355},
-  date = {1987},
+  year = {1987},
   journaltitle = {The Journal of Systems and Software}
 }
 
 @article{ref:macleod2017documenting,
   title = {Documenting and sharing software knowledge using screencasts},
   author = {MacLeod, Laura and Bergen, Andreas and Storey, Margaret-Anne},
-  publisher = {Springer},
+  publisher = {\pubspringer},
   volume = {22},
   pages = {1478--1507},
-  date = {2017},
+  year = {2017},
   journaltitle = {Empirical Software Engineering}
 }
 
@@ -444,7 +453,7 @@
   volume = {34},
   number = {1},
   pages = {137--144},
-  date = {2018},
+  year = {2018},
   journaltitle = {Journal of Computing Sciences in Colleges}
 }
 
@@ -454,7 +463,7 @@
   volume = {26},
   number = {11},
   pages = {861--867},
-  date = {1983},
+  year = {1983},
   journaltitle = {\journalcacm}
 }
 
@@ -463,7 +472,7 @@
   author = {Murphy-Hill, Emerson and Black, Andrew P.},
   volume = {25},
   number = {5},
-  date = {2008},
+  year = {2008},
   journaltitle = {\journalsoftware}
 }
 
@@ -473,7 +482,7 @@
   volume = {43},
   number = {3},
   pages = {82--89},
-  date = {2000},
+  year = {2000},
   journaltitle = {\journalcacm}
 }
 
@@ -482,7 +491,7 @@
   author = {Nielebock, Sebastian and Krolikowski, Dariusz and Kr\"{u}ger, Jacob and Leich, Thomas and Ortmeier, Frank},
   volume = {24},
   pages = {1418--1457},
-  date = {2019},
+  year = {2019},
   journaltitle = {Empirical Software Engineering}
 }
 
@@ -502,7 +511,7 @@
   volume = {19},
   number = {5},
   pages = {177--184},
-  date = {1984},
+  year = {1984},
   journaltitle = {\journalsigplan}
 }
 
@@ -512,7 +521,7 @@
   volume = {19},
   number = {3},
   pages = {295--341},
-  date = {1987},
+  year = {1987},
   journaltitle = {Cognitive Psychology}
 }
 
@@ -522,7 +531,7 @@
   volume = {12},
   number = {3},
   pages = {235--275},
-  date = {1994},
+  year = {1994},
   journaltitle = {Cognition and Instruction}
 }
 
@@ -532,7 +541,7 @@
   volume = {21},
   number = {7},
   pages = {677--683},
-  date = {1991},
+  year = {1991},
   journaltitle = {\journalspae}
 }
 
@@ -542,17 +551,17 @@
   volume = {11},
   number = {5},
   pages = {97--105},
-  date = {1994},
+  year = {1994},
   journaltitle = {\journalsoftware}
 }
 
 @article{ref:robillard2009makes,
-  title = {What Makes APIs Hard to Learn? Answers from Developers},
+  title = {{What} {Makes} {APIs} {Hard} to {Learn?} {Answers} from {Developers}},
   author = {Robillard, Martin P.},
   volume = {26},
   number = {6},
   pages = {27--34},
-  date = {2009},
+  year = {2009},
   journaltitle = {\journalsoftware}
 }
 
@@ -561,7 +570,7 @@
   author = {Robillard, Martin P. and Deline, Robert},
   volume = {16},
   pages = {703--732},
-  date = {2011},
+  year = {2011},
   journaltitle = {Empirical Software Engineering}
 }
 
@@ -571,7 +580,7 @@
   volume = {3},
   number = {3},
   pages = {219--253},
-  date = {1996},
+  year = {1996},
   journaltitle = {\journaltochi}
 }
 
@@ -581,7 +590,7 @@
   volume = {25},
   number = {3},
   pages = {279--294},
-  date = {1986},
+  year = {1986},
   journaltitle = {Journal of Memory and Language}
 }
 
@@ -591,7 +600,7 @@
   volume = {46},
   number = {3},
   pages = {1--24},
-  date = {2012},
+  year = {2012},
   journaltitle = {Journal of Statistical Software}
 }
 
@@ -601,7 +610,7 @@
   volume = {8},
   number = {3},
   pages = {219--238},
-  date = {1979},
+  year = {1979},
   journaltitle = {International Journal of Computer and Information Sciences}
 }
 
@@ -611,7 +620,7 @@
   volume = {44},
   number = {3},
   pages = {12:1--12:41},
-  date = {2012},
+  year = {2012},
   journaltitle = {ACM Computing Surveys}
 }
 
@@ -621,7 +630,7 @@
   volume = {SE-10},
   number = {5},
   pages = {595--609},
-  date = {1984},
+  year = {1984},
   journaltitle = {\journaltse}
 }
 
@@ -631,14 +640,14 @@
   volume = {1},
   number = {2},
   pages = {127--139},
-  date = {1990},
+  year = {1990},
   journaltitle = {\journaljvlc}
 }
 
 @article{ref:tashtoush2013impact,
   title = {Impact of Programming Features on Code Readability},
   author = {Tashtoush, Yahya and Odat, Zeinab and Alsmadi, Izzat and Yatim, Maryan},
-  date = {2013},
+  year = {2013},
   volume = {7},
   number = {6},
   pages = {441--458},
@@ -651,7 +660,7 @@
   volume = {29},
   number = {3},
   pages = {201--211},
-  date = {1986},
+  year = {1986},
   journaltitle = {The Computer Journal}
 }
 
@@ -661,7 +670,7 @@
   volume = {3},
   number = {3},
   pages = {121--189},
-  date = {1995},
+  year = {1995},
   journaltitle = {Journal of Programming Languages}
 }
 
@@ -671,14 +680,14 @@
   volume = {32},
   number = {4},
   pages = {68--75},
-  date = {2015},
+  year = {2015},
   journaltitle = {\journalsoftware}
 }
 
 @article{ref:vanderlindenimpact2020impact,
   title = {The impact of surface features on choice of (in)secure answers by Stackoverflow readers},
   author = {van der Linden, Dirk and Williams, Emma and Hallett, Joseph and Rashid, Awais},
-  date = {2020},
+  year = {2020},
   note = {To appear},
   journaltitle = {\journaltse}
 }
@@ -689,7 +698,7 @@
   volume = {56},
   number = {3},
   pages = {265--292},
-  date = {2009},
+  year = {2009},
   journaltitle = {Technical Communication}
 }
 
@@ -699,7 +708,7 @@
   volume = {33},
   number = {3},
   pages = {361--363},
-  date = {1990},
+  year = {1990},
   journaltitle = {\journalcacm}
 }
 
@@ -709,7 +718,7 @@
   volume = {26},
   number = {1},
   pages = {27--49},
-  date = {2014},
+  year = {2014},
   journaltitle = {Journal of Software: Evolution and Process}
 }
 
@@ -719,7 +728,7 @@
   volume = {39},
   number = {5},
   pages = {793--812},
-  date = {1993},
+  year = {1993},
   journaltitle = {\journalmms}
 }
 
@@ -729,7 +738,7 @@
   volume = {23},
   number = {3},
   pages = {38--44},
-  date = {2016},
+  year = {2016},
   journaltitle = {ACM Interactions}
 }
 
@@ -738,7 +747,7 @@
   author = {Wu, Yuhao and Wang, Shaowei and Bezemer, Cor-Paul and Inoue, Katsuro},
   volume = {24},
   pages = {637--673},
-  date = {2019},
+  year = {2019},
   journaltitle = {Empirical Software Engineering}
 }
 
@@ -747,7 +756,7 @@
   author = {Xia, Xin and Bao, Lingfeng and Lo, David and Kochhar, Pavneet Singh and Hassan, Ahmed E. and Xing, Zhenchang},
   volume = {22},
   pages = {3149--3185},
-  date = {2017},
+  year = {2017},
   journaltitle = {Empirical Software Engineering}
 }
 
@@ -757,7 +766,7 @@
   volume = {28},
   number = {2},
   pages = {183--200},
-  date = {2002},
+  year = {2002},
   journaltitle = {\journaltse}
 }
 
@@ -765,7 +774,7 @@
 @book{ref:backus1956fortran,
   title = {Fortran: Automatic Coding System for the IBM 704 EDPM},
   author = {Backus, J. W. and Beeber, R. J. and Best, S. and Goldberg, R. and Herrick, H. L. and Hughes, R. A. and Mitchell, L. B. and Nelson, R. A. and Nutt, R. and Sayre, D. and Sheridan, P. B. and Stern, H. and Ziller, I.},
-  date = {1956}
+  year = {1956}
 }
 
 @book{ref:booth1956automatic,
@@ -773,35 +782,35 @@
   author = {Booth, Andrew D. and Booth, Kathleen H. V.},
   publisher = {Butterworths},
   edition = {3},
-  date = {1956}
+  year = {1956}
 }
 
 @book{ref:carroll1990nurnberg,
   title = {The Nurnberg Funnel: Designing Minimalist Instruction for Practical Computer Skill},
   author = {Carroll, John M.},
   publisher = {\pubmit},
-  date = {1990}
+  year = {1990}
 }
 
 @book{ref:cooper2007face,
   title = {About Face 3: The Essentials of Interaction Design},
   author = {Cooper, Alan and Reimann, Robert and Cronin, David},
   publisher = {Wiley Publishing, Inc.},
-  date = {2007}
+  year = {2007}
 }
 
 @book{ref:cypher1993watch,
   title = {Watch What I Do: Programming by Demonstration},
   editor = {Cypher, Allen},
   publisher = {\pubmit},
-  date = {1993}
+  year = {1993}
 }
 
 @book{ref:detienne2001software,
   title = {Software Design -- Cognitive Aspects},
   author = {D{\'e}tienne, Fran\c{c}oise},
-  publisher = {Springer},
-  date = {2002}
+  publisher = {\pubspringer},
+  year = {2002}
 }
 
 @book{ref:felleisen2018design,
@@ -809,7 +818,7 @@
   author = {Felleisen, Matthias and Findler, Robert Bruce and Flatt, Matthew and Krishnamurthi, Shriram},
   publisher = {\pubmit},
   edition = {2},
-  date = {2018}
+  year = {2018}
 }
 
 @book{ref:fowler2018refactoring,
@@ -817,7 +826,7 @@
   author = {Fowler, Martin},
   publisher = {Addison-Wesley Professional},
   edition = {2},
-  date = {2018}
+  year = {2018}
 }
 
 @book{ref:howtocodeinpython3,
@@ -825,7 +834,7 @@
   author = {Tagliaferri, Lisa},
   publisher = {DigitalOcean},
   url = {https://www.digitalocean.com/community/tutorial_series/how-to-code-in-python-3},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @book{ref:jones1992design,
@@ -833,7 +842,7 @@
   author = {Jones, John Chris},
   publisher = {\pubwiley},
   edition = {2},
-  date = {1992}
+  year = {1992}
 }
 
 @book{ref:knuth1986tex,
@@ -847,7 +856,7 @@
   title = {Content Analysis: An Introduction to Its Methodology},
   author = {Krippendorff, Klaus},
   publisher = {SAGE Publications, Inc.},
-  date = {2013},
+  year = {2013},
   edition = {3}
 }
 
@@ -855,21 +864,21 @@
   title = {On-the-Job Learning in the Software Industry: Corporate Culture and the Acquisition of Knowledge},
   author = {Sacks, Marc},
   publisher = {Quorum Books},
-  date = {1994}
+  year = {1994}
 }
 
 @book{ref:stasko1998software,
   title = {Software Visualization: Programming as a Multimedia Experience},
   editor = {Stasko, John and Domingue, John and Brown, Marc H. and Price, Blaine A.},
   publisher = {\pubmit},
-  date = {1998}
+  year = {1998}
 }
 
 @book{ref:weiss1995learning,
   title = {Learning from Strangers: The Art and Method of Qualitative Interview Studies},
   author = {Weiss, Robert S.},
   publisher = {The Free Press},
-  date = {1995}
+  year = {1995}
 }
 
 @inproceedings{ref:agrawal1990dynamic,
@@ -878,7 +887,7 @@
   booktitle = {\confpldi},
   pages = {246--256},
   publisher = {ACM},
-  date = {1990}
+  year = {1990}
 }
 
 @inproceedings{ref:allamanis2014mining,
@@ -886,7 +895,7 @@
   author = {Allamanis, Miltiadis and Sutton, Charles},
   booktitle = {\conffsesymposium},
   pages = {472--483},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:anderson2001software,
@@ -894,7 +903,7 @@
   author = {Anderson, Paul and Teitelbaum, Tim},
   booktitle = {Workshop on Inspection in Software Engineering},
   pages = {4--11},
-  date = {2001}
+  year = {2001}
 }
 
 @inproceedings{ref:barik2016quick,
@@ -903,13 +912,13 @@
   booktitle = {\conficsme},
   publisher = {IEEE},
   pages = {211--221},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:beltagy2019scibert,
   title = {SciBERT: A Pretrained Language Model for Scientific Text},
   author = {Beltagy, Iz and Lo, Kyle and Cohan, Arman},
-  date = {2019},
+  year = {2019},
   booktitle = {\confemnlp},
   publisher = {Association for Computational Linguistics},
   pages = {3615--3620}
@@ -921,7 +930,7 @@
   booktitle = {\confchi},
   pages = {567--576},
   publisher = {ACM},
-  date = {2007}
+  year = {2007}
 }
 
 @inproceedings{ref:bragdon2010code,
@@ -930,7 +939,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {2503--2512},
-  date = {2010}
+  year = {2010}
 }
 
 @inproceedings{ref:brandt2009two,
@@ -939,7 +948,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {1589--1598},
-  date = {2009}
+  year = {2009}
 }
 
 @inproceedings{ref:brandt2011example,
@@ -948,7 +957,7 @@
   publisher = {ACM},
   booktitle = {\confchi},
   pages = {513--522},
-  date = {2010}
+  year = {2010}
 }
 
 @inproceedings{ref:burden2011natural,
@@ -957,7 +966,7 @@
   booktitle = {Proceedings of the International Workshop on Model-Driven Engineering, Verification and Validation},
   publisher = {ACM},
   note = {\articleno{8}},
-  date = {2011}
+  year = {2011}
 }
 
 @inproceedings{ref:burg2013record,
@@ -966,7 +975,7 @@
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {473--483},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:burg2015explaining,
@@ -975,16 +984,16 @@
   booktitle = {\confuist},
   publisher = {acm},
   pages = {259--269},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:burkhardt1995empirical,
   title = {An empirical study of software reuse by experts in object-oriented design},
   author = {Burkhardt, Jean-Marie and Detienne, Fran\c{c}oise},
   booktitle = {\confinteract},
-  publisher = {Springer},
+  publisher = {\pubspringer},
   pages = {133--138},
-  date = {1995}
+  year = {1995}
 }
 
 @inproceedings{ref:buse2012synthesizing,
@@ -993,7 +1002,7 @@
   booktitle = {\conficse},
   pages = {782--792},
   publisher = {IEEE},
-  date = {2012}
+  year = {2012}
 }
 
 @inproceedings{ref:busjahn2015eye,
@@ -1002,7 +1011,7 @@
   booktitle = {\conficpc},
   pages = {255--265},
   publisher = {IEEE},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:chasins2018rousillon,
@@ -1011,7 +1020,7 @@
   booktitle = {\confuist},
   pages = {963--975},
   publisher = {ACM},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:chen2014dynamic,
@@ -1020,7 +1029,7 @@
   booktitle = {Proceedings of the International Computers, Software and Applications Conference},
   pages = {219--228},
   publisher = {IEEE},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:chen2019improv,
@@ -1029,7 +1038,7 @@
   booktitle = {\conflas},
   note = {\articleno{9}},
   publisher = {ACM},
-  date = {2019}
+  year = {2019}
 }
 
 @inproceedings{ref:chi2018doppio,
@@ -1038,7 +1047,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   note = {\paperno{455}},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:conlen2018idyll,
@@ -1047,7 +1056,7 @@
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {977--989},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:conlen2019capture,
@@ -1063,7 +1072,7 @@
   title = {Launching the Parametric Press},
   author = {Conlen, Matthew and Hohman, Fred},
   booktitle = {Visualization for Communication Workshop},
-  date = {2019}
+  year = {2019}
 }
 
 @inproceedings{ref:cuoq2012framac,
@@ -1071,8 +1080,8 @@
   author = {Cuoq, Pascal and Kirchner, Florent and Kosmatov, Nikolai and Prevosto, Virgile and Signoles, Julien and Yakobowski, Boris},
   booktitle = {Proceedings of the International Conference on Software Engineering and Formal Methods},
   pages = {233--247},
-  publisher = {Springer},
-  date = {2012}
+  publisher = {\pubspringer},
+  year = {2012}
 }
 
 @inproceedings{ref:dagenais2010creating,
@@ -1081,7 +1090,7 @@
   booktitle = {\conffsesymposium},
   pages = {127--136},
   publisher = {ACM},
-  date = {2010}
+  year = {2010}
 }
 
 @inproceedings{ref:daka2015modeling,
@@ -1090,7 +1099,7 @@
   booktitle = {\conffsemeeting},
   pages = {107--118},
   publisher = {ACM},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:deline2015supporting,
@@ -1099,7 +1108,7 @@
   booktitle = {\confvlhcc},
   pages = {111--119},
   publisher = {IEEE},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:deline2015tempe,
@@ -1108,7 +1117,7 @@
   booktitle = {\confvlhcc},
   publisher = {IEEE},
   pages = {137--141},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:dewit2009managing,
@@ -1117,7 +1126,7 @@
   booktitle = {\conficsm},
   pages = {169--178},
   publisher = {IEEE},
-  date = {2009}
+  year = {2009}
 }
 
 @inproceedings{ref:dorn2010learning,
@@ -1126,7 +1135,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {703--712},
-  date = {2010}
+  year = {2010}
 }
 
 @inproceedings{ref:drosos2020wrex,
@@ -1134,8 +1143,8 @@
   author = {Drosos, Ian and Barik, Titus and Guo, Philip J. and DeLine, Robert and Gulwani, Sumit},
   booktitle = {\confchi},
   publisher = {ACM},
-  date = {2020},
-  note = {\paperno{315}} 
+  year = {2020},
+  note = {\paperno{315}}
 }
 
 @inproceedings{ref:dunsmore2000object,
@@ -1144,7 +1153,7 @@
   booktitle = {\conficse},
   pages = {467--476},
   publisher = {ACM},
-  date = {2000}
+  year = {2000}
 }
 
 @inproceedings{ref:fast2014emergent,
@@ -1153,7 +1162,7 @@
   booktitle = {\confchi},
   pages = {2491--2500},
   publisher = {ACM},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:fast2016meta,
@@ -1162,7 +1171,7 @@
   booktitle = {\confuist},
   pages = {259--270},
   publisher = {ACM},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:feng2017component,
@@ -1171,7 +1180,7 @@
   booktitle = {\confpopl},
   publisher = {ACM},
   pages = {599--612},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:fitzmaurice1995bricks,
@@ -1180,7 +1189,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {442--449},
-  date = {1995}
+  year = {1995}
 }
 
 @inproceedings{ref:ford2016paradise,
@@ -1189,7 +1198,7 @@
   booktitle = {\conffsesymposium},
   pages = {846--857},
   publisher = {ACM},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:fourney2013enhancing,
@@ -1197,7 +1206,7 @@
   author = {Fourney, Adam and Morris, Meredith Ringel},
   publisher = {The AAAI Press},
   booktitle = {Proceedings of the International Conference on Weblogs and Social Media},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:fraser2011exploiting,
@@ -1206,7 +1215,7 @@
   booktitle = {Proceedings of the International Conference on Software Testing, Verification and Validation},
   pages = {80--89},
   publisher = {IEEE},
-  date = {2011}
+  year = {2011}
 }
 
 @inproceedings{ref:galenson2014codehint,
@@ -1215,7 +1224,7 @@
   booktitle = {\conficse},
   pages = {653--663},
   publisher = {ACM},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:gatys2016image,
@@ -1224,7 +1233,7 @@
   booktitle = {Proceedings of the Conference on Computer Vision and Pattern Recognition},
   pages = {2414--2423},
   publisher = {IEEE},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:ginosar2013authoring,
@@ -1233,7 +1242,7 @@
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {485--494},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:glassman2018visualizing,
@@ -1242,7 +1251,7 @@
   booktitle = {\confchi},
   note = {\paperno{580}},
   publisher = {ACM},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:goffi2014search,
@@ -1251,7 +1260,7 @@
   booktitle = {\conffsesymposium},
   pages = {366--376},
   publisher = {ACM},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:gordon2015codepourri,
@@ -1260,7 +1269,7 @@
   booktitle = {\confvlhcc},
   pages = {13--21},
   publisher = {IEEE},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:gross2010code,
@@ -1269,7 +1278,7 @@
   booktitle = {\confiui},
   pages = {219--228},
   publisher = {ACM},
-  date = {2010}
+  year = {2010}
 }
 
 @inproceedings{ref:guo2013online,
@@ -1278,7 +1287,7 @@
   booktitle = {\confsigcse},
   publisher = {ACM},
   pages = {579--584},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:gvero2011interactive,
@@ -1286,8 +1295,8 @@
   author = {Gvero, Tihomir and Kuncak, Viktor and Piskac, Ruzica},
   booktitle = {Proceedings of the International Conference on Computer Aided Verification},
   pages = {418--423},
-  publisher = {Springer},
-  date = {2011}
+  publisher = {\pubspringer},
+  year = {2011}
 }
 
 @inproceedings{ref:hartmann2008design,
@@ -1296,7 +1305,7 @@
   booktitle = {\confuist},
   pages = {91--100},
   publisher = {ACM},
-  date = {2008}
+  year = {2008}
 }
 
 @inproceedings{ref:hartmann2011hypersource,
@@ -1305,7 +1314,7 @@
   booktitle = {\confchi},
   pages = {2207--2210},
   publisher = {ACM},
-  date = {2011}
+  year = {2011}
 }
 
 @inproceedings{ref:head2015tutorons,
@@ -1314,7 +1323,7 @@
   booktitle = {\confvlhcc},
   pages = {3--12},
   publisher = {IEEE},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:head2018interactive,
@@ -1323,7 +1332,7 @@
   booktitle = {\confchi},
   note = {\paperno{85}},
   publisher = {ACM},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:head2019managing,
@@ -1332,7 +1341,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   note = {\paperno{270}},
-  date = {2019}
+  year = {2019}
 }
 
 @inproceedings{ref:head2020composing,
@@ -1341,7 +1350,7 @@
   note = {\toappear},
   publisher = {ACM},
   booktitle = {\confchi},
-  date = {2020}
+  year = {2020}
 }
 
 @inproceedings{ref:hempel2018deuce,
@@ -1350,16 +1359,16 @@
   booktitle = {\conficse},
   pages = {654--664},
   publisher = {ACM},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:hempel2019sketch,
-  title = {Sketch-n-Sketch: Output-Directed Programming for SVG},
+  title = {Sketch-n-Sketch: Output-Directed Programming for {SVG}},
   author = {Hempel, Brian and Lubin, Justin and Chugh, Ravi},
   booktitle = {\confuist},
   pages = {281--292},
   publisher = {ACM},
-  date = {2019}
+  year = {2019}
 }
 
 @inproceedings{ref:heo2018effective,
@@ -1368,7 +1377,7 @@
   booktitle = {Proceedings of the SIGSAC Conference on Computer and Communications Security},
   publisher = {ACM},
   pages = {380--394},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:hibschman2015unravel,
@@ -1377,7 +1386,7 @@
   booktitle = {\confuist},
   pages = {270--279},
   publisher = {ACM},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:hibschman2016telescope,
@@ -1386,7 +1395,7 @@
   booktitle = {\confuist},
   pages = {233--245},
   publisher = {ACM},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:hoffmann2007assieme,
@@ -1395,7 +1404,7 @@
   booktitle = {\confuist},
   pages = {13--22},
   publisher = {ACM},
-  date = {2007}
+  year = {2007}
 }
 
 @inproceedings{ref:hoffswell2018augmenting,
@@ -1404,7 +1413,7 @@
   booktitle = {\confchi},
   note = {\paperno{532}},
   publisher = {ACM},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:horton2018gistable,
@@ -1413,7 +1422,7 @@
   booktitle = {\conficsme},
   pages = {217--227},
   publisher = {IEEE},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:hou2009cnp,
@@ -1422,7 +1431,7 @@
   booktitle = {\conficpc},
   publisher = {IEEE},
   pages = {238--242},
-  date = {2009}
+  year = {2009}
 }
 
 @inproceedings{ref:iyer2016summarizing,
@@ -1431,15 +1440,15 @@
   publisher = {Association for Computational Linguistics},
   booktitle = {\confacl},
   pages = {2073--2083},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:jayaraman2005kaveri,
   title = {Kaveri: Delivering the Indus Java Program Slicer to Eclipse},
   author = {Jayaraman, Ganeshan and Ranganath, Venkatesh Prasad and Hatcliff, John},
   booktitle = {\conffase},
-  publisher = {Springer},
-  date = {2005},
+  publisher = {\pubspringer},
+  year = {2005},
   pages = {269--272}
 }
 
@@ -1449,7 +1458,7 @@
   booktitle = {\conficpc},
   publisher = {IEEE},
   pages = {215--218},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:kang2017omnicode,
@@ -1458,7 +1467,7 @@
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {737--745},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:kelley2017jupyter,
@@ -1466,7 +1475,7 @@
   author = {Kelley, Kyle and Granger, Brian},
   booktitle = {JupyterCon},
   url = {https://www.youtube.com/watch?v=YKmJvHjTGAM},
-  date = {2017},
+  year = {2017},
   note = {Video}
 }
 
@@ -1476,7 +1485,7 @@
   booktitle = {\confvlhcc},
   pages = {25--29},
   publisher = {IEEE},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:kery2017variolite,
@@ -1485,7 +1494,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {1265--1276},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:kery2018interactions,
@@ -1503,7 +1512,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   note = {\paperno{174}},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:kery2019towards,
@@ -1512,7 +1521,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   note = {\paperno{92}},
-  date = {2019}
+  year = {2019}
 }
 
 @inproceedings{ref:khandwala2018codemotion,
@@ -1521,7 +1530,7 @@
   booktitle = {\conflas},
   note = {\articleno{57}},
   publisher = {ACM},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:kim2004ethnographic,
@@ -1530,7 +1539,7 @@
   booktitle = {\confisese},
   pages = {83--92},
   publisher = {IEEE},
-  date = {2004}
+  year = {2004}
 }
 
 @inproceedings{ref:kim2009adding,
@@ -1539,7 +1548,7 @@
   booktitle = {\confase},
   pages = {540--544},
   publisher = {IEEE},
-  date = {2009}
+  year = {2009}
 }
 
 @inproceedings{ref:kim2010towards,
@@ -1548,7 +1557,7 @@
   booktitle = {\confaaai},
   pages = {1358--1363},
   publisher = {The AAAI Press},
-  date = {2010}
+  year = {2010}
 }
 
 @inproceedings{ref:kim2017pedagogical,
@@ -1557,16 +1566,16 @@
   booktitle = {\confsigcse},
   pages = {321--326},
   publisher = {ACM},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:ko2009finding,
-  title = {Finding Causes of Program Output with the Java Whyline},
+  title = {Finding Causes of Program Output with the {Java} {Whyline}},
   author = {Ko, Amy and Myers, Brad A.},
   booktitle = {\confchi},
   pages = {1569--1578},
   publisher = {ACM},
-  date = {2009}
+  year = {2009}
 }
 
 @inproceedings{ref:koenemann1991expert,
@@ -1575,7 +1584,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {125--130},
-  date = {1991}
+  year = {1991}
 }
 
 @inproceedings{ref:kojouharov2004jtutor,
@@ -1584,7 +1593,7 @@
   booktitle = {Proceedings of the Eclipse Technology eXchange Workshop},
   pages = {27--31},
   publisher = {ACM},
-  date = {2004}
+  year = {2004}
 }
 
 @inproceedings{ref:kramer2016using,
@@ -1593,7 +1602,7 @@
   booktitle = {\confchi},
   pages = {3232--3237},
   publisher = {ACM},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:lange1989some,
@@ -1602,7 +1611,7 @@
   booktitle = {\confchi},
   pages = {69--73},
   publisher = {ACM},
-  date = {1989}
+  year = {1989}
 }
 
 @inproceedings{ref:lawrie2006whats,
@@ -1611,7 +1620,7 @@
   booktitle = {\conficpc},
   pages = {3--12},
   publisher = {IEEE},
-  date = {2006}
+  year = {2006}
 }
 
 @inproceedings{ref:lee2013draganddrop,
@@ -1620,7 +1629,7 @@
   booktitle = {\conficse},
   pages = {23--32},
   publisher = {IEEE},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:leshed2008coscripter,
@@ -1629,7 +1638,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {1719--1728},
-  date = {2008}
+  year = {2008}
 }
 
 @inproceedings{ref:lieber2014addressing,
@@ -1638,7 +1647,7 @@
   booktitle = {\confchi},
   pages = {2481--2490},
   publisher = {ACM},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:little2007koala,
@@ -1648,7 +1657,7 @@
   publisher = {ACM},
   pages = {943--946},
   note = {This paper describes an earlier version of the \textit{CoScripter} tool called \textit{Koala}},
-  date = {2007}
+  year = {2007}
 }
 
 @inproceedings{ref:malan2004examples,
@@ -1657,7 +1666,7 @@
   booktitle = {Companion to the Conference on Object-Oriented Programming Systems, Languages, and Applications},
   pages = {83--87},
   publisher = {ACM},
-  date = {2004}
+  year = {2004}
 }
 
 @inproceedings{ref:mamykina2011design,
@@ -1674,7 +1683,7 @@
   author = {Mandelin, David and Xu, Lin and Bod\'{i}k, Rastislav and Kimelman, Doug},
   publisher = {ACM},
   pages = {48--61},
-  date = {2005},
+  year = {2005},
   booktitle = {\confpldi}
 }
 
@@ -1684,7 +1693,7 @@
   booktitle = {\confcgit},
   publisher = {ACM},
   pages = {389--400},
-  date = {1997}
+  year = {1997}
 }
 
 @inproceedings{ref:mayer2015user,
@@ -1693,7 +1702,7 @@
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {291--301},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:mcburney2014automatic,
@@ -1702,7 +1711,7 @@
   booktitle = {\conficpc},
   publisher = {ACM},
   pages = {279--290},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:mcdirmid2013usable,
@@ -1710,7 +1719,7 @@
   author = {McDirmid, Sean},
   booktitle = {Proceedings of the International Symposium on New Ideas, New Paradigms, and Reflections on Programming \& Software},
   pages = {53--62},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:miltner2019fly,
@@ -1719,7 +1728,7 @@
   publisher = {ACM},
   pages = {143:1--143:29},
   note = {\articleno{143}},
-  date = {2019},
+  year = {2019},
   booktitle = {Proceedings of the SIGPLAN Conference on Systems, Programming, Languages, and Applications: Software for Humanity}
 }
 
@@ -1729,7 +1738,7 @@
   booktitle = {\confwcre},
   pages = {401--408},
   publisher = {IEEE},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:moreno2013automatic,
@@ -1738,7 +1747,7 @@
   booktitle = {\conficpc},
   publisher = {IEEE},
   pages = {23--32},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:moreno2015how,
@@ -1747,7 +1756,7 @@
   booktitle = {\conficse},
   pages = {880--890},
   publisher = {IEEE},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:mysore2017torta,
@@ -1756,7 +1765,7 @@
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {703--714},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:nasehi2010unit,
@@ -1764,7 +1773,7 @@
   author = {Nasehi, Seyed Mehdi and Maurer, Frank},
   booktitle = {\conficsm},
   publisher = {IEEE},
-  date = {2010}
+  year = {2010}
 }
 
 @inproceedings{ref:nasehi2012what,
@@ -1773,7 +1782,7 @@
   booktitle = {\conficsm},
   publisher = {IEEE},
   pages = {25--34},
-  date = {2012}
+  year = {2012}
 }
 
 @inproceedings{ref:neal1989system,
@@ -1781,7 +1790,7 @@
   author = {Neal, Lisa Rubin},
   publisher = {ACM},
   pages = {63--68},
-  date = {1989},
+  year = {1989},
   booktitle = {\confchi}
 }
 
@@ -1791,7 +1800,7 @@
   booktitle = {\conffsesymposium},
   publisher = {ACM},
   pages = {1013--1017},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:norcio1982indentation,
@@ -1800,7 +1809,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {118--120},
-  date = {1982}
+  year = {1982}
 }
 
 @inproceedings{ref:nykaza2002what,
@@ -1809,7 +1818,7 @@
   booktitle = {Proceedings of the International Conference on the Design of Communication},
   pages = {133--141},
   publisher = {ACM},
-  date = {2002}
+  year = {2002}
 }
 
 @inproceedings{ref:oezbek2007jtourbus,
@@ -1818,7 +1827,7 @@
   booktitle = {\conficsm},
   pages = {64--73},
   publisher = {IEEE},
-  date = {2007}
+  year = {2007}
 }
 
 @inproceedings{ref:olsen2007evaluating,
@@ -1827,7 +1836,7 @@
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {251--258},
-  date = {2007}
+  year = {2007}
 }
 
 @inproceedings{ref:oney2009firecrystal,
@@ -1836,7 +1845,7 @@
   booktitle = {\confvlhcc},
   pages = {105--108},
   publisher = {IEEE},
-  date = {2009}
+  year = {2009}
 }
 
 @inproceedings{ref:oney2012codelets,
@@ -1845,14 +1854,14 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {2697--2706},
-  date = {2012}
+  year = {2012}
 }
 
 @inproceedings{ref:oney2018creating,
   title = {Creating Guided Code Explanations with chat.codes},
   author = {Oney, Steve and Brooks, Christopher and Resnick, Paul},
   publisher = {ACM},
-  date = {2018},
+  year = {2018},
   note = {\articleno{39}},
   booktitle = {\confcscw}
 }
@@ -1863,7 +1872,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   pages = {3053--3062},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:parnin2013blogging,
@@ -1872,7 +1881,7 @@
   booktitle = {\conficpc},
   pages = {211--214},
   publisher = {IEEE},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:polozov2015flashmeta,
@@ -1881,7 +1890,7 @@
   booktitle = {\confoopsla},
   publisher = {ACM},
   pages = {107--126},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:rambally1986influence,
@@ -1890,7 +1899,7 @@
   booktitle = {\confsigcse},
   publisher = {ACM},
   pages = {173--181},
-  date = {1986}
+  year = {1986}
 }
 
 @inproceedings{ref:rissland1980overview,
@@ -1899,7 +1908,7 @@
   publisher = {The AAAI Press},
   booktitle = {\confaaai},
   pages = {256--258},
-  date = {1980}
+  year = {1980}
 }
 
 @inproceedings{ref:robertson1990program,
@@ -1908,7 +1917,7 @@
   booktitle = {\confinteract},
   publisher = {North-Holland Publishing Co.},
   pages = {959--963},
-  date = {1990}
+  year = {1990}
 }
 
 @inproceedings{ref:robillard2017ondemand,
@@ -1917,7 +1926,7 @@
   booktitle = {\conficsme},
   pages = {479--483},
   publisher = {IEEE},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:rule2018aiding,
@@ -1926,7 +1935,7 @@
   booktitle = {\confcscw},
   publisher = {ACM},
   note = {\articleno{150}},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:rule2018exploration,
@@ -1935,7 +1944,7 @@
   booktitle = {\confchi},
   publisher = {ACM},
   note = {\paperno{32}},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:sadowski2015developers,
@@ -1944,7 +1953,7 @@
   booktitle = {\conffsemeeting},
   pages = {191--201},
   publisher = {ACM},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:sanchez2016multistaging,
@@ -1952,7 +1961,7 @@
   author = {Sanchez, Huascar and Whitehead, Jim and Sch\"{a}f, Martin},
   booktitle = {\conficpc},
   publisher = {IEEE},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:shum1994using,
@@ -1961,7 +1970,7 @@
   booktitle = {\confsigcse},
   publisher = {ACM},
   pages = {66--70},
-  date = {1994}
+  year = {1994}
 }
 
 @inproceedings{ref:siegel2018extracting,
@@ -1970,7 +1979,7 @@
   booktitle = {Proceedings of the Joint Conference on Digital Libraries},
   pages = {223--232},
   publisher = {ACM},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:sillito2013app,
@@ -1979,7 +1988,7 @@
   booktitle = {\confchase},
   pages = {81--84},
   publisher = {IEEE},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:sohan2015spyrest,
@@ -1988,7 +1997,7 @@
   booktitle = {\confase},
   publisher = {IEEE},
   pages = {271--276},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:sridhara2010towards,
@@ -1997,7 +2006,7 @@
   booktitle = {\confase},
   publisher = {ACM},
   pages = {43--52},
-  date = {2010}
+  year = {2010}
 }
 
 @inproceedings{ref:sridhara2011automatically,
@@ -2006,7 +2015,7 @@
   booktitle = {\conficse},
   publisher = {ACM},
   pages = {101--110},
-  date = {2011}
+  year = {2011}
 }
 
 @inproceedings{ref:sridhara2011generating,
@@ -2015,7 +2024,7 @@
   booktitle = {\conficpc},
   publisher = {IEEE},
   pages = {71--80},
-  date = {2011}
+  year = {2011}
 }
 
 @inproceedings{ref:srinivasa2016foraging,
@@ -2024,7 +2033,7 @@
   booktitle = {\confchi},
   pages = {3509--3521},
   publisher = {ACM},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:stylos2006mica,
@@ -2033,7 +2042,7 @@
   booktitle = {\confvlhcc},
   publisher = {IEEE},
   pages = {195--202},
-  date = {2006}
+  year = {2006}
 }
 
 @inproceedings{ref:subramanian2014live,
@@ -2042,7 +2051,7 @@
   booktitle = {\conficse},
   publisher = {ACM},
   pages = {643--652},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:sulir2017generating,
@@ -2051,7 +2060,7 @@
   booktitle = {Proceedings of the Symposium on Languages, Applications and Technologies},
   pages = {3:1--3:13},
   publisher = {Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:suzuki2015interactive,
@@ -2060,7 +2069,7 @@
   booktitle = {\conficse},
   publisher = {IEEE},
   pages = {799--800},
-  date = {2015}
+  year = {2015}
 }
 
 @inproceedings{ref:tanimoto2013perspective,
@@ -2069,7 +2078,7 @@
   booktitle = {Proceedings of the International Workshop on Live Programming},
   pages = {31--34},
   publisher = {IEEE},
-  date = {2013}
+  year = {2013}
 }
 
 @inproceedings{ref:tapp1994determining,
@@ -2078,7 +2087,7 @@
   booktitle = {Proceedings of the Workshop on Program Comprehension},
   publisher = {IEEE},
   pages = {154--161},
-  date = {1994}
+  year = {1994}
 }
 
 @inproceedings{ref:terragni2016csnippex,
@@ -2087,7 +2096,7 @@
   booktitle = {Proceedings of the International Symposium on Software Testing and Analysis},
   publisher = {ACM},
   pages = {118--129},
-  date = {2016}
+  year = {2016}
 }
 
 @inproceedings{ref:tiarks2014does,
@@ -2096,7 +2105,7 @@
   booktitle = {Proceedings of the Working Conference on Mining Software Repositories},
   publisher = {ACM},
   pages = {272--281},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:tip1999practical,
@@ -2105,7 +2114,7 @@
   publisher = {ACM},
   booktitle = {\confoopsla},
   pages = {292--305},
-  date = {1999}
+  year = {1999}
 }
 
 @inproceedings{ref:toomim2004managing,
@@ -2114,7 +2123,7 @@
   booktitle = {\confvlhcc},
   publisher = {IEEE},
   pages = {173--180},
-  date = {2004}
+  year = {2004}
 }
 
 @inproceedings{ref:treude2011programmers,
@@ -2123,7 +2132,7 @@
   booktitle = {\conficse},
   publisher = {IEEE},
   pages = {804--807},
-  date = {2011}
+  year = {2011}
 }
 
 @inproceedings{ref:treude2017understanding,
@@ -2132,7 +2141,7 @@
   booktitle = {\conficsme},
   pages = {509--513},
   publisher = {IEEE},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:uwano2006analyzing,
@@ -2141,7 +2150,7 @@
   booktitle = {Proceedings of the Symposium on Eye Tracking Research \& Applications},
   publisher = {ACM},
   pages = {133--140},
-  date = {2006}
+  year = {2006}
 }
 
 @inproceedings{ref:valleerai1999soot,
@@ -2149,7 +2158,7 @@
   author = {Vall\'{e}e-Rai, Raja and Co, Phong and Gagnon, Etienne and {Sable Research Group}},
   booktitle = {Proceedings of the Conference of the Centre for Advanced Studies on Collaborative Research},
   publisher = {IBM Press},
-  date = {1999}
+  year = {1999}
 }
 
 @inproceedings{ref:weiser1981program,
@@ -2158,7 +2167,7 @@
   booktitle = {\conficse},
   pages = {439--449},
   publisher = {IEEE},
-  date = {1981}
+  year = {1981}
 }
 
 @inproceedings{ref:wightman2012snipmatch,
@@ -2167,7 +2176,7 @@
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {219--228},
-  date = {2012}
+  year = {2012}
 }
 
 @inproceedings{ref:yang2016query,
@@ -2183,7 +2192,7 @@
   title = {A Syntactic Neural Model for General-purpose Code Generation},
   author = {Yin, Pengcheng and Neubig, Graham},
   publisher = {Association for Computational Linguistics},
-  date = {2017},
+  year = {2017},
   pages = {440--450},
   booktitle = {\confacl}
 }
@@ -2194,7 +2203,7 @@
   booktitle = {\conffsesymposium},
   publisher = {ACM},
   pages = {460--471},
-  date = {2014}
+  year = {2014}
 }
 
 @inproceedings{ref:yoon2012exploratory,
@@ -2203,7 +2212,7 @@
   booktitle = {\confchase},
   pages = {138--144},
   publisher = {IEEE},
-  date = {2012}
+  year = {2012}
 }
 
 @inproceedings{ref:zhang2006pruning,
@@ -2211,7 +2220,7 @@
   author = {Zhang, Xiangyu and Gupta, Neelam and Gupta, Rajiv},
   publisher = {ACM},
   pages = {169--180},
-  date = {2006},
+  year = {2006},
   booktitle = {\confpldi}
 }
 
@@ -2221,7 +2230,7 @@
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {691--702},
-  date = {2017}
+  year = {2017}
 }
 
 @inproceedings{ref:zhang2018code,
@@ -2230,7 +2239,7 @@
   booktitle = {\conficse},
   pages = {886--896},
   publisher = {IEEE},
-  date = {2018}
+  year = {2018}
 }
 
 @inproceedings{ref:zhang2019analyzing,
@@ -2239,16 +2248,16 @@
   booktitle = {\conficse},
   pages = {316--327},
   publisher = {IEEE},
-  date = {2019}
+  year = {2019}
 }
 
 @inproceedings{ref:zwicky1967morphological,
   title = {The Morphological Approach to Discovery, Invention, Research and Construction},
   author = {Zwicky, F.},
   booktitle = {New Methods of Thought and Procedure: Contributions to the Symposium on Methodologies},
-  publisher = {Springer},
+  publisher = {\pubspringer},
   pages = {273--297},
-  date = {1967}
+  year = {1967}
 }
 
 % ONLINE, ATTRIBUTED
@@ -2257,56 +2266,56 @@
   title = {Codewalk: How to write a Codewalk},
   author = {Google},
   url = {https://golang.org/doc/codewalk/codewalk/},
-  urldate = {2020-05-06},
+  urlyear = {2020-05-06},
 }
 
 @online{ref:codewalksharemem,
   title = {Codewalk: Share Memory By Communicating},
   author = {Google},
   url = {https://golang.org/doc/codewalk/sharemem/},
-  urldate = {2020-05-06},
+  urlyear = {2020-05-06},
 }
 
 @online{ref:denero2014composing,
   title = {Composing Programs},
   author = {DeNero, John},
   url = {https://composingprograms.com/},
-  urldate = {2020-05-05},
+  urlyear = {2020-05-05},
 }
 
 @online{ref:distill,
   title = {Distill},
   url = {https://distill.pub/},
   editor = {Carter, Shan and Olah, Chris and Satyanarayan, Arvind},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{ref:eclipse,
   title = {Quick Fix and Quick Assist},
   author = {{Eclipse Foundation}},
   url = {https://help.eclipse.org/2020-03/topic/org.eclipse.jdt.doc.user/concepts/concept-quickfix-assist.htm?cp=1_2_5},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{ref:javadoc,
   title = {How to Write Doc Comments for the Javadoc Tool},
   author = {Oracle},
   url = {http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html},
-  urldate = {2018-02-12},
+  urlyear = {2018-02-12},
 }
 
 @online{ref:jonskeetshortcompleteprograms,
   title = {Short but complete programs},
   author = {Skeet, Jon},
   url = {https://jonskeet.uk/csharp/complete.html},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{ref:jupyterextensions,
   title = {Unofficial Jupyter Notebook Extensions},
   author = {{Jupyter Contrib Team}},
   note = {https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{ref:rule2018explorationdata,
@@ -2314,21 +2323,21 @@
   author = {Rule, Adam and Tabard, Aur\'{e}lien and Hollan, James D.},
   organization = {UC San Diego Library Digital Collections},
   url = {https://doi.org/10.6075/J0JW8C39},
-  date = {2018}
+  year = {2018}
 }
 
 @online{ref:sscce,
   title = {The SSCCE},
   author = {Thompson, Andrew},
   url = {http://www.sscce.org/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{ref:stackoverflowhow,
   title = {How to create a Minimal, Reproducible Example},
   author = {{Stack Overflow Help Center}},
   url = {https://stackoverflow.com/help/minimal-reproducible-example},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 % ONLINE, ATTRIBUTED
@@ -2336,28 +2345,28 @@
   title = {Let's make a Mario game.},
   author = {Kamermans, Mike ``Pomax''},
   url = {http://processingjs.nihongoresources.com/test/PjsGameEngine/docs/tutorial/mario.html},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{ref:mozillaguidelines,
   title = {Code example guidelines},
   url = {https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines},
   author = {{MDN contributors}},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{ref:pombo2019build,
   title = {Build Your Own React},
   author = {Pombo, Rodrigo},
   url = {https://pomb.us/build-your-own-react/},
-  date = {2019-11-13}
+  year = {2019-11-13}
 }
 
 @online{ref:pombo2019waves,
   title = {Gatsby Waves},
   author = {Pombo, Rodrigo},
   url = {https://github.com/pomber/gatsby-waves},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{ref:perez2015project,
@@ -2365,7 +2374,7 @@
   author = {Perez, Fernando and Granger, Brian E.},
   note = {Grant proposal},
   url = {http://archive.ipython.org/JupyterGrantNarrative-2015.pdf},
-  date = {2015}
+  year = {2015}
 }
 
 @online{ref:punchedcards,
@@ -2373,27 +2382,27 @@
   author = {Reinhold, Arnold},
   url = {https://en.wikipedia.org/wiki/File:Punched_card_program_deck.agr.jpg},
   note = {This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license},
-  date = {2006}
+  year = {2006}
 }
 
 @online{ref:sweigart2015automate,
   title = {Automate the Boring Stuff with Python},
   author = {Sweigart, Al},
   url = {https://automatetheboringstuff.com/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{ref:victor2011explorable,
   title = {Explorable Explanations},
   author = {Victor, Bret},
-  date = {2011},
+  year = {2011},
   url = {http://worrydream.com/ExplorableExplanations/}
 }
 
 @online{ref:victor2012learnable,
   title = {Learnable programming},
   author = {Victor, Bret},
-  date = {2012},
+  year = {2012},
   url = {http://worrydream.com/LearnableProgramming/}
 }
 
@@ -2401,7 +2410,7 @@
   title = {Interactive Charts with D3.js},
   author = {Wattenberger, Amelia},
   url = {https://wattenberger.com/blog/d3-interactive-charts},
-  urldate = {2019-06-04}
+  urlyear = {2019-06-04}
 }
 
 @online{ref:wikibooks2019beginners,
@@ -2409,7 +2418,7 @@
   author = {{Wikibooks contributors}},
   publisher = {Wikibooks, The Free Textbook Project},
   url = {https://en.wikibooks.org/w/index.php?title=A_Beginner%27s_Python_Tutorial/Classes},
-  urldate = {2019-09-14}
+  urlyear = {2019-09-14}
 }
 
 % TOOL LINKS
@@ -2419,94 +2428,94 @@
 @online{tool:jdi,
   title = {Java Debug Interface},
   url = {https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/index.html},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:jison,
   title = {Jison},
   url = {http://jison.org},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:jupyter,
   title = {Jupyter},
   url = {https://jupyter.org/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:knitr,
   title = {Knitr},
   url = {https://yihui.org/knitr/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:markdownpreviewenhanced,
   title = {Markdown Preview Enhanced},
   url = {https://github.com/shd101wyy/markdown-preview-enhanced},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:observable,
   title = {Observable},
   url = {https://observablehq.com/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:processing,
   title = {Processing},
   url = {https://processing.org/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:raywenderlich,
   title = {Ray Wenderlich},
   url = {https://www.raywenderlich.com},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:rstudio,
   title = {RStudio},
   url = {https://rstudio.com/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:streamlit,
   title = {Streamlit},
   url = {https://www.streamlit.io/about},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:stackoverflow,
   title = {Stack Overflow},
   url = {https://stackoverflow.com},
-  urldate = {2020-05-10}
+  urlyear = {2020-05-10}
 }
 
 @online{tool:swagger,
   title = {Swagger},
   url = {https://swagger.io/solutions/api-documentation/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:vscode,
   title = {VSCode},
   url = {https://code.visualstudio.com/},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 @online{tool:wala,
   title = {WALA},
   url = {http://wala.sourceforge.net},
-  urldate = {2020-05-06}
+  urlyear = {2020-05-06}
 }
 
 % END OF ONLINE SOURCES
-@report{ref:brandt2010rehearse,
+@techreport{ref:brandt2010rehearse,
   title = {Rehearse: Helping Programmers Adapt Examples by Visualizing Execution and Highlighting Related Code},
   author = {Brandt, Joel and Pattamatta, Vignan and Choi, William and Hsieh, Ben and Klemmer, Scott R.},
   institution = {Stanford University},
-  date = {2010},
-  type = {techreport}
+  year = {2010},
+  type = {Technical report}
 }
 
 @techreport{ref:hoare1973hints,
@@ -2514,7 +2523,7 @@
   author = {Hoare, C. A. R.},
   shortauthor = {{Tony Hoare}},
   institution = {Stanford University},
-  date = {1973},
+  year = {1973},
   type = {techreport}
 }
 
@@ -2522,7 +2531,7 @@
   title = {Crowd Documentation: Exploring the Coverage and the Dynamics of API Discussions on Stack Overflow},
   author = {Parnin, Chris and Treude, Christoph and Grammel, Lars and Storey, Margaret-Anne},
   institution = {Georgia Institute of Technology},
-  date = {2012},
+  year = {2012},
   type = {techreport}
 }
 
@@ -2530,7 +2539,7 @@
   title = {Design and Use of Computational Notebooks},
   author = {Rule, Adam},
   institution = {University of California, San Diego},
-  date = {2018},
+  year = {2018},
   type = {phdthesis}
 }
 
@@ -2538,7 +2547,7 @@
   title = {Program Synthesis by Sketching},
   author = {Solar-Lezama, Armando},
   institution = {University of California, Berkeley},
-  date = {2008},
+  year = {2008},
   type = {phdthesis}
 }
 
@@ -2546,7 +2555,7 @@
   title = {Visual Program Simulation in Introductory Programming Education},
   author = {Sorva, Juha},
   institution = {Aalto University},
-  date = {2012},
+  year = {2012},
   type = {phdthesis}
 }
 
@@ -2554,153 +2563,324 @@
   title = {Program Slices: Formal, Psychological, and Practical Investigations of an Automatic Program Abstraction Method},
   author = {Weiser, Mark David},
   institution = {University of Michigan},
-  date = {1979},
+  year = {1979},
   type = {phdthesis}
 }
 
-% Recent additions, need editing and sorting.
 @book{ref:holtzblatt1997contextual,
-  title={Contextual design: defining customer-centered systems},
+  title={Contextual Design: Defining Customer-Centered Systems},
   author={Holtzblatt, Karen and Beyer, Hugh},
   year={1997},
-  publisher={Elsevier}
+  publisher={\pubelsevier}
 }
 
 @inproceedings{ref:suzuki2017tracediff,
-  title={Tracediff: Debugging unexpected code behavior using trace divergences},
-  author={Suzuki, Ryo and Soares, Gustavo and Head, Andrew and Glassman, Elena and Reis, Ruan and Mongiovi, Melina and D'Antoni, Loris and Hartmann, Bjoern},
-  booktitle={2017 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)},
+  title={TraceDiff: Debugging unexpected code behavior using trace divergences},
+  author={Suzuki, Ryo and Soares, Gustavo and Head, Andrew and Glassman, Elena and Reis, Ruan and Mongiovi, Melina and D'Antoni, Loris and Hartmann, Bj\"orn},
+  booktitle={\confvlhcc},
   pages={107--115},
   year={2017},
-  organization={IEEE}
+  organization={\pubieee}
 }
 
 @inproceedings{ref:le2018deep,
   title={Deep specification mining},
-  author={Le, Tien-Duy B and Lo, David},
-  booktitle={Proceedings of the 27th ACM SIGSOFT International Symposium on Software Testing and Analysis},
+  author={Le, Tien-Duy B. and Lo, David},
+  booktitle={\confissta},
   pages={106--117},
-  year={2018}
+  year={2018},
+  publisher={\pubacm},
 }
 
 @article{ref:ammons2002mining,
   title={Mining specifications},
-  author={Ammons, Glenn and Bodik, Rastislav and Larus, James R},
-  journal={ACM Sigplan Notices},
-  volume={37},
-  number={1},
+  author={Ammons, Glenn and Bod\'ik, Rastislav and Larus, James R.},
+  journal={\confpopl},
   pages={4--16},
   year={2002},
-  publisher={ACM New York, NY, USA}
+  publisher={\pubacm}
 }
 
 @inproceedings{ref:claessen2010quickspec,
-  title={QuickSpec: Guessing formal specifications using testing},
+  title={QuickSpec: Guessing Formal Specifications using Testing},
   author={Claessen, Koen and Smallbone, Nicholas and Hughes, John},
   booktitle={International Conference on Tests and Proofs},
-  pages={6--21},
   year={2010},
-  organization={Springer}
+  publisher={\pubspringer}
 }
 
 @article{ref:goldstein2022some,
   title={Some Problems with Properties},
   author={Goldstein, Harrison and Cutler, Joseph W. and Stein, Adam and Pierce, Benjamin C. and Head, Andrew},
-  booktitle={Proceedings of the ACM SPLASH Workshop on Human Aspects of Types and Reasoning Assistants},
+  booktitle={\confhatra},
+  publisher={\pubacm},
   year={2022}
 }
 
 @inproceedings{ref:head2017writing,
-  title={Writing reusable code feedback at scale with mixed-initiative program synthesis},
+  title={Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis},
   author={Head, Andrew and Glassman, Elena and Soares, Gustavo and Suzuki, Ryo and Figueredo, Lucas and D'Antoni, Loris and Hartmann, Bj{\"o}rn},
-  booktitle={Proceedings of the Fourth (2017) ACM Conference on Learning@ Scale},
+  booktitle={\conflas},
   pages={89--98},
-  year={2017}
+  year={2017},
+  publisher={\pubacm}
 }
 
 @online{tool:jetbrains,
+  key = "JetBrains",
   title = {JetBrains},
   url = {https://www.jetbrains.com/},
-  urldate = {2022-12-14}
+  urlyear = {2022-12-14}
 }
 
 @inproceedings{ref:lim2018ply,
-  title={Ply: A visual web inspector for learning from professional webpages},
+  title={Ply: A Visual Web Inspector for Learning from Professional Webpages},
   author={Lim, Sarah and Hibschman, Joshua and Zhang, Haoqi and O'Rourke, Eleanor},
-  booktitle={Proceedings of the 31st Annual ACM Symposium on User Interface Software and Technology},
+  booktitle={\confuist},
   pages={991--1002},
-  year={2018}
+  year={2018},
+  publisher={\pubacm}
 }
 
 @inproceedings{ref:omar2012active,
   title={Active code completion},
-  author={Omar, Cyrus and Yoon, Young Seok and LaToza, Thomas D and Myers, Brad A},
-  booktitle={2012 34th International Conference on Software Engineering (ICSE)},
+  author={Omar, Cyrus and Yoon, YoungSeok and LaToza, Thomas D. and Myers, Brad A.},
+  booktitle={\conficse},
   pages={859--869},
   year={2012},
-  organization={IEEE}
+  published={\pubieee}
 }
 
 @inproceedings{ref:omar2021filling,
-  title={Filling typed holes with live GUIs},
+  title={Filling Typed Holes with Live {GUIs}},
   author={Omar, Cyrus and Moon, David and Blinn, Andrew and Voysey, Ian and Collins, Nick and Chugh, Ravi},
-  booktitle={Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+  booktitle={\confpldi},
   pages={511--525},
-  year={2021}
+  year={2021},
+  publisher={\pubacm}
 }
 
 @inproceedings{ref:kery2020mage,
-  title={mage: Fluid moves between code and graphical work in computational notebooks},
+  title={{mage}: Fluid moves between code and graphical work in computational notebooks},
   author={Kery, Mary Beth and Ren, Donghao and Hohman, Fred and Moritz, Dominik and Wongsuphasawat, Kanit and Patel, Kayur},
-  booktitle={Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology},
+  booktitle={\confuist},
   pages={140--151},
-  year={2020}
+  year={2020},
+  publisher={\pubacm}
 }
 
 @online{tool:lighttable,
+  key="Light Table",
   title = {Light Table},
   url = {http://lighttable.com/},
-  urldate = {2022-12-14}
+  urlyear = {2022-12-14}
 }
 
-@article{ref:omar2019live,
-  title={Live functional programming with typed holes},
-  author={Omar, Cyrus and Voysey, Ian and Chugh, Ravi and Hammer, Matthew A},
-  journal={Proceedings of the ACM on Programming Languages},
-  volume={3},
-  number={POPL},
-  pages={1--32},
+@inproceedings{ref:omar2019live,
+  title={Live Functional Programming with Typed Holes},
+  author={Omar, Cyrus and Voysey, Ian and Chugh, Ravi and Hammer, Matthew A.},
+  booktitle={\confpopl},
+  note = {\articleno{14}},
+  pages={14:1--14:32},
   year={2019},
-  publisher={ACM New York, NY, USA}
+  publisher={\pubacm}
 }
 
+% Continue cleaning from here.
 @inproceedings{ref:hohman2019gamut,
-  title={Gamut: A design probe to understand how data scientists understand machine learning models},
-  author={Hohman, Fred and Head, Andrew and Caruana, Rich and DeLine, Robert and Drucker, Steven M},
-  booktitle={Proceedings of the 2019 CHI conference on human factors in computing systems},
-  pages={1--13},
-  year={2019}
+  title={Gamut: A Design Probe to Understand How Data Scientists Understand Machine Learning Models},
+  author={Hohman, Fred and Head, Andrew and Caruana, Rich and DeLine, Robert and Drucker, Steven M.},
+  booktitle={\confchi},
+  publisher={\pubacm},
+  year={2019},
+  note={\paperno{579}}
 }
 
 @inproceedings{ref:hohman2020understanding,
-  title={Understanding and visualizing data iteration in machine learning},
+  title={Understanding and Visualizing Data Iteration in Machine Learning},
   author={Hohman, Fred and Wongsuphasawat, Kanit and Kery, Mary Beth and Patel, Kayur},
-  booktitle={Proceedings of the 2020 CHI conference on human factors in computing systems},
-  pages={1--13},
-  year={2020}
+  booktitle={\confchi},
+  publisher={\pubacm},
+  year={2020},
+  note={\paperno{50}}
 }
 
-@article{ref:lee2021lux,
-  title={Lux: Always-on visualization recommendations for exploratory data science},
-  author={Lee, Doris Jung-Lin and Tang, Dixin and Agarwal, Kunal and Boonmark, Thyne and Chen, Caitlyn and Kang, Jake and Mukhopadhyay, Ujjaini and Song, Jerry and Yong, Micah and Hearst, Marti A and others},
-  journal={arXiv preprint arXiv:2105.00121},
-  year={2021}
+@inproceedings{ref:lee2021lux,
+  title={Lux: Always-on Visualization Recommendations for Exploratory Dataframe Workflows},
+  author={Lee, Doris Jung-Lin and Tang, Dixin and Agarwal, Kunal and Boonmark, Thyne and Chen, Caitlyn and Kang, Jake and Mukhopadhyay, Ujjaini and Song, Jerry and Yong, Micah and Hearst, Marti A. and Parameswaran, Aditya G.},
+  booktitle={\confvldb},
+  pages={727--738},
+  year={2022}
 }
 
 @inproceedings{ref:head2018when,
-  title={When not to comment: questions and tradeoffs with api documentation for c++ projects},
+  title={When Not to Comment: {Q}uestions and Tradeoffs with {API} Documentation for {C++} Projects},
   author={Head, Andrew and Sadowski, Caitlin and Murphy-Hill, Emerson and Knight, Andrea},
-  booktitle={Proceedings of the 40th International Conference on Software Engineering},
+  booktitle={\conficse},
   pages={643--653},
+  publisher={\pubacm},
   year={2018}
+}
+
+@article{ref:lawrance2010programmers,
+  title={How Programmers Debug, Revisited: An Information Foraging Theory Perspective},
+  author={Lawrance, Joseph and Bogart, Christopher and Burnett, Margaret and Bellamy, Rachel and Rector, Kyle and Fleming, Scott D.},
+  journal={\journaltse},
+  volume={39},
+  number={2},
+  pages={197--215},
+  year={2010},
+  publisher={\pubieee}
+}
+
+@inproceedings{ref:blackwell2002first,
+  title={First Steps in Programming: A Rationale for Attention Investment Models},
+  author={Blackwell, Alan F.},
+  booktitle={Proceedings of the Symposia on Human Centric Computing Languages and Environments},
+  pages={2--10},
+  year={2002},
+  organization={\pubieee}
+}
+
+@article{ref:ko2005framework,
+  title={A framework and methodology for studying the causes of software errors in programming systems},
+  author={Ko, Amy J. and Myers, Brad A.},
+  journal={\journaljvlc},
+  volume={16},
+  pages={41--84},
+  year={2005},
+  publisher={\pubelsevier}
+}
+
+@inproceedings{ref:henley2014patchworks,
+  title={The {P}atchworks Code Editor: Toward Faster Navigation with Less Code Arranging and Fewer Navigation Mistakes},
+  author={Henley, Austin Z. and Fleming, Scott D.},
+  booktitle={\confchi},
+  pages={2511--2520},
+  publisher={\pubacm},
+  year={2014}
+}
+
+@inproceedings{ref:ko2004six,
+  title={Six Learning Barriers in End-User Programming Systems},
+  author={Ko, Amy J. and Myers, Brad A. and Aung, Htet Htet},
+  booktitle={\confvlhcc},
+  pages={199--206},
+  year={2004},
+  publisher={\pubieee}
+}
+
+@inproceedings{ref:potter2022contextualized,
+  title={Contextualized Programming Language Documentation},
+  author={Potter, Hannah and Madadi, Ardi and Just, Ren{\'e} and Omar, Cyrus},
+  booktitle={\confonward},
+  pages={1--15},
+  publisher={\pubacm},
+  year={2022}
+}
+
+@article{ref:dantoni2015can,
+  title={How Can Automatic Feedback Help Students Construct Automata?},
+  author={D'Antoni, Loris and Kini, Dileep and Alur, Rajeev and Gulwani, Sumit and Viswanathan, Mahesh and Hartmann, Bj{\"o}rn},
+  journal={\journaltochi},
+  volume={22},
+  number={2},
+  pages={9:1--9:24},
+  year={2015},
+  publisher={\pubacm}
+}
+
+@article{ref:murphyhill2019predicts,
+  title={What Predicts Software Developers' Productivity?},
+  author={Murphy-Hill, Emerson and Jaspan, Ciera and Sadowski, Caitlin and Shepherd, David and Phillips, Michael and Winter, Collin and Knight, Andrea and Smith, Edward and Jorde, Matthew},
+  journal={\journaltse},
+  volume={47},
+  number={3},
+  pages={582--594},
+  year={2019},
+  publisher={\pubieee}
+}
+
+@article{ref:myers2000past,
+  title={Past, Present, and Future of User Interface Software Tools},
+  author={Myers, Brad and Hudson, Scott E. and Pausch, Randy},
+  journal={\journaltochi},
+  volume={7},
+  number={1},
+  pages={3--28},
+  year={2000},
+  publisher={\pubacm}
+}
+
+@incollection{ref:pirolli2003exploring,
+  title={Exploring and Finding Information},
+  author={Pirolli, Peter},
+  booktitle={HCI Models, Theories, and Frameworks: Toward a Multidisciplinary Science},
+  pages={157--191},
+  year={2003},
+  publisher={\pubmorgankaufmann}
+}
+
+@article{ref:brown2004consideration,
+  title={Consideration of the origin of {Herbert Simon's} theory of ``satisficing'' (1933--1947)},
+  author={Brown, Reva},
+  journal={Management Decision},
+  volume={42},
+  number={10},
+  pages={1240--1256},
+  year={2004},
+  publisher={\pubemerald}
+}
+
+@article{ref:ko2015practical,
+  title={A practical guide to controlled experiments of software engineering tools with human participants},
+  author={Ko, Amy J. and LaToza, Thomas D. and Burnett, Margaret M.},
+  journal={Empirical Software Engineering},
+  volume={20},
+  pages={110--141},
+  year={2013},
+  publisher={\pubspringer}
+}
+
+@incollection{ref:blackwell2003notational,
+  title={Notational Systems---The {C}ognitive {D}imensions of {N}otations Framework},
+  author={Blackwell, Alan and Green, Thomas},
+  booktitle={HCI Models, Theories, and Frameworks: Toward a Multidisciplinary Science},
+  publisher = {\pubmorgankaufmann},
+  pages = {103--134},
+  year={2003}
+}
+
+@book{ref:blandford2016qualitative,
+  title={Qualitative {HCI} Research: {G}oing Behind the Scenes},
+  author={Blandford, Ann and Furniss, Dominic and Makri, Stephann},
+  series={Synthesis Lectures on Human-Centered Informatics},
+  year={2016},
+  publisher={Morgan \& Claypool Publishers}
+}
+
+@inproceedings{ref:gerdes2018understanding,
+  title={Understanding Formal Specifications through Good Examples},
+  author={Gerdes, Alex and Hughes, John and Smallbone, Nicholas and Hanenberg, Stefan and Ivarsson, Sebastian and Wang, Meng},
+  booktitle={Proceedings of the International Workshop on Erlang},
+  pages={13--24},
+  year={2018},
+  publisher={\pubacm}
+}
+ 
+@inproceedings{ref:fok2023scim,
+  title={Scim: Intelligent Skimming Support for Scientific Papers},
+  author={Fok, Raymond and Kambhamettu, Hita and Soldaini, Luca and Bragg, Jonathan and Lo, Kyle and Hearst, Marti A. and Head, Andrew and Weld, Daniel S.},
+  year={2023},
+  booktitle={\confiui},
+  publisher={ACM},
+  note={\toappear}
+}
+
+@article{ref:august2022paper,
+  title={Paper {P}lain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing},
+  author={August, Tal and Wang, Lucy Lu and Bragg, Jonathan and Hearst, Marti A. and Head, Andrew and Lo, Kyle},
+  journal={\journaltochi},
+  year={2023},
+  note={\toappear}
 }
