@@ -31,6 +31,7 @@
 \def\articleno#1{Article #1}
 \def\paperno#1{Paper #1}
 \def\toappear{To appear}
+\def\eatnexttoken#1{}  % Can eat punctuation after question mark in a title
 \def\pubmit{The MIT Press}
 \def\pubieee{IEEE}
 \def\pubacm{ACM}
@@ -119,16 +120,6 @@
   journaltitle = {Empirical Software Engineering},
   volume = {24},
   pages = {1259--1295}
-}
-
-@article{ref:bazerman1985physicists,
-  title = {Physicists Reading Physics: Schema-Laden Purposes and Purpose-Laden Schema},
-  author = {Bazerman, Charles},
-  volume = {2},
-  number = {1},
-  pages = {3--23},
-  year = {1985},
-  journaltitle = {Written Communication}
 }
 
 @article{ref:beck2001aim,
@@ -843,7 +834,7 @@
   author = {Tagliaferri, Lisa},
   publisher = {DigitalOcean},
   url = {https://www.digitalocean.com/community/tutorial_series/how-to-code-in-python-3},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @book{ref:jones1992design,
@@ -1805,7 +1796,7 @@
 
 @inproceedings{ref:nguyen2016t2api,
   title = {T2API: Synthesizing API Code Usage Templates from English texts with Statistical Translation},
-  author = {Nguyen, Thanh and Rigby, Peter C, and Nguyen, Anh Tuan and Karanfil, Mark and Nguyen, Tien N.},
+  author = {Nguyen, Thanh and Rigby, Peter C and Nguyen, Anh Tuan and Karanfil, Mark and Nguyen, Tien N.},
   booktitle = {\conffsesymposium},
   publisher = {ACM},
   pages = {1013--1017},
@@ -2270,63 +2261,63 @@
 }
 
 @online{ref:codewalkhowtowrite,
-  title = {Codewalk: How to write a Codewalk},
+  key = {Codewalk: How to write a Codewalk},
   author = {Google},
   url = {https://golang.org/doc/codewalk/codewalk/},
-  urlyear = {2020-05-06},
+  lastaccessed = {2020-05-06},
 }
 
 @online{ref:codewalksharemem,
-  title = {Codewalk: Share Memory By Communicating},
+  key = {Codewalk: Share Memory By Communicating},
   author = {Google},
   url = {https://golang.org/doc/codewalk/sharemem/},
-  urlyear = {2020-05-06},
+  lastaccessed = {2020-05-06},
 }
 
 @online{ref:denero2014composing,
-  title = {Composing Programs},
+  key = {Composing Programs},
   author = {DeNero, John},
   url = {https://composingprograms.com/},
-  urlyear = {2020-05-05},
+  lastaccessed = {2020-05-05},
 }
 
 @online{ref:distill,
   title = {Distill},
   url = {https://distill.pub/},
   editor = {Carter, Shan and Olah, Chris and Satyanarayan, Arvind},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:eclipse,
-  title = {Quick Fix and Quick Assist},
+  key = {Quick Fix and Quick Assist},
   author = {{Eclipse Foundation}},
   url = {https://help.eclipse.org/2020-03/topic/org.eclipse.jdt.doc.user/concepts/concept-quickfix-assist.htm?cp=1_2_5},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:javadoc,
-  title = {How to Write Doc Comments for the Javadoc Tool},
+  key = {How to Write Doc Comments for the Javadoc Tool},
   author = {Oracle},
   url = {http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html},
-  urlyear = {2018-02-12},
+  lastaccessed = {2018-02-12},
 }
 
 @online{ref:jonskeetshortcompleteprograms,
-  title = {Short but complete programs},
+  key = {Short but complete programs},
   author = {Skeet, Jon},
   url = {https://jonskeet.uk/csharp/complete.html},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:jupyterextensions,
-  title = {Unofficial Jupyter Notebook Extensions},
+  key = {Unofficial Jupyter Notebook Extensions},
   author = {{Jupyter Contrib Team}},
   note = {https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:rule2018explorationdata,
-  title = {Data from: Exploration and Explanation in Computational Notebooks},
+  key = {Data from: Exploration and Explanation in Computational Notebooks},
   author = {Rule, Adam and Tabard, Aur\'{e}lien and Hollan, James D.},
   organization = {UC San Diego Library Digital Collections},
   url = {https://doi.org/10.6075/J0JW8C39},
@@ -2334,49 +2325,49 @@
 }
 
 @online{ref:sscce,
-  title = {The SSCCE},
+  key = {The SSCCE},
   author = {Thompson, Andrew},
   url = {http://www.sscce.org/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:stackoverflowhow,
-  title = {How to create a Minimal, Reproducible Example},
+  key = {How to create a Minimal, Reproducible Example},
   author = {{Stack Overflow Help Center}},
   url = {https://stackoverflow.com/help/minimal-reproducible-example},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:mariotutorial,
-  title = {Let's make a Mario game.},
+  key = {Let's make a Mario game.},
   author = {Kamermans, Mike ``Pomax''},
   url = {http://processingjs.nihongoresources.com/test/PjsGameEngine/docs/tutorial/mario.html},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:mozillaguidelines,
-  title = {Code example guidelines},
+  key = {Code example guidelines},
   url = {https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines},
   author = {{MDN contributors}},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:pombo2019build,
-  title = {Build Your Own React},
+  key = {Build Your Own React},
   author = {Pombo, Rodrigo},
   url = {https://pomb.us/build-your-own-react/},
   year = {2019-11-13}
 }
 
 @online{ref:pombo2019waves,
-  title = {Gatsby Waves},
+  key = {Gatsby Waves},
   author = {Pombo, Rodrigo},
   url = {https://github.com/pomber/gatsby-waves},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:perez2015project,
-  title = {Project Jupyter: Computational Narratives as the Engine of Collaborative Data Science},
+  key = {Project Jupyter: Computational Narratives as the Engine of Collaborative Data Science},
   author = {Perez, Fernando and Granger, Brian E.},
   note = {Grant proposal},
   url = {http://archive.ipython.org/JupyterGrantNarrative-2015.pdf},
@@ -2384,7 +2375,7 @@
 }
 
 @online{ref:punchedcards,
-  title = {Punched card program deck.agr.jpg},
+  key = {Punched card program deck.agr.jpg},
   author = {Reinhold, Arnold},
   url = {https://en.wikipedia.org/wiki/File:Punched_card_program_deck.agr.jpg},
   note = {This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license},
@@ -2392,123 +2383,123 @@
 }
 
 @online{ref:sweigart2015automate,
-  title = {Automate the Boring Stuff with Python},
+  key = {Automate the Boring Stuff with Python},
   author = {Sweigart, Al},
   url = {https://automatetheboringstuff.com/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{ref:victor2011explorable,
-  title = {Explorable Explanations},
+  key = {Explorable Explanations},
   author = {Victor, Bret},
   year = {2011},
   url = {http://worrydream.com/ExplorableExplanations/}
 }
 
 @online{ref:victor2012learnable,
-  title = {Learnable programming},
+  key = {Learnable programming},
   author = {Victor, Bret},
   year = {2012},
   url = {http://worrydream.com/LearnableProgramming/}
 }
 
 @online{ref:wattenberger2019interactive,
-  title = {Interactive Charts with D3.js},
+  key = {Interactive Charts with D3.js},
   author = {Wattenberger, Amelia},
   url = {https://wattenberger.com/blog/d3-interactive-charts},
-  urlyear = {2019-06-04}
+  lastaccessed = {2019-06-04}
 }
 
 @online{ref:wikibooks2019beginners,
-  title = {A Beginner's Python Tutorial/Classes},
+  key = {A Beginner's Python Tutorial/Classes},
   author = {{Wikibooks contributors}},
   publisher = {Wikibooks, The Free Textbook Project},
-  url = {https://en.wikibooks.org/w/index.php?title=A_Beginner%27s_Python_Tutorial/Classes},
-  urlyear = {2019-09-14}
+  url = {https://en.wikibooks.org/w/index.php?key=A_Beginner%27s_Python_Tutorial/Classes},
+  lastaccessed = {2019-09-14}
 }
 
 @online{tool:jdi,
-  title = {Java Debug Interface},
+  key = {Java Debug Interface},
   url = {https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/index.html},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:jison,
-  title = {Jison},
+  key = {Jison},
   url = {http://jison.org},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:jupyter,
-  title = {Jupyter},
+  key = {Jupyter},
   url = {https://jupyter.org/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:knitr,
-  title = {Knitr},
+  key = {Knitr},
   url = {https://yihui.org/knitr/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:markdownpreviewenhanced,
-  title = {Markdown Preview Enhanced},
+  key = {Markdown Preview Enhanced},
   url = {https://github.com/shd101wyy/markdown-preview-enhanced},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:observable,
-  title = {Observable},
+  key = {Observable},
   url = {https://observablehq.com/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:processing,
-  title = {Processing},
+  key = {Processing},
   url = {https://processing.org/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:raywenderlich,
-  title = {Ray Wenderlich},
+  key = {Ray Wenderlich},
   url = {https://www.raywenderlich.com},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:rstudio,
-  title = {RStudio},
+  key = {RStudio},
   url = {https://rstudio.com/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:streamlit,
-  title = {Streamlit},
+  key = {Streamlit},
   url = {https://www.streamlit.io/about},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:stackoverflow,
-  title = {Stack Overflow},
+  key = {Stack Overflow},
   url = {https://stackoverflow.com},
-  urlyear = {2020-05-10}
+  lastaccessed = {2020-05-10}
 }
 
 @online{tool:swagger,
-  title = {Swagger},
+  key = {Swagger},
   url = {https://swagger.io/solutions/api-documentation/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:vscode,
-  title = {VSCode},
+  key = {VSCode},
   url = {https://code.visualstudio.com/},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @online{tool:wala,
-  title = {WALA},
+  key = {WALA},
   url = {http://wala.sourceforge.net},
-  urlyear = {2020-05-06}
+  lastaccessed = {2020-05-06}
 }
 
 @techreport{ref:brandt2010rehearse,
@@ -2631,7 +2622,7 @@
   key = "JetBrains",
   title = {JetBrains},
   url = {https://www.jetbrains.com/},
-  urlyear = {2022-12-14}
+  lastaccessed = {2022-12-14}
 }
 
 @inproceedings{ref:lim2018ply,
@@ -2674,7 +2665,7 @@
   key="Light Table",
   title = {Light Table},
   url = {http://lighttable.com/},
-  urlyear = {2022-12-14}
+  lastaccessed = {2022-12-14}
 }
 
 @inproceedings{ref:omar2019live,
@@ -2900,13 +2891,6 @@
   year={2020}
 }
 
-@book{ref:knuth1986tex,
-  title={TeX: The Program},
-  author={Donald Knuth},
-  publisher={Addison-Wesley},
-  year={1985}
-}
-
 @inproceedings{ref:latif2021kori,
   title={Kori: Interactive Synthesis of Text and Charts in Data Documents},
   author={Shahid Latif and Zheng Zhou and Yoon Kim and Fabian Beck and Nam Wook Kim},
@@ -2978,14 +2962,6 @@
   year={2021}
 }
 
-@inproceedings{ref:kim2018facilitating,
-  title={Facilitating Document Reading by Linking Text and Tables},
-  author={Dae Hyun Kim and Enamul Hoque and Juho Kim and Maneesh Agrawala},
-  booktitle={\confuist},
-  pages = {423–434},
-  year={2018}
-}
-
 @article{ref:bryan2017temporal,
   title={Temporal Summary Images: An Approach to Narrative Visualization via Interactive Annotation Generation and Placement},
   author={Chris Bryan and Kwan-Liu Ma and Jonathan Woodring},
@@ -3005,13 +2981,6 @@
   pages={2033--2040}
 }
 
-@phdthesis{ref:roy2014evaluating,
-  title={Evaluating novel pedagogy in higher education: a case study of e-proofs},
-  author={Somali Roy},
-  school={Loughborough University},
-  year={2014}
-}
-
 @inproceedings{ref:ion2001mathematical,
   title={Mathematical Markup Language (MathML) Version 3.0},
   author={Patrick D. F. Ion and Robert R. Miner and Ron Ausbrooks and S. Buswell and D. Carlisle and Giorgi Chavchanidze and St{\'e}phane Dalmas and S. Devitt and Angel D{\'i}az and S. Dooley and R. Hunter and M. Kohlhase and A. Lazrek and P. Libbrecht and B. Miller and C. Rowley and M. Sargent and Bruce T. Smith and Neil Soiffer and R. Sutor and S. Watt},
@@ -3025,13 +2994,6 @@
   journal={Computer Graphics Forum},
   year={2014},
   volume={33}
-}
-
-@inproceedings{ref:hullman2018improving,
-  title={Improving Comprehension of Measurements Using Concrete Re-expression Strategies},
-  author={Jessica Hullman and Yea-Seul Kim and Frances Nguyen and Lauren Speers and Maneesh Agrawala},
-  booktitle={\confchi},
-  year={2018}
 }
 
 @article{ref:srinivasan2019augmenting,
@@ -3119,22 +3081,6 @@
   pages={21--30}
 }
 
-@InProceedings{ref:kohlhase2018discourse,
-author="Kohlhase, Andrea
-and Kohlhase, Michael
-and Ouypornkochagorn, Taweechai",
-editor="Rabe, Florian
-and Farmer, William M.
-and Passmore, Grant O.
-and Youssef, Abdou",
-title="Discourse Phenomena in Mathematical Documents",
-booktitle="Intelligent Computer Mathematics",
-year="2018",
-publisher="Springer International Publishing",
-address="Cham",
-pages="147--163",
-}
-
 @book{ref:tufte1985visual,
   title={The visual display of quantitative information},
   author={Edward Tufte},
@@ -3180,13 +3126,6 @@ pages="147--163",
   year={2021}
 }
 
-@inproceedings{ref:conlen2018idyll,
-  title={Idyll: A Markup Language for Authoring and Publishing Interactive Articles on the Web},
-  author={Matthew Conlen and Jeffrey Heer},
-  booktitle={\confuist},
-  year={2018}
-}
-
 @inproceedings{ref:jansen1999perceiving,
   title={Perceiving structure in mathematical expressions},
   author={Anthony R. Jansen and Kim Marriott and Greg Yelland},
@@ -3225,7 +3164,7 @@ pages="147--163",
 @manual{tool:victortangle,
   title={Tangle: a JavaScript library for reactive documents},
   author={Victor, Bret},
-  urlyear = {2021-08-15},
+  lastaccessed = {2021-08-15},
   url = {http://worrydream.com/Tangle/}
 }
 
@@ -3246,7 +3185,7 @@ pages="147--163",
 @online{ref:3Blue1Brown,
   title={3Blue1Brown},
   author={Sanderson, Grant},
-  urlyear = {2021-09-08},
+  lastaccessed = {2021-09-08},
   url = {https://www.youtube.com/c/3blue1brown}
 }
 
@@ -3274,7 +3213,7 @@ pages="147--163",
 @manual{tool:katex,
   author={Emily Eisenberg and Sophie Alpert},
   url = {https://katex.org},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   title = {KaTeX}
 }
 
@@ -3291,29 +3230,21 @@ pages="147--163",
   author = {Hall, Matt},
   url = {https://agilescientific.com/blog/2021/1/14/illuminated-equations},
   year = {2021},
-  urlyear = {2021-09-09}
-}
-
-@inproceedings{ref:kong2014extracting,
-  title={Extracting references between text and charts via crowdsourcing},
-  author={Kong, Nicholas and Hearst, Marti A. and Agrawala, Maneesh},
-  booktitle={\confchi},
-  pages={31--40},
-  year={2014}
+  lastaccessed = {2021-09-09}
 }
 
 @manual{ref:beynonbuildyourowntf,
   author={Tali Benyon},
   url={https://taliesin.ai/projects/edu/indaba-2019/},
   organization={Deep Learning Indaba},
-  urlyear = {2021-12-27},
+  lastaccessed = {2021-12-27},
   title = {Build your own Tensorflow}
 }
 
 @manual{ref:alexanderexponential,
   author={Alexander, Andrew M.H.},
   url = {http://www.andrusia.com/math/complex-numbers/eulers-identity.pdf},
-  urlyear = {2021-12-27},
+  lastaccessed = {2021-12-27},
   title = {Exponential Improvements}
 }
 
@@ -3321,7 +3252,7 @@ pages="147--163",
   author={Basurco, Sergio},
   url = {https://chuckleplant.github.io/2017/05/28/light-shafts.html},
   date = {May 28, 2017},
-  urlyear = {2021-12-27},
+  lastaccessed = {2021-12-27},
   title = {Isaac Hayes Wallpaper Generator - Volumetric light scattering, 1 of 2}
 }
 
@@ -3346,7 +3277,7 @@ pages="147--163",
 @manual{ref:rougeuxeuclid,
   author={Rougeux, Nicholas},
   url = {https://www.c82.net/euclid/book1},
-  urlyear = {2021-12-30},
+  lastaccessed = {2021-12-30},
   title = {Byrne's Euclid},
 }
 
@@ -3832,7 +3763,7 @@ pages="147--163",
   month = {July},
   year = 2008,
   journal = {Journal for Research in Mathematics Education},
-  publisher={National Council of Teachers of Mathematics}
+  publisher={National Council of Teachers of Mathematics},
   volume = 39,
   number = 4,
   pages = {431--459}
@@ -3960,7 +3891,7 @@ pages="147--163",
 }
 
 @inproceedings{ref:deridder2002visiblechi,
-  title = {Visible or invisible links?\killpunct},
+  title = {Visible or invisible links?\eatnexttoken},
   author = {De Ridder, Isabelle},
   year = 2002,
   booktitle = {\confchi},
@@ -3999,15 +3930,6 @@ pages="147--163",
   title={Recognition of Composite Symbols, Their Components, and Their Locations in LaTeX-Based PDFs},
   author={Head, Andrew and Lo, Kyle and Weld, Daniel S. and Hearst, Marti A.},
   year={Forthcoming}
-}
-
-@inproceedings{ref:head2015tutorons,
-  title = {Tutorons: Generating Context-Relevant, On-Demand Explanations and Demonstrations of Online Code},
-  author = {Head, Andrew and Appachu, Codanda and Hearst, Marti A. and Hartmann, Bj{\"o}rn},
-  year = 2015,
-  booktitle = {\confvlhcc},
-  publisher = {IEEE},
-  pages = {3--12},
 }
 
 @inproceedings{ref:hill1992edit,
@@ -4083,15 +4005,6 @@ pages="147--163",
   booktitle = {\confuist},
   publisher = {ACM},
   pages = {423--434}
-}
-
-@inproceedings{ref:ko2009finding,
-  title = {Finding Causes of Program Output with the Java Whyline},
-  author = {Ko, Amy J. and Myers, Brad A.},
-  year = 2009,
-  booktitle = {\confchi},
-  pages = {1569--1578},
-  publisher = {ACM}
 }
 
 @inproceedings{ref:kocielnik2019will,
@@ -4196,15 +4109,6 @@ pages="147--163",
   pages = {341--346}
 }
 
-@inproceedings{ref:siegel2018extracting,
-  title = {Extracting Scientific Figures with Distantly Supervised Neural Networks},
-  author = {Siegel, Noah and Lourie, Nicholas and Power, Russell and Ammar, Waleed},
-  year = 2018,
-  booktitle = {Proceedings of the Joint Conference on Digital Libraries},
-  publisher = {ACM},
-  pages = {223--232}
-}
-
 @inproceedings{ref:tashman2011active,
   title = {Active Reading and Its Discontents: The Situations, Problems and Ideas of Readers},
   author = {Tashman, Craig and Edwards, W. Keith},
@@ -4303,58 +4207,58 @@ pages="147--163",
 
 @online{tool:fermatslibrary,
   url = {https://fermatslibrary.com/},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   title = {Fermat's Library}
 }
 
 @online{tool:kindlewordwise,
   url = {https://www.amazon.com/b?ie=UTF8&node=17717476011},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   title = {Look Up Words, People, and Places While You Read}
 }
 
 @online{tool:labella,
   url = {https://twitter.github.io/labella.js/},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   title = {Labella.js}
 }
 
 @online{tool:materialui,
   url = {https://material-ui.com/},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   title = {Material-UI}
 }
 
 @online{tool:mathjax,
   title = {MathJax},
   url={https://mathjax.org/},
-  urlyear = {2021-01-08},
+  lastaccessed = {2021-01-08},
 }
 
 @online{tool:mathml,
   title = {Mathematical Markup Language (MathML)},
   author = {Max Froumentin},
   url = {https://www.w3.org/Math/whatIsMathML.html},
-  urlyear = {2020-09-16}
+  lastaccessed = {2020-09-16}
 }
 
 @online{tool:pdfjs,
   title = {pdf.js},
   author = {{Mozilla and individual contributors}},
   url = {https://mozilla.github.io/pdf.js/},
-  urlyear = {2020-09-16}
+  lastaccessed = {2020-09-16}
 }
 
 @online{tool:peerlibrary,
   url = {https://peerlibrary.org/},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   title = {PeerLibrary}
 }
 
 @online{tool:pubmed,
   url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765694/},
   note = {Example document},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   title = {PubMed}
 }
 
@@ -4369,26 +4273,26 @@ pages="147--163",
 
 @online{tool:scholarcy,
   url = {https://www.scholarcy.com/scholarcy-features/},
-  urlyear = {2020-07-24},
+  lastaccessed = {2020-07-24},
   title = {Scholarcy}
 }
 
 @online{tool:sciencedirect,
   url={https://sciencedirect.com/science/article/pii/S0939388918301181},
   note={Example document},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   title = {ScienceDirect}
 }
 
 @online{tool:scihive,
   url = {https://start.scihive.org/},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   title = {SciHive}
 }
 
 @online{tool:springer,
   url = {https://link.springer.com/chapter/10.1007/978-3-030-01424-7_27},
-  urlyear = {2020-09-16},
+  lastaccessed = {2020-09-16},
   note = {Example document},
   title = {Springer}
 }
@@ -4414,17 +4318,11 @@ pages="147--163",
   pages = "3285--3301"
 }
 
-@online{tool:vscode,
-  url = {https://code.visualstudio.com/},
-  urlyear = {2020-09-16},
-  key = {VSCode}
-}
-
 @online{ref:wikipediapagepreviews,
   title = {Page Previews},
   author = {{MediaWiki contributors}},
   url = {https://www.mediawiki.org/wiki/Page_Previews},
-  urlyear = {2020-09-16}
+  lastaccessed = {2020-09-16}
 }
 
 @inproceedings{ref:kang2020heddex,
