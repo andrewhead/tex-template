@@ -786,10 +786,9 @@ FUNCTION { output.year.check }
   year empty.or.unknown
      { "empty year in " cite$ * warning$
        write$
-       % " \bibinfo{year}{[n.\,d.]}"
-       % \bibinfo{year}{}"
-       % "\natexlab{" extra.label * "}" * *
-       % mid.sentence 'output.state :=
+       " \bibinfo{year}{[n.\,d.]}"
+       "\natexlab{" extra.label * "}" * *
+       mid.sentence 'output.state :=
      }
      { write$
        " \bibinfo{year}{" year * "}"  *
@@ -2427,25 +2426,7 @@ FUNCTION { misc }
   fin.entry
 }
 
-FUNCTION { online }
-{
-  output.bibitem
-  format.authors "author" output.check
-  author format.key output            % added
-  format.title output
-  calc.format.page.count output
-  fin.block
-  output.url
-  note empty.or.unknown
-    { }
-    {
-      "\newblock" writeln
-      output.note
-    }
-  if$
-  ""
-  fin.entry
-}
+FUNCTION { online } { manual }
 
 FUNCTION { game } { manual }
 
@@ -3081,24 +3062,7 @@ FUNCTION { begin.bib }
   "\providecommand\bibfield[2]{#2}" writeln
   "\providecommand\bibinfo[2]{#2}" writeln
   "\providecommand\natexlab[1]{#1}" writeln
-  "\providecommand\showeprint[2][]{arXiv:#2}" writelnFUNCTION { output.year.check }
-{ % warn if year empty, output top string and leave " YEAR<label>" on stack in mid-sentence
-  year empty.or.unknown
-     { "empty year in " cite$ * warning$
-       write$
-       % " \bibinfo{year}{[n.\,d.]}"
-       % \bibinfo{year}{}"
-       % "\natexlab{" extra.label * "}" * *
-       % mid.sentence 'output.state :=
-     }
-     { write$
-       " \bibinfo{year}{" year * "}"  *
-       "\natexlab{" extra.label * "}" * *
-       mid.sentence 'output.state :=
-     }
-  if$
-}
-
+  "\providecommand\showeprint[2][]{arXiv:#2}" writeln
 }
 
 EXECUTE {begin.bib}
