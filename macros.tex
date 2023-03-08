@@ -12,6 +12,26 @@
 \newcommand\important[1]{\textcolor{darkgreen}{#1}}
 \newcommand\unimportant[1]{\textcolor{gray}{\sout{#1}}}
 \newcommand\move[1]{\textcolor{andreworange}{#1}}
+\newcommand{\change}[1]{\textcolor{andrewpurple}{#1}}
+\newenvironment{changes}
+{\begingroup\color{andrewpurple}}
+{\endgroup}
+
+% Fonts
+\def\computer#1{{\small\texttt{#1}}}
+\AtBeginEnvironment{quote}{\itshape}
+
+% Sectioning
+\def\subparagraph#1{\textbf{#1.}}
+
+% URL formatting
+\def\UrlBigBreaks{\do\/\do-\do\#}
+
+% Spacing helpers
+\def\shortspace{\kern 0.1em}
+
+% Common strings
+\def\KaTeX{K\kern-.2em\raisebox{.2em}{\scriptsize A}\kern-.12em\TeX}
 
 % Drawing boxes as isotypes in table
 % Based on feedback from https://tex.stackexchange.com/questions/32597/vertically-centered-horizontal-rule-filling-the-rest-of-a-line
@@ -28,13 +48,20 @@
 \boxnum=0
 \loop
 \ifnum \boxnum<#1 \bigbox \else \smallbox \fi
+
 \advance \boxnum by 1
 \ifnum \boxnum<#2
 \repeat
 }
 
-% Spacing
-\def\shortspace{\kern 0.1em}
+% Inline figures
+\newenvironment{inlinefigureenv}
+{\setlength{\topsep}{2.5ex}\center}
+{\endcenter}
 
-% Fonts
-\def\alexa#1{{\small\texttt{#1}}}
+\newcommand{\inlinefigure}[2][.5\textwidth]{%
+\begin{inlinefigureenv}%
+\includegraphics[width=#1]{#2}%
+\vspace{-1.25ex}%
+\end{inlinefigureenv}%
+}

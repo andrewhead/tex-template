@@ -1,12 +1,61 @@
-\documentclass[sigconf]{acmart}
-% \documentclass{article}
-% \documentclass{acmart}
+\newif\ifreview
+\newif\ifpreprint
+\newif\ifauthorversion
 
+% \reviewtrue
+% \preprinttrue
+% \authorversiontrue
+
+% Review version
+\ifreview
+\documentclass[manuscript,screen,anonymous]{acmart}
+\else
+% Preprint (e.g., for arXiv)
+\ifpreprint
+\documentclass[sigconf,screen,nonacm]{acmart}
+\else
+% Author version (for posting on personal sites)
+\ifauthorversion
+\documentclass[sigconf,screen,authorversion]{acmart}
+\else
+% Version submitted to ACM
+\documentclass[sigconf]{acmart}
+% Changes highlighted
+% \documentclass[manuscript,review,screen]{acmart}
+\fi
+\fi
+\fi
+
+% Packages should be approved by TAPS
 \usepackage{url}
 
-% \input{macros}
+\input{macros}
+
+\title{Template TeX project}
+
+\author{Andrew Head}
+\email{head@seas.upenn.edu}
+\orcid{0000-0002-1523-3347}
+\affiliation{%
+  \institution{University of Pennsylvania}
+  \city{Philadelphia, PA}
+  \country{United States of America}
+}
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10003120.10003121.10003129</concept_id>
+<concept_desc>Human-centered computing~Interactive systems and tools</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Human-centered computing~Interactive systems and \nolinebreak tools}
 
 \begin{document}
+
+\maketitle
 
 This is an example document listing all of the references
 from the references file.
