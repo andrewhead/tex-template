@@ -18,11 +18,13 @@ cat $auxfile |\
   sort |\
   uniq > cited-papers.txt
 
+# Extract reference keys from (specific) bib file.
 cat $bibfile |
   grep "^@" |\
   sed -e 's/.*{\([^,]*\).*/\1/g' |\
   sort > bib-entries.txt
 
+# Print out differences.
 echo "Unused but defined references:"
 diff cited-papers.txt bib-entries.txt | grep "^>"
 
