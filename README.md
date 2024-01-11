@@ -1,5 +1,8 @@
-For reason I am not sure of, this project requires 4 compilations, where 2 of
-those will yield compilation errors, to successfully print out all references.
+# References file and utilities for Andrew's projects
+
+Compile "main.pdf" to preview the appearance of references as they might
+appear in a CHI submission. (This project uses a CHI template as of around
+2022).
 
 The anticipated workflow for integrating this into a LaTeX project is...
 
