@@ -25,6 +25,12 @@
 %     that tool.
 %   - Each tool should have a 'title' and a 'urlyear'.
 %
+% To merge a clean reference file with this one:
+% * Use the "find unused" shell script in Andrew's LaTeX utility repository.
+% * Delete the unused references.
+% * Copy them into the end of this file.
+% * Tidy and de-duplicate the refereneces using the link just below.
+%
 % Entries should be sorted, formatted, and de-duplicated using
 % https://flamingtempura.github.io/bibtex-tidy/index.html?opt=%7B%22curly%22%3Atrue%2C%22numeric%22%3Atrue%2C%22space%22%3A2%2C%22tab%22%3Afalse%2C%22align%22%3A1%2C%22blankLines%22%3Atrue%2C%22sort%22%3A%5B%22type%22%2C%22key%22%2C%22author%22%2C%22title%22%5D%2C%22duplicates%22%3A%5B%22key%22%5D%2C%22stripEnclosingBraces%22%3Afalse%2C%22dropAllCaps%22%3Afalse%2C%22escape%22%3Afalse%2C%22sortFields%22%3A%5B%22title%22%2C%22shorttitle%22%2C%22author%22%2C%22year%22%2C%22month%22%2C%22day%22%2C%22journal%22%2C%22booktitle%22%2C%22location%22%2C%22on%22%2C%22publisher%22%2C%22address%22%2C%22series%22%2C%22volume%22%2C%22number%22%2C%22pages%22%2C%22doi%22%2C%22isbn%22%2C%22issn%22%2C%22url%22%2C%22urldate%22%2C%22copyright%22%2C%22category%22%2C%22note%22%2C%22metadata%22%5D%2C%22stripComments%22%3Afalse%2C%22trailingCommas%22%3Afalse%2C%22encodeUrls%22%3Afalse%2C%22tidyComments%22%3Atrue%2C%22removeEmptyFields%22%3Afalse%2C%22removeDuplicateFields%22%3Afalse%2C%22lowercase%22%3Atrue%2C%22backup%22%3Atrue%7D
 @preamble{"
@@ -149,6 +155,17 @@
   year = 2023,
   journal = {\journaltochi},
   note = {\toappear}
+}
+
+@article{ref:ayres2006impact,
+  title = {Impact of Reducing Intrinsic Cognitive Load on Learning in a Mathematical Domain},
+  author = {Ayres, Paul},
+  year = 2006,
+  journal = {Applied Cognitive Psychology},
+  publisher = {\pubwiley},
+  volume = 20,
+  number = 3,
+  pages = {287--298}
 }
 
 @article{ref:badam2018elastic,
@@ -295,6 +312,17 @@
   pages = {511--520}
 }
 
+@article{ref:burnett2016gendermag,
+  title = {{G}ender{M}ag: A Method for Evaluating Software's Gender Inclusiveness},
+  author = {Burnett, Margaret and Stumpf, Simone and Macbeth, Jamie and Makri, Stephann and Beckwith, Laura and Kwan, Irwin and Peters, Anicia and Jernigan, William},
+  year = 2016,
+  journal = {Interacting with Computers},
+  publisher = {Oxford University Press},
+  volume = 28,
+  number = 6,
+  pages = {760--787}
+}
+
 @article{ref:buse2009learning,
   title = {Learning a Metric for Code Readability},
   author = {Buse, Raymond P.L. and Weimer, Westley R.},
@@ -314,6 +342,17 @@
   volume = 176,
   number = 1,
   pages = {101--108}
+}
+
+@article{ref:caplan2009every,
+  title = {Every Equation Tells a Story: Using Equation Dictionaries in Introductory Geophysics},
+  author = {Caplan-Auerbach, Jacqueline},
+  year = 2009,
+  journal = {Journal of Geoscience Education},
+  publisher = {Taylor \& Francis},
+  volume = 57,
+  number = 5,
+  pages = {348--355}
 }
 
 @article{ref:card1991morphological,
@@ -451,7 +490,7 @@
 }
 
 @article{ref:ge2020canis,
-  title = {Canis: A High‐Level Language for Data‐Driven Chart Animations},
+  title = {Canis: A High-Level Language for Data-Driven Chart Animations},
   author = {Tong Ge and Yue Zhao and Bongshin Lee and Donghao Ren and Baoquan Chen and Yunhai Wang},
   year = 2020,
   journal = {Computer Graphics Forum},
@@ -498,6 +537,17 @@
   publisher = {\pubacm}
 }
 
+@article{ref:goldstone2017adapting,
+  title = {Adapting perception, action, and technology for mathematical reasoning},
+  author = {Goldstone, Robert L and Marghetis, Tyler and Weitnauer, Erik and Ottmar, Erin R and Landy, David},
+  year = 2017,
+  journal = {Current Directions in Psychological Science},
+  publisher = {SAGE Publications Sage CA: Los Angeles, CA},
+  volume = 26,
+  number = 5,
+  pages = {434--441}
+}
+
 @article{ref:goues2019automated,
   title = {Automated Program Repair},
   author = {Le Goues, Claire and Pradel, Michael and Roychoudhury, Abhik},
@@ -506,6 +556,16 @@
   number = 12,
   pages = {56--65},
   journaltitle = {\journalcacm}
+}
+
+@article{ref:gray1994duality,
+  title = {Duality, Ambiguity, and Flexibility: A ``Proceptual'' View of Simple Arithmetic},
+  author = {Gray, Eddie M. and Tall, David O.},
+  year = 1994,
+  journal = {Journal for Research in Mathematics Education},
+  volume = 25,
+  number = 2,
+  pages = {116--140}
 }
 
 @article{ref:gulwani2017program,
@@ -632,6 +692,17 @@
   journaltitle = {Transactions on Visualization and Computer Graphics}
 }
 
+@article{ref:knauff2014efficiency,
+  title = {An efficiency comparison of document preparation systems used in academic research and development},
+  author = {Knauff, Markus and Nejasmic, Jelica},
+  year = 2014,
+  journal = {PloS one},
+  publisher = {Public Library of Science},
+  volume = 9,
+  number = 12,
+  pages = {e115069}
+}
+
 @article{ref:knuth1984literate,
   title = {Literate Programming},
   author = {Knuth, Donald E.},
@@ -735,6 +806,16 @@
   journaltitle = {AI Magazine}
 }
 
+@article{ref:laviola2006mathpad2,
+  title = {Math{P}ad$^2$: A System for the Creation and Exploration of Mathematical Sketches},
+  author = {LaViola Jr., Joseph J. and Zeleznik, Robert C.},
+  year = 2006,
+  journal = {ACM Transactions on Graphics},
+  volume = 23,
+  pages = {432--440},
+  issue = 3
+}
+
 @article{ref:lawrance2010programmers,
   title = {How Programmers Debug, Revisited: An Information Foraging Theory Perspective},
   author = {Lawrance, Joseph and Bogart, Christopher and Burnett, Margaret and Bellamy, Rachel and Rector, Kyle and Fleming, Scott D.},
@@ -820,6 +901,27 @@
   journaltitle = {The Journal of Systems and Software}
 }
 
+@article{ref:ma2021latexify,
+  title = {Latexify Math: Mathematical Formula Markup Revision to Assist Collaborative Editing in Math Q\&A Sites},
+  author = {Ma, Suyu and Chen, Chunyang and Khalajzadeh, Hourieh and Grundy, John},
+  year = 2021,
+  journal = {Proceedings of the ACM on Human-Computer Interaction},
+  publisher = {ACM New York, NY, USA},
+  volume = 5,
+  number = {CSCW2},
+  pages = {1--24}
+}
+
+@article{ref:mackenzie1992fitts,
+  title = {Fitts' Law as a Research and Design Tool in Human-Computer Interaction},
+  author = {MacKenzie, I. Scott},
+  year = 1992,
+  journal = {Human-Computer Interaction},
+  publisher = {Lawrence Elbaum Associates},
+  volume = 7,
+  pages = {91--139}
+}
+
 @article{ref:macleod2017documenting,
   title = {Documenting and sharing software knowledge using screencasts},
   author = {MacLeod, Laura and Bergen, Andreas and Storey, Margaret-Anne},
@@ -840,6 +942,16 @@
   journaltitle = {Journal of Computing Sciences in Colleges}
 }
 
+@article{ref:marghetis2016mastering,
+  title = {Mastering algebra retrains the visual system to perceive hierarchical structure in equations},
+  author = {Marghetis, Tyler and Landy, David and Goldstone, Robert L.},
+  year = 2016,
+  journal = {Cognitive research: principles and implications},
+  publisher = {\pubspringer},
+  volume = 1,
+  pages = {1--10}
+}
+
 @article{ref:marshall2016robotreviewer,
   title = {RobotReviewer: evaluation of a system for automatically assessing bias in clinical trials},
   author = {Marshall, Iain J and Kuiper, Jo{\"e}l and Wallace, Byron C},
@@ -849,6 +961,17 @@
   volume = 23,
   number = 1,
   pages = {193--201}
+}
+
+@article{ref:matthews2019craft,
+  title = {Craft beautiful equations in Word with LaTeX},
+  author = {Matthews, David},
+  year = 2019,
+  journal = {Nature},
+  publisher = {Nature},
+  volume = 570,
+  number = 7760,
+  pages = {263--264}
 }
 
 @article{ref:mccartney2018annotated,
@@ -871,6 +994,16 @@
   number = 11,
   pages = {861--867},
   journaltitle = {\journalcacm}
+}
+
+@article{ref:misfeldt2011computers,
+  title = {Computers as medium for mathematical writing},
+  author = {Misfeldt, Morten},
+  year = 2011,
+  journal = {Semiotica},
+  publisher = {Walter de Gruyter GmbH \& Co. KG},
+  volume = 2011,
+  pages = 239
 }
 
 @article{ref:mohammadi2015reads,
@@ -1033,6 +1166,26 @@
   journaltitle = {\journalsoftware}
 }
 
+@article{ref:redish2015language,
+  title = {Language of Physics, Language of Math: Disciplinary Culture and Dynamic Epistemology},
+  author = {Redish, Edward F. and Kuo, Eric},
+  year = 2015,
+  journal = {Science \& Education},
+  publisher = {\pubspringer},
+  volume = 24,
+  pages = {561--590}
+}
+
+@article{ref:rein2018exploratory,
+  title = {Exploratory and Live, Programming and Coding},
+  author = {Rein, Patrick and Ramson, Stefan and Lincke, Jens and Hirschfeld, Robert and Pape, Tobias},
+  year = 2018,
+  journal = {The Art, Science, and Engineering of Programming},
+  publisher = {Aspect-Oriented Software Association ({AOSA})},
+  volume = 3,
+  number = 1
+}
+
 @article{ref:robillard2009makes,
   title = {{What} {Makes} {APIs} {Hard} to {Learn?} {Answers} from {Developers}},
   author = {Robillard, Martin P.},
@@ -1142,6 +1295,17 @@
   pages = {74--86}
 }
 
+@article{ref:sherin2001students,
+  title = {How Students Understand Physics Equations},
+  author = {Sherin, Bruce L.},
+  year = 2001,
+  journal = {Cognition and Instruction},
+  publisher = {Lawrence Elbaum Associates},
+  volume = 19,
+  number = 4,
+  pages = {479--541}
+}
+
 @article{ref:shneiderman1979syntactic,
   title = {Syntactic/Semantic Interactions in Programmer Behavior: A Model and Experimental Results},
   author = {Shneiderman, Ben and Mayer, Richard},
@@ -1179,6 +1343,17 @@
   journal = {\journaltvcg},
   volume = 25,
   pages = {672--681}
+}
+
+@article{ref:stadler2000boys,
+  title = {Do boys and girls understand physics differently?},
+  author = {Stadler, Helga and Duit, Reinders and Benke, Gertraud},
+  year = 2000,
+  journal = {Physics education},
+  publisher = {IOP Publishing},
+  volume = 35,
+  number = 6,
+  pages = {417--422}
 }
 
 @article{ref:tanimoto1990viva,
@@ -1279,6 +1454,17 @@
   journaltitle = {\journalcacm}
 }
 
+@article{ref:wagemans2012century,
+  title = {A Century of {G}estalt psychology in Visual Perception I. Perceptual Grouping and Figure-Ground Organization},
+  author = {Wagemans, Johan and Elder, James H. and Kubovy, Michael and Palmer, Stephen E. and Peterson, Mary A. and Singh, Manish and von der Heydt, R{\"u}diger},
+  year = 2012,
+  journal = {Psychological bulletin},
+  publisher = {American Psychological Association},
+  volume = 138,
+  number = 6,
+  pages = {1172--1217}
+}
+
 @article{ref:wang2014automatic,
   title = {Automatic Segmentation of Method Code into Meaningful Blocks: Design and Evaluation},
   author = {Wang, Xiaoran and Pollock, Lori and Vijay-Shanker, K.},
@@ -1308,6 +1494,7 @@
   journal = {Journal of Numerical Cognition},
   publisher = {PsychOpen},
   volume = 6,
+  number = 3,
   pages = {378--392}
 }
 
@@ -1329,6 +1516,16 @@
   number = 3,
   pages = {38--44},
   journaltitle = {ACM Interactions}
+}
+
+@article{ref:wolfe2019preattentive,
+  title = {What is a preattentive feature?},
+  author = {Wolfe, Jeremy M and Utochkin, Igor S},
+  year = 2019,
+  journal = {Current Opinion in Psychology},
+  publisher = {Elsevier},
+  volume = 29,
+  pages = {19--26}
 }
 
 @article{ref:wu2019developers,
@@ -1409,6 +1606,13 @@
   year = 1956,
   publisher = {Butterworths},
   edition = 3
+}
+
+@book{ref:bruce2020practical,
+  title = {Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python},
+  author = {Bruce, Peter and Bruce, Andrew and Gedeck, Peter},
+  year = 2020,
+  publisher = {O'Reilly Media}
 }
 
 @book{ref:carroll1990nurnberg,
@@ -1587,12 +1791,21 @@
 }
 
 @incollection{ref:blackwell2003notational,
-  title = {Notational Systems---The {C}ognitive {D}imensions of {N}otations Framework},
+  title = {Notational Systems -- The {C}ognitive {D}imensions of {N}otations framework},
   author = {Blackwell, Alan and Green, Thomas},
   year = 2003,
   booktitle = {HCI Models, Theories, and Frameworks: Toward a Multidisciplinary Science},
   publisher = {\pubmorgankaufmann},
   pages = {103--134}
+}
+
+@incollection{ref:leitner2010nice,
+  title = {{NiCE} Formula Editor},
+  author = {Leitner, Jakob and Rendl, Christian and Perteneder, Florian and Gokcezade, Adam and Seifried, Thomas and Haller, Michael and Zeleznik, Robert and Bragdon, Andrew},
+  year = 2010,
+  booktitle = {SIGGRAPH Talks},
+  publisher = {\pubacm},
+  articleno = 55
 }
 
 @incollection{ref:pirolli2003exploring,
@@ -1662,6 +1875,14 @@
   year = 2001,
   booktitle = {Workshop on Inspection in Software Engineering},
   pages = {4--11}
+}
+
+@inproceedings{ref:anthony2005evaluation,
+  title = {Evaluation of multimodal input for entering mathematical equations on the computer},
+  author = {Anthony, Lisa and Yang, Jie and Koedinger, Kenneth R},
+  year = 2005,
+  booktitle = {CHI'05 Extended Abstracts on Human Factors in Computing Sys},
+  pages = {1184--1187}
 }
 
 @inproceedings{ref:barik2016quick,
@@ -1804,7 +2025,17 @@
   author = {Carrie J. Cai and Philip J. Guo},
   year = 2019,
   booktitle = {\confvlhcc},
+  publisher = {\pubieee},
   pages = {25--34}
+}
+
+@inproceedings{ref:cao2023dataparticles,
+  title = {{D}ata{P}articles: Block-based and Language-oriented Authoring of Animated Unit Visualizations},
+  author = {Cao, Yining and E, Jane L. and Chen, Zhutian and Xia, Haijun},
+  year = 2023,
+  booktitle = {\confchi},
+  publisher = {\pubacm},
+  note = {\articleno{808}}
 }
 
 @inproceedings{ref:chang1998negotiation,
@@ -1850,6 +2081,15 @@
   booktitle = {\conflas},
   publisher = {\pubacm},
   note = {\articleno{9}}
+}
+
+@inproceedings{ref:chi2012mixt,
+  title = {{MixT}: Automatic Generation of Step-by-Step Mixed Media Tutorials},
+  author = {Chi, Pei-Yu (Peggy) and Ahn, Sally and Ren, Amanda and Dontcheva, Mira and Li, Wilmot and Hartmann, Bj{\"o}rn},
+  year = 2012,
+  booktitle = {\confuist},
+  publisher = {\pubacm},
+  pages = {93--102}
 }
 
 @inproceedings{ref:chi2018doppio,
@@ -1901,6 +2141,14 @@
   author = {Conlen, Matthew and Hohman, Fred},
   year = 2019,
   booktitle = {Visualization for Communication Workshop}
+}
+
+@inproceedings{ref:crichton2021new,
+  title = {A New Medium for Communicating Research on Programming Languages},
+  author = {Crichton, Will},
+  year = 2021,
+  booktitle = {\confhatra},
+  publisher = {\pubacm}
 }
 
 @inproceedings{ref:cuoq2012framac,
@@ -2005,7 +2253,7 @@
   author = {Pierre Dragicevic and Yvonne Jansen and Abhraneel Sarma and Matthew Kay and Fanny Chevalier},
   year = 2019,
   booktitle = {\confchi},
-  pages = {1–15}
+  pages = {1--15}
 }
 
 @inproceedings{ref:dragunov2003designing,
@@ -2202,6 +2450,14 @@
   pages = {219--228}
 }
 
+@inproceedings{ref:grossman2010chronicle,
+  title = {Chronicle: Capture, Exploration, and Playback of Document Workflow Histories},
+  author = {Grossman, Tovi and Matejka, Justin and Fitzmaurice, George},
+  year = 2010,
+  booktitle = {\confuist},
+  pages = {143--152}
+}
+
 @inproceedings{ref:grossman2015your,
   title = {Your Paper is Dead! Bringing Life to Research Articles with Animated Figures},
   author = {Grossman, Tovi and Chevalier, Fanny and Kazi, Rubaiat Habib},
@@ -2227,6 +2483,15 @@
   booktitle = {Proceedings of the International Conference on Computer Aided Verification},
   publisher = {\pubspringer},
   pages = {418--423}
+}
+
+@inproceedings{ref:han2020textlets,
+  title = {Textlets: supporting constraints and consistency in text documents},
+  author = {Han, Han L. and Renom, Miguel A. and Mackay, Wendy E. and Beaudouin-Lafon, Michel},
+  year = 2020,
+  booktitle = {\confchi},
+  publisher = {\pubacm},
+  note = {\paperno{675}}
 }
 
 @inproceedings{ref:hartmann2008design,
@@ -2306,6 +2571,16 @@
   author = {Andrew Head and Kyle Lo and Dongyeop Kang and Raymond Fok and Sam Skjonsberg and Daniel S. Weld and Marti A. Hearst},
   year = 2021,
   booktitle = {\confchi}
+}
+
+@inproceedings{ref:head2022math,
+  title = {Math Augmentation: How Authors Enhance the Readability of Formulas Using Novel Visual Design Practices},
+  author = {Head, Andrew and Xie, Amber and Hearst, Marti A.},
+  year = 2022,
+  booktitle = {\confchi},
+  publisher = {\pubacm},
+  note = {\paperno{491}},
+  articleno = 491
 }
 
 @inproceedings{ref:hempel2018deuce,
@@ -2466,11 +2741,21 @@
   pages = {2073--2083}
 }
 
+@inproceedings{ref:jahanlou2022katika,
+  title = {Katika: An End-to-End System for Authoring Amateur Explainer Motion Graphics Videos},
+  author = {Jahanlou, Amir and Chilana, Parmit K.},
+  year = 2022,
+  booktitle = {\confchi},
+  publisher = {\pubacm},
+  articleno = 502
+}
+
 @inproceedings{ref:jansen1999perceiving,
   title = {Perceiving structure in mathematical expressions},
   author = {Anthony R. Jansen and Kim Marriott and Greg Yelland},
   year = 1999,
-  booktitle = {Proceedings of the  Conference of the Cognitive Science Society}
+  booktitle = {Proceedings of the  Conference of the Cognitive Science Society},
+  publisher = {Psychology Press}
 }
 
 @inproceedings{ref:jayaraman2005kaveri,
@@ -2816,6 +3101,15 @@
   pages = {727--738}
 }
 
+@inproceedings{ref:lee2023deimos,
+  title = {Deimos: A Grammar of Dynamic Embodied Immersive Visualisation Morphs and Transitions},
+  author = {Lee, Benjamin and Satyanarayan, Arvind and Cordeil, Maxime and Prouzeau, Arnaud and Jenny, Bernhard and Dwyer, Tim},
+  year = 2023,
+  booktitle = {\confchi},
+  publisher = {\pubacm},
+  articleno = 810
+}
+
 @inproceedings{ref:leshed2008coscripter,
   title = {CoScripter: Automating \& Sharing How-To Knowledge in the Enterprise},
   author = {Leshed, Gilly and Haber, Eben M. and Matthews, Tara and Lau, Tessa},
@@ -2832,6 +3126,15 @@
   booktitle = {Proceedings of the International Conference on Computational Linguistics},
   publisher = {International Committee on Computational Linguistics},
   pages = {949--960}
+}
+
+@inproceedings{ref:li2022heartdown,
+  title = {H{\ensuremath\varheartsuit}rtDown: Document Processor for Executable Linear Algebra Papers},
+  author = {Li, Yong and Kamil, Shoaib and Jacobson, Alec and Gingold, Yotam},
+  year = 2022,
+  booktitle = {SIGGRAPH Asia 2022 Conference Papers},
+  publisher = {ACM},
+  articleno = 51
 }
 
 @inproceedings{ref:lieber2014addressing,
@@ -2977,6 +3280,15 @@
   pages = {53--62}
 }
 
+@inproceedings{ref:mendes2014structure,
+  title = {Structure Editing of Handwritten Mathematics: Improving the Computer Support for the Calculational Method},
+  author = {Mendes, Alexandra and Backhouse, Roland and Ferreira, Jo\~ao F.},
+  year = 2014,
+  booktitle = {Proceedings of the International Conference on Interactive Tabletops and Surfaces},
+  publisher = {\pubacm},
+  pages = {139--148}
+}
+
 @inproceedings{ref:miltner2019fly,
   title = {On the Fly Synthesis of Edit Suggestions},
   author = {Miltner, Anders and Gulwani, Sumit and Le, Vu and Leung, Alan and Radhakrishna, Arjun and Soares, Gustavo and Tiwari, Ashish and Udupa, Abhishek},
@@ -3023,6 +3335,15 @@
   pages = {703--714}
 }
 
+@inproceedings{ref:mysore2023how,
+  title = {How Data Scientists Review the Scholarly Literature},
+  author = {Mysore, Sheshera and Jasim, Mahmood and Song, Haoru and Akbar, Sarah and Randall, Andre Kenneth Chase and Mahyar, Narges},
+  year = 2023,
+  booktitle = {Proceedings of the Conference on Human Information Interaction and Retrieval},
+  publisher = {\pubacm},
+  pages = {137–152}
+}
+
 @inproceedings{ref:nasehi2010unit,
   title = {Unit Tests as API Usage Examples},
   author = {Nasehi, Seyed Mehdi and Maurer, Frank},
@@ -3056,6 +3377,15 @@
   booktitle = {\conffsesymposium},
   publisher = {\pubacm},
   pages = {1013--1017}
+}
+
+@inproceedings{ref:nielsen1994enhancing,
+  title = {Enhancing the Explanatory Power of Usability Heuristics},
+  author = {Nielsen, Jakob},
+  year = 1994,
+  booktitle = {\confchi},
+  publisher = {\pubacm},
+  pages = {152--158}
 }
 
 @inproceedings{ref:norcio1982indentation,
@@ -3174,6 +3504,15 @@
   pages = {211--214}
 }
 
+@inproceedings{ref:pavel2014video,
+  title = {Video Digests: A Browsable, Skimmable Format for Informational Lecture Videos},
+  author = {Pavel, Amy and Reed, Colorado and Hartmann, Bj{\"o}rn and Agrawala, Maneesh},
+  year = 2014,
+  booktitle = {\confuist},
+  publisher = {\pubacm},
+  pages = {573--582}
+}
+
 @inproceedings{ref:polozov2015flashmeta,
   title = {FlashMeta: A Framework for Inductive Program Synthesis},
   author = {Polozov, Oleksandr and Gulwani, Sumit},
@@ -3194,7 +3533,7 @@
 
 @inproceedings{ref:potter2022contextualized,
   title = {Contextualized Programming Language Documentation},
-  author = {Potter, Hannah and Madadi, Ardi and Just, Ren{\'e} and Omar, Cyrus},
+  author = {Potter, Hannah and Madadi, Ardi and Just, Ren\'e and Omar, Cyrus},
   year = 2022,
   booktitle = {\confonward},
   publisher = {\pubacm},
@@ -3207,6 +3546,15 @@
   year = 2009,
   booktitle = {Document Recognition and Retrieval},
   publisher = {International Society for Optics and Photonics}
+}
+
+@inproceedings{ref:pysbd,
+  title = {{P}y{SBD}: Pragmatic Sentence Boundary Disambiguation},
+  author = {Sadvilkar, Nipun  and Neumann, Mark},
+  year = 2020,
+  booktitle = {Proceedings of the Second Workshop for NLP Open Source Software},
+  publisher = {Association for Computational Linguistics},
+  pages = {110--114}
 }
 
 @inproceedings{ref:qian2019beyond,
@@ -3228,10 +3576,11 @@
 }
 
 @inproceedings{ref:ren2017chartaccent,
-  title = {ChartAccent: Annotation for data-driven storytelling},
-  author = {Donghao Ren and M. Brehmer and Bongshin Lee and Tobias H{\"o}llerer and E. Choe},
+  title = {ChartAccent: Annotation for Data-Driven Storytelling},
+  author = {Donghao Ren and Matthew Brehmer and Bongshin Lee and Tobias H{\"o}llerer and Eun Kyoung Choe},
   year = 2017,
-  booktitle = {Proceedings of the IEEE Pacific Visualization Symposium (PacificVis)},
+  booktitle = {Proceedings of the Pacific Visualization Symposium},
+  publisher = {\pubieee},
   pages = {230--239}
 }
 
@@ -3301,7 +3650,9 @@
   title = {Constructing Embodied Algebra by Sketching},
   author = {Saquib, Nazmus and Kazi, Rubaiat Habib and Wei, Li-yi and Mark, Gloria and Roy, Deb},
   year = 2021,
-  booktitle = {\confchi}
+  booktitle = {\confchi},
+  publisher = {\pubacm},
+  articleno = 428
 }
 
 @inproceedings{ref:satyanarayan2017vegalite,
@@ -3323,7 +3674,7 @@
 }
 
 @inproceedings{ref:seyser2018scrollytelling,
-  title = {Scrollytelling – An Analysis of Visual Storytelling in Online Journalism},
+  title = {Scrollytelling --- An Analysis of Visual Storytelling in Online Journalism},
   author = {Doris Seyser and M. Zeiller},
   year = 2018,
   booktitle = {2018 22nd International Conference Information Visualisation (IV)},
@@ -3492,6 +3843,15 @@
   pages = {118--129}
 }
 
+@inproceedings{ref:thompson2021data,
+  title = {Data {A}nimator: Authoring Expressive Animated Data Graphics},
+  author = {Thompson, John and Liu, Zhicheng and Stasko, John},
+  year = 2021,
+  booktitle = {\confchi},
+  publisher = {\pubacm},
+  articleno = 15
+}
+
 @inproceedings{ref:tiarks2014does,
   title = {How Does a Typical Tutorial for Mobile Development Look Like?},
   author = {Tiarks, Rebecca and Maalej, Walid},
@@ -3517,6 +3877,15 @@
   booktitle = {\confvlhcc},
   publisher = {\pubieee},
   pages = {173--180}
+}
+
+@inproceedings{ref:topping1999using,
+  title = {Using MathType to create TeX and MathML equations},
+  author = {Topping, Paul},
+  year = 1999,
+  booktitle = {Proceedings of the 1999 TEX Annual Meeting, TUGBoat},
+  volume = 20,
+  number = 3
 }
 
 @inproceedings{ref:treude2011programmers,
@@ -3572,12 +3941,30 @@
   pages = {9098--9105}
 }
 
+@inproceedings{ref:wang2023colaroid,
+  title = {Colaroid: A Literate Programming Approach for Authoring Explorable Multi-Stage Tutorials},
+  author = {Wang, April Yi and Head, Andrew and Zhang, Ashley and Oney, Steve and Brooks, Christopher},
+  year = 2023,
+  booktitle = {\confchi},
+  publisher = {\pubacm},
+  articleno = 798
+}
+
 @inproceedings{ref:warner2018electrotutor,
   title = {ElectroTutor: Test-Driven Physical Computing Tutorials},
   author = {Jeremy Warner and Ben Lafreniere and George Fitzmaurice and Tovi Grossman},
   year = 2018,
   booktitle = {\confuist},
-  pages = {435–446}
+  pages = {435--446}
+}
+
+@inproceedings{ref:weir2015learnersourcing,
+  title = {Learnersourcing Subgoal Labels for How-to Videos},
+  author = {Weir, Sarah and Kim, Juho and Gajos, Krzysztof Z. and Miller, Robert C.},
+  year = 2015,
+  booktitle = {\confcscw},
+  publisher = {\pubacm},
+  pages = {405--416}
 }
 
 @inproceedings{ref:weiser1981program,
@@ -3589,6 +3976,15 @@
   pages = {439--449}
 }
 
+@inproceedings{ref:weitnauer2016graspable,
+  title = {Graspable {Math}: Towards Dynamic Algebra Notations that Support Learners Better than Paper},
+  author = {Weitnauer, Erik and Landy, David and Ottmar, Erin},
+  year = 2016,
+  booktitle = {Proceedings of the Future Technologies Conference},
+  publisher = {IEEE},
+  pages = {406--414}
+}
+
 @inproceedings{ref:wightman2012snipmatch,
   title = {SnipMatch: Using Source Code Context to Enhance Snippet Retrieval and Parameterization},
   author = {Wightman, Doug and Ye, Zi and Brandt, Joel and Vertegaal, Roel},
@@ -3596,6 +3992,16 @@
   booktitle = {\confuist},
   publisher = {\pubacm},
   pages = {219--228}
+}
+
+@inproceedings{ref:wongsuphasawat2015voyager,
+  title = {Voyager: Exploratory analysis via faceted browsing of visualization recommendations},
+  author = {Wongsuphasawat, Kanit and Moritz, Dominik and Anand, Anushka and Mackinlay, Jock and Howe, Bill and Heer, Jeffrey},
+  year = 2015,
+  journal = {\journaltvcg},
+  publisher = {\pubieee},
+  volume = 22,
+  pages = {649--658}
 }
 
 @inproceedings{ref:yang2016query,
@@ -3749,15 +4155,6 @@
   pages = {273--297}
 }
 
-@inproceedings{tool:pysbd,
-  title = {{P}y{SBD}: Pragmatic Sentence Boundary Disambiguation},
-  author = {Sadvilkar, Nipun  and Neumann, Mark},
-  year = 2020,
-  booktitle = {Proceedings of the Second Workshop for NLP Open Source Software},
-  publisher = {Association for Computational Linguistics},
-  pages = {110--114}
-}
-
 @manual{ref:alexanderexponential,
   title = {Exponential Improvements},
   author = {Alexander, Andrew M.H.},
@@ -3781,6 +4178,63 @@
   lastaccessed = {December 27, 2021}
 }
 
+@manual{ref:carlisle1997color,
+  title = {The \texttt{color} package},
+  author = {Carlisle, David P.},
+  year = 1997,
+  address = {CTAN-Archive}
+}
+
+@manual{ref:googleslides,
+  url = {https://slides.google.com},
+  key = {Google Slides\eatnexttoken},
+  lastaccessed = {March 29, 2023}
+}
+
+@manual{ref:inkscape,
+  url = {https://inkscape.org/},
+  key = {Inkscape\eatnexttoken},
+  lastaccessed = {March 29, 2023}
+}
+
+@manual{ref:katex,
+  title = {KaTeX},
+  author = {Emily Eisenberg and Sophie Alpert},
+  url = {https://katex.org},
+  lastaccessed = {September 16, 2020}
+}
+
+@manual{ref:latex,
+  url = {https://www.latex-project.org},
+  key = {The \LaTeX{} Project\eatnexttoken},
+  lastaccessed = {March 29, 2023}
+}
+
+@manual{ref:madsen2014mathtools,
+  title = {The mathtools package},
+  author = {Madsen, Lars and Robertson, Will and Wright, Joseph},
+  year = 2014,
+  address = {CTAN-Archive}
+}
+
+@manual{ref:manim,
+  url = {https://3b1b.github.io/manim/},
+  key = {manim\eatnexttoken},
+  lastaccessed = {June 26, 2023}
+}
+
+@manual{ref:mathcha,
+  url = {https://www.mathcha.io/},
+  key = {Mathcha\eatnexttoken},
+  lastaccessed = {March 29, 2023}
+}
+
+@manual{ref:powerpoint,
+  url = {https://microsoft.com/powerpoint},
+  key = {Microsoft PowerPoint\eatnexttoken},
+  lastaccessed = {March 29, 2023}
+}
+
 @manual{ref:rougeuxeuclid,
   title = {Byrne's Euclid},
   author = {Rougeux, Nicholas},
@@ -3788,46 +4242,92 @@
   lastaccessed = {December 30, 2021}
 }
 
-@manual{tool:carlisle1997color,
-  title = {The \texttt{color} package},
-  author = {Carlisle, David P.},
-  year = 1997,
-  address = {CTAN-Archive}
+@manual{ref:wordformulaeditor,
+  title = {Write an equation or formula},
+  author = {Microsoft},
+  year = {Retrieved {July 7, 2023}},
+  url = {https://support.microsoft.com/en-au/office/write-an-equation-or-formula-4f799df7-4ca4-4670-afd3-6135768b01d0},
+  lastaccessed = {March 29, 2022}
 }
 
-@manual{tool:katex,
-  title = {KaTeX},
-  author = {Emily Eisenberg and Sophie Alpert},
-  url = {https://katex.org},
-  lastaccessed = {September 16, 2020}
+@manual{tool:codecogs,
+  title = {CodeCogs Equation Editor},
+  author = {Zyba Ltd.},
+  year = {Retrieved {July 7, 2023}},
+  url = {https://editor.codecogs.com/}
 }
 
-@manual{tool:madsen2014mathtools,
-  title = {The mathtools package},
-  author = {Madsen, Lars and Robertson, Will and Wright, Joseph},
-  year = 2014,
-  address = {CTAN-Archive, ctan.org}
+@masterthesis{ref:pollock2022bluefish,
+  title = {Bluefish: A Grammar of Discrete Diagrams},
+  author = {Pollock, Joshua Maxwell},
+  year = 2022,
+  note = {Master's thesis},
+  institution = {Massachusetts Institute of Technology}
 }
 
-@manual{tool:manim,
-  title = {Manim},
-  author = {Sanderson, Grant},
-  url = {https://3b1b.github.io/manim/},
-  organization = {Manim Community}
+@misc{ref:acmtaps,
+  title = {{TAPS} for Conference Organizers},
+  author = {{Association for Computing Machinery}},
+  year = 2022,
+  url = {https://authors.acm.org/proceedings/production-information/taps-for-conference-organizers},
+  lastaccessed = {June 15, 2023}
 }
 
-@online{tool:victortangle,
-  title = {Tangle: a JavaScript library for reactive documents},
-  author = {Victor, Bret},
-  url = {http://worrydream.com/Tangle/},
-  lastaccessed = {August 15, 2021}
+@misc{ref:census2022population,
+  title = {Quick Facts: Philadelphia city, Pennsylvania},
+  author = {{United States Census Bureau}},
+  url = {https://www.census.gov/quickfacts/philadelphiacitypennsylvania},
+  lastaccessed = {June 25, 2023}
+}
+
+@misc{ref:centerphysiome,
+  title = {Physiome Project Launches New Scientific Journal},
+  author = {{Center for Reproducible Biomedical Modeling}},
+  year = 2023,
+  url = {https://reproduciblebiomodels.org/physiome/},
+  lastaccessed = {June 15, 2023}
+}
+
+@misc{ref:dvisvgm,
+  title = {dvisvgm -- A fast DVI to SVG converter},
+  author = {Gieseking, Martin},
+  url = {https://github.com/mgieseki/dvisvgm},
+  lastaccessed = {June 17, 2023}
+}
+
+@misc{ref:myst,
+  title = {My{ST}: {M}arkedly {S}tructured {T}ext},
+  author = {{Executable Book Project}},
+  url = {https://myst-parser.readthedocs.io},
+  lastaccessed = {June 15, 2023}
+}
+
+@misc{ref:nces2022number,
+  title = {Number and percentage distribution of science, technology, engineering, and mathematics ({STEM}) degrees/certificates conferred by postsecondary institutions, by race/ethnicity, level of degree/certificate, and sex of student: Academic years 2011--12 through 2020--21},
+  author = {{National Center for Education Statistics}},
+  year = 2022,
+  url = {https://nces.ed.gov/programs/digest/d22/tables/dt22_318.45.asp}
+}
+
+@misc{ref:python-pptx,
+  title = {python-pptx},
+  author = {Canny, Steve},
+  url = {https://python-pptx.readthedocs.io},
+  lastaccessed = {June 15, 2023}
 }
 
 @online{ref:3Blue1Brown,
-  title = {3Blue1Brown},
+  title = {{3}Blue{1}Brown},
   author = {Sanderson, Grant},
   url = {https://www.youtube.com/c/3blue1brown},
   lastaccessed = {September 8, 2021}
+}
+
+@online{ref:annotateequations,
+  title = {annotate-equations -- Easily annotate math equations using {TikZ}},
+  author = {John, {ST} and other contributors},
+  year = 2023,
+  address = {CTAN-Archive}
 }
 
 @online{ref:codewalkhowtowrite,
@@ -3852,9 +4352,9 @@
 }
 
 @online{ref:distill,
-  key = {Distill},
   title = {Distill},
   url = {https://distill.pub/},
+  key = {Distill},
   editor = {Carter, Shan and Olah, Chris and Satyanarayan, Arvind},
   lastaccessed = {May 6, 2020}
 }
@@ -3866,9 +4366,16 @@
   lastaccessed = {May 6, 2020}
 }
 
+@online{ref:fermatslibrary,
+  title = {Fermat's Library},
+  url = {https://fermatslibrary.com/},
+  key = {Fermat's Library},
+  lastaccessed = {September 16, 2020}
+}
+
 @online{ref:hall2021illustrated,
-  author = {Hall, Matt},
   title = {Illuminated equations},
+  author = {Hall, Matt},
   year = 2021,
   url = {https://agilescientific.com/blog/2021/1/14/illuminated-equations},
   lastaccessed = {September 9, 2021}
@@ -3881,10 +4388,38 @@
   lastaccessed = {February 12, 2018}
 }
 
+@online{ref:jdi,
+  title = {Java Debug Interface},
+  url = {https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/index.html},
+  key = {Java Debug Interface},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:jetbrains,
+  title = {JetBrains},
+  url = {https://www.jetbrains.com/},
+  key = {JetBrains},
+  lastaccessed = {December 14, 2022}
+}
+
+@online{ref:jison,
+  title = {Jison},
+  url = {http://jison.org},
+  key = {Jison},
+  lastaccessed = {May 6, 2020}
+}
+
 @online{ref:jonskeetshortcompleteprograms,
   title = {Short but complete programs},
   author = {Skeet, Jon},
   url = {https://jonskeet.uk/csharp/complete.html},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:jupyter,
+  title = {Jupyter},
+  url = {https://jupyter.org/},
+  key = {Jupyter},
   lastaccessed = {May 6, 2020}
 }
 
@@ -3895,6 +4430,41 @@
   lastaccessed = {May 6, 2020}
 }
 
+@online{ref:kindlewordwise,
+  title = {Look Up Words, People, and Places While You Read},
+  url = {https://www.amazon.com/b?ie=UTF8&node=17717476011},
+  key = {Look Up Words, People, and Places While You Read},
+  lastaccessed = {September 16, 2020}
+}
+
+@online{ref:knitr,
+  title = {Knitr},
+  url = {https://yihui.org/knitr/},
+  key = {Knitr},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:labella,
+  title = {Labella.js},
+  url = {https://twitter.github.io/labella.js/},
+  key = {Labella.js},
+  lastaccessed = {September 16, 2020}
+}
+
+@online{ref:lighttable,
+  title = {Light Table},
+  url = {http://lighttable.com/},
+  key = {Light Table},
+  lastaccessed = {December 14, 2022}
+}
+
+@online{ref:litt2022potluck,
+  title = {Potluck: Dynamic documents as personal software},
+  author = {Litt, Geoffrey and Schoening, Max and Shen, Paul and Sonnentag, Paul},
+  url = {https://www.inkandswitch.com/potluck/},
+  lastaccessed = {July 12, 2023}
+}
+
 @online{ref:mariotutorial,
   title = {Let's make a Mario game.},
   author = {Kamermans, Mike ``Pomax''},
@@ -3902,11 +4472,70 @@
   lastaccessed = {May 6, 2020}
 }
 
+@online{ref:markdownpreviewenhanced,
+  title = {Markdown Preview Enhanced},
+  url = {https://github.com/shd101wyy/markdown-preview-enhanced},
+  key = {Markdown Preview Enhanced},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:materialui,
+  title = {Material-UI},
+  url = {https://material-ui.com/},
+  key = {Material-UI},
+  lastaccessed = {September 16, 2020}
+}
+
+@online{ref:mathjax,
+  url = {https://mathjax.org/},
+  key = {MathJax\eatnexttoken},
+  lastaccessed = {January 8, 2021}
+}
+
+@online{ref:mathml,
+  title = {Mathematical Markup Language (MathML)},
+  author = {Max Froumentin},
+  url = {https://www.w3.org/Math/whatIsMathML.html},
+  key = {Mathematical Markup Language (MathML)},
+  lastaccessed = {September 16, 2020}
+}
+
 @online{ref:mozillaguidelines,
   title = {Code example guidelines},
   author = {{MDN contributors}},
   url = {https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines},
   lastaccessed = {May 6, 2020}
+}
+
+@online{ref:nielsen1993response,
+  title = {Response Times: The 3 Important Limits},
+  author = {Nielsen, Jakob},
+  year = 1993,
+  url = {https://www.nngroup.com/articles/response-times-3-important-limits/},
+  organization = {Nielsen Norman Group},
+  lastaccessed = {June 12, 2023}
+}
+
+@online{ref:observable,
+  title = {Observable},
+  url = {https://observablehq.com/},
+  key = {Observable},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:pdfjs,
+  title = {pdf.js},
+  author = {{Mozilla and individual contributors}},
+  url = {https://mozilla.github.io/pdf.js/},
+  key = {pdf.js},
+  lastaccessed = {September 16, 2020}
+}
+
+@online{ref:peerlibrary,
+  title = {PeerLibrary},
+  url = {https://peerlibrary.org/},
+  key = {PeerLibrary},
+  lastaccessed = {September 16, 2020}
 }
 
 @online{ref:perez2015project,
@@ -3931,12 +4560,41 @@
   lastaccessed = {May 6, 2020}
 }
 
+@online{ref:processing,
+  title = {Processing},
+  url = {https://processing.org/},
+  key = {Processing},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:pubmed,
+  title = {PubMed},
+  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765694/},
+  note = {Example document},
+  key = {PubMed},
+  lastaccessed = {September 16, 2020}
+}
+
 @online{ref:punchedcards,
   title = {Punched card program deck.agr.jpg},
   author = {Reinhold, Arnold},
   year = 2006,
   url = {https://en.wikipedia.org/wiki/File:Punched_card_program_deck.agr.jpg},
   note = {This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license}
+}
+
+@online{ref:raywenderlich,
+  title = {Ray Wenderlich},
+  url = {https://www.raywenderlich.com},
+  key = {Ray Wenderlich},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:rstudio,
+  title = {RStudio},
+  url = {https://rstudio.com/},
+  key = {RStudio},
+  lastaccessed = {May 6, 2020}
 }
 
 @online{ref:rule2018explorationdata,
@@ -3947,6 +4605,43 @@
   organization = {UC San Diego Library Digital Collections}
 }
 
+@online{ref:scholarcy,
+  title = {Scholarcy},
+  url = {https://www.scholarcy.com/scholarcy-features/},
+  key = {Scholarcy},
+  lastaccessed = {July 24, 2020}
+}
+
+@online{ref:sciencedirect,
+  title = {ScienceDirect},
+  url = {https://sciencedirect.com/science/article/pii/S0939388918301181},
+  note = {Example document},
+  key = {ScienceDirect},
+  lastaccessed = {September 16, 2020}
+}
+
+@online{ref:scihive,
+  title = {SciHive},
+  url = {https://start.scihive.org/},
+  key = {SciHive},
+  lastaccessed = {September 16, 2020}
+}
+
+@online{ref:snuggletex,
+  title = {SnuggleTeX - Overview \& Features},
+  author = {McKain, David},
+  url = {https://www2.ph.ed.ac.uk/snuggletex},
+  lastaccessed = {June 9, 2023}
+}
+
+@online{ref:springer,
+  title = {Springer},
+  url = {https://link.springer.com/chapter/10.1007/978-3-030-01424-7_27},
+  note = {Example document},
+  key = {Springer},
+  lastaccessed = {September 16, 2020}
+}
+
 @online{ref:sscce,
   title = {The SSCCE},
   author = {Thompson, Andrew},
@@ -3954,10 +4649,31 @@
   lastaccessed = {May 6, 2020}
 }
 
+@online{ref:stackoverflow,
+  title = {Stack Overflow},
+  url = {https://stackoverflow.com},
+  key = {Stack Overflow},
+  lastaccessed = {May 10, 2020}
+}
+
 @online{ref:stackoverflowhow,
   title = {How to create a Minimal, Reproducible Example},
   author = {{Stack Overflow Help Center}},
   url = {https://stackoverflow.com/help/minimal-reproducible-example},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:streamlit,
+  title = {Streamlit},
+  url = {https://www.streamlit.io/about},
+  key = {Streamlit},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:swagger,
+  title = {Swagger},
+  url = {https://swagger.io/solutions/api-documentation/},
+  key = {Swagger},
   lastaccessed = {May 6, 2020}
 }
 
@@ -3982,11 +4698,40 @@
   url = {http://worrydream.com/LearnableProgramming/}
 }
 
+@online{ref:victortangle,
+  title = {Tangle: a JavaScript library for reactive documents},
+  author = {Victor, Bret},
+  url = {http://worrydream.com/Tangle/},
+  lastaccessed = {August 15, 2021}
+}
+
+@online{ref:vscode,
+  title = {VSCode},
+  url = {https://code.visualstudio.com/},
+  key = {VSCode},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:wala,
+  title = {WALA},
+  url = {http://wala.sourceforge.net},
+  key = {WALA},
+  lastaccessed = {May 6, 2020}
+}
+
 @online{ref:wattenberger2019interactive,
   title = {Interactive Charts with D3.js},
   author = {Wattenberger, Amelia},
   url = {https://wattenberger.com/blog/d3-interactive-charts},
   lastaccessed = {June 4, 2019}
+}
+
+@online{ref:wells2017symbolic,
+  title = {The Symbolic Language of Math},
+  author = {Wells, Charles},
+  year = 2017,
+  url = {https://abstractmath.org/MM/MMSymLang.htm},
+  lastaccessed = {June 6, 2023}
 }
 
 @online{ref:wikibooks2019beginners,
@@ -3998,219 +4743,32 @@
 }
 
 @online{ref:wikipediapagepreviews,
-  key = {Page Previews},
   title = {Page Previews},
   author = {{MediaWiki contributors}},
   url = {https://www.mediawiki.org/wiki/Page_Previews},
+  key = {Page Previews},
   lastaccessed = {September 16, 2020}
 }
 
-@online{tool:fermatslibrary,
-  key = {Fermat's Library},
-  title = {Fermat's Library},
-  url = {https://fermatslibrary.com/},
-  lastaccessed = {September 16, 2020}
+@online{ref:wolframworking,
+  title = {Working with MathML},
+  author = {Wolfram},
+  url = {https://reference.wolfram.com/language/XML/tutorial/MathML.html},
+  lastaccessed = {June 9, 2023}
 }
 
-@online{tool:jdi,
-  key = {Java Debug Interface},
-  title = {Java Debug Interface},
-  url = {https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/index.html},
-  lastaccessed = {May 6, 2020}
+@online{tool:annotateequations,
+  title = {Annotate equations in LaTeX using {TikZ}},
+  author = {John, {ST} and other contributors},
+  url = {https://github.com/st--/annotate-equations},
+  lastaccessed = {July 6, 2023}
 }
 
-@online{tool:jetbrains,
-  key = {JetBrains},
-  title = {JetBrains},
-  url = {https://www.jetbrains.com/},
-  lastaccessed = {December 14, 2022}
-}
-
-@online{tool:jison,
-  key = {Jison},
-  title = {Jison},
-  url = {http://jison.org},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:jupyter,
-  key = {Jupyter},
-  title = {Jupyter},
-  url = {https://jupyter.org/},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:kindlewordwise,
-  key = {Look Up Words, People, and Places While You Read},
-  title = {Look Up Words, People, and Places While You Read},
-  url = {https://www.amazon.com/b?ie=UTF8&node=17717476011},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:knitr,
-  key = {Knitr},
-  title = {Knitr},
-  url = {https://yihui.org/knitr/},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:labella,
-  key = {Labella.js},
-  title = {Labella.js},
-  url = {https://twitter.github.io/labella.js/},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:lighttable,
-  key = {Light Table},
-  title = {Light Table},
-  url = {http://lighttable.com/},
-  lastaccessed = {December 14, 2022}
-}
-
-@online{tool:markdownpreviewenhanced,
-  key = {Markdown Preview Enhanced},
-  title = {Markdown Preview Enhanced},
-  url = {https://github.com/shd101wyy/markdown-preview-enhanced},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:materialui,
-  key = {Material-UI},
-  title = {Material-UI},
-  url = {https://material-ui.com/},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:mathjax,
-  key = {MathJax},
-  title = {MathJax},
-  url = {https://mathjax.org/},
-  lastaccessed = {January 8, 2021}
-}
-
-@online{tool:mathml,
-  key = {Mathematical Markup Language (MathML)},
-  title = {Mathematical Markup Language (MathML)},
-  author = {Max Froumentin},
-  url = {https://www.w3.org/Math/whatIsMathML.html},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:observable,
-  key = {Observable},
-  title = {Observable},
-  url = {https://observablehq.com/},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:pdfjs,
-  key = {pdf.js},
-  title = {pdf.js},
-  author = {{Mozilla and individual contributors}},
-  url = {https://mozilla.github.io/pdf.js/},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:peerlibrary,
-  key = {PeerLibrary},
-  title = {PeerLibrary},
-  url = {https://peerlibrary.org/},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:processing,
-  key = {Processing},
-  title = {Processing},
-  url = {https://processing.org/},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:pubmed,
-  key = {PubMed},
-  title = {PubMed},
-  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765694/},
-  note = {Example document},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:raywenderlich,
-  key = {Ray Wenderlich},
-  title = {Ray Wenderlich},
-  url = {https://www.raywenderlich.com},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:rstudio,
-  key = {RStudio},
-  title = {RStudio},
-  url = {https://rstudio.com/},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:scholarcy,
-  key = {Scholarcy},
-  title = {Scholarcy},
-  url = {https://www.scholarcy.com/scholarcy-features/},
-  lastaccessed = {July 24, 2020}
-}
-
-@online{tool:sciencedirect,
-  key = {ScienceDirect},
-  title = {ScienceDirect},
-  url = {https://sciencedirect.com/science/article/pii/S0939388918301181},
-  note = {Example document},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:scihive,
-  key = {SciHive},
-  title = {SciHive},
-  url = {https://start.scihive.org/},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:springer,
-  key = {Springer},
-  title = {Springer},
-  url = {https://link.springer.com/chapter/10.1007/978-3-030-01424-7_27},
-  note = {Example document},
-  lastaccessed = {September 16, 2020}
-}
-
-@online{tool:stackoverflow,
-  key = {Stack Overflow},
-  title = {Stack Overflow},
-  url = {https://stackoverflow.com},
-  lastaccessed = {May 10, 2020}
-}
-
-@online{tool:streamlit,
-  key = {Streamlit},
-  title = {Streamlit},
-  url = {https://www.streamlit.io/about},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:swagger,
-  key = {Swagger},
-  title = {Swagger},
-  url = {https://swagger.io/solutions/api-documentation/},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:vscode,
-  key = {VSCode},
-  title = {VSCode},
-  url = {https://code.visualstudio.com/},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{tool:wala,
-  key = {WALA},
-  title = {WALA},
-  url = {http://wala.sourceforge.net},
-  lastaccessed = {May 6, 2020}
+@online{tool:curvenote,
+  title = {Equation},
+  author = {Curvenote},
+  url = {https://curvenote.dev/article/equation},
+  lastaccessed = {July 12, 2023}
 }
 
 @phdthesis{ref:roy2014evaluating,
@@ -4226,6 +4784,52 @@
   year = 2012,
   institution = {Georgia Institute of Technology},
   type = {techreport}
+}
+
+@software{ref:executable2020jupyterbook,
+  title = {Jupyter Book},
+  author = {Executable Books Community},
+  year = 2020,
+  month = feb,
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.4539666},
+  url = {https://doi.org/10.5281/zenodo.4539666},
+  version = {v0.10}
+}
+
+@software{tool:googleslides,
+  title = {Google Slides},
+  author = {Google},
+  year = {Retrieved {July 7, 2023}},
+  url = {https://slides.google.com}
+}
+
+@software{tool:inkscape,
+  title = {Inkscape},
+  author = {Open-source contributors},
+  year = {Retrieved {July 7, 2023}},
+  url = {https://inkscape.org/}
+}
+
+@software{tool:latex,
+  title = {\LaTeX{}},
+  author = {The \LaTeX{} Project},
+  year = {Retrieved {July 7, 2023}},
+  url = {https://www.latex-project.org}
+}
+
+@software{tool:mathcha,
+  title = {Mathcha},
+  author = {Bui Duc Nha},
+  year = {Retrieved {July 7, 2023}},
+  url = {https://www.mathcha.io/}
+}
+
+@software{tool:powerpoint,
+  title = {PowerPoint},
+  author = {Microsoft},
+  year = {Retrieved {July 7, 2023}},
+  url = {https://microsoft.com/powerpoint}
 }
 
 @techreport{ref:brandt2010rehearse,
@@ -4284,6 +4888,13 @@
   type = {phdthesis}
 }
 
+@title{ref:curvenote,
+  title = {Equation | curvenote.dev},
+  author = {Curvenote},
+  url = {https://curvenote.dev/article/equation},
+  lastaccessed = {March 30, 2023}
+}
+
 @unpublished{ref:christensen2018cumulative,
   title = {Cumulative Link Models for Ordinal Regression with the R Package ordinal},
   author = {Christensen, Rune Haubo B},
@@ -4307,12 +4918,6 @@
   url = {https://elifesciences.org/inside-elife/0414db99/seeing- through-the-elife-lens-a-new-way-to-view-research}
 }
 
-@unpublished{ref:headdetection,
-  title = {Recognition of Composite Symbols, Their Components, and Their Locations in LaTeX-Based PDFs},
-  author = {Head, Andrew and Lo, Kyle and Weld, Daniel S. and Hearst, Marti A.},
-  year = {Forthcoming}
-}
-
 @unpublished{ref:lee2019deep,
   title = {{Deep Amortized Clustering}},
   author = {{Lee}, Juho and {Lee}, Yoonho and {Whye Teh}, Yee},
@@ -4320,6 +4925,15 @@
   archiveprefix = {arXiv},
   eprint = {1909.13433},
   primaryclass = {cs.LG}
+}
+
+@unpublished{ref:lo2023semantic,
+  title = {The Semantic Reader Project: Augmenting Scholarly Documents through AI-Powered Interactive Reading Interfaces},
+  author = {Kyle Lo and Joseph Chee Chang and Andrew Head and Jonathan Bragg and Amy X. Zhang and Cassidy Trier and Chloe Anastasiades and Tal August and Russell Authur and Danielle Bragg and Erin Bransom and Isabel Cachola and Stefan Candra and Yoganand Chandrasekhar and Yen-Sung Chen and Evie Yu-Yen Cheng and Yvonne Chou and Doug Downey and Rob Evans and Raymond Fok and Fangzhou Hu and Regan Huff and Dongyeop Kang and Tae Soo Kim and Rodney Kinney and Aniket Kittur and Hyeonsu Kang and Egor Klevak and Bailey Kuehl and Michael Langan and Matt Latzke and Jaron Lochner and Kelsey MacMillan and Eric Marsh and Tyler Murray and Aakanksha Naik and Ngoc-Uyen Nguyen and Srishti Palani and Soya Park and Caroline Paulic and Napol Rachatasumrit and Smita Rao and Paul Sayre and Zejiang Shen and Pao Siangliulue and Luca Soldaini and Huy Tran and Madeleine van Zuylen and Lucy Lu Wang and Christopher Wilhelm and Caroline Wu and Jiangjiang Yang and Angele Zamarron and Marti A. Hearst and Daniel S. Weld},
+  year = 2023,
+  eprint = {2303.14334},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.HC}
 }
 
 @unpublished{ref:strubell2018linguistically,
