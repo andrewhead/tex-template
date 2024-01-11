@@ -18,12 +18,8 @@
 %   - Often the publisher is not needed in the reference because it already appears in the name of the journal (e.g., "ACM Transactions on Computer-Human Interaction")
 % - Online
 %   - Online sources should generally use "online" (and not "misc")
+%   - Internet entries that only have a title and URL should be entered as "misc" (the '.bst' file seems to choke if it is entered as 'online')
 %   - The listing should include an author and a 'urlyear' or date or urldate
-% - "Tool"
-%   - This bibliography file uses the convention of the "tool:" citation key prefix for
-%     entries meant to be referenced as an existing tool, and not as a publication about
-%     that tool.
-%   - Each tool should have a 'title' and a 'urlyear'.
 %
 % To merge a clean reference file with this one:
 % * Use the "find unused" shell script in Andrew's LaTeX utility repository.
@@ -32,7 +28,6 @@
 % * Tidy and de-duplicate the refereneces using the link just below.
 %
 % Additional debugging suggestions:
-% * Internet entries that only have a title and URL should be entered as "misc" (the '.bst' file seems to choke if it is entered as 'online')
 % * If there is an error reading "Missing number, treated as zero," consider wrapping the author in curly braces (if it is a single-word author). It might also be worth trying (though I haven't tried yet) making that entry into a "misc" or "manual" entry.
 %
 % Entries should be sorted, formatted, and de-duplicated using
@@ -2210,7 +2205,7 @@
 }
 
 @inproceedings{ref:deridder2002visiblechi,
-  title = {Visible or invisible links?\eatnexttoken},
+  title = {Visible or invisible links?},
   author = {De Ridder, Isabelle},
   year = 2002,
   booktitle = {\confchi},
@@ -2729,11 +2724,12 @@
   note = {\paperno{34}}
 }
 
-@inproceedings{ref:ion2001mathematical,
-  title = {Mathematical Markup Language (MathML) Version 3.0},
-  author = {Patrick D. F. Ion and Robert R. Miner and Ron Ausbrooks and S. Buswell and D. Carlisle and Giorgi Chavchanidze and St{\'e}phane Dalmas and S. Devitt and Angel D{\'i}az and S. Dooley and R. Hunter and M. Kohlhase and A. Lazrek and P. Libbrecht and B. Miller and C. Rowley and M. Sargent and Bruce T. Smith and Neil Soiffer and R. Sutor and S. Watt},
-  year = 2001,
-  booktitle = {WWW 2001}
+@article{ausbrooks2010mathematical,
+  title={Mathematical Markup Language ({MathML}) Version 3.0},
+  author={Ausbrooks, Ron and Buswell, Stephen and Carlisle, David and Chavchanidze, Giorgi and Dalmas, St{\'e}phane and Devitt, Stan and Diaz, Angel and Dooley, Sam and Hunter, Roger and Ion, Patrick and Kohlhase, Michael and Lazrek, Azzeddine and Leas, Dennis and Libbrecht, Paul and Mavrikis, Manolis and Miller, Bruce and Miner, Robert and Sargent, Murray and Siegrist, Kyle and Soiffer, Neil and Watt, Stephen and Zergaoui, Mohamed},
+  organization={World Wide Web Consortium},
+  url={https://www.w3.org/TR/2010/PR-MathML3-20100810/mathml.pdf},
+  year={2010}
 }
 
 @inproceedings{ref:iyer2016summarizing,
@@ -4189,6 +4185,13 @@
   address = {CTAN-Archive}
 }
 
+@manual{ref:codecogs,
+  title = {CodeCogs Equation Editor},
+  author = {Zyba Ltd.},
+  year = {Retrieved {July 7, 2023}},
+  url = {https://editor.codecogs.com/}
+}
+
 @manual{ref:katex,
   title = {KaTeX},
   author = {Emily Eisenberg and Sophie Alpert},
@@ -4216,13 +4219,6 @@
   year = {Retrieved {July 7, 2023}},
   url = {https://support.microsoft.com/en-au/office/write-an-equation-or-formula-4f799df7-4ca4-4670-afd3-6135768b01d0},
   lastaccessed = {March 29, 2022}
-}
-
-@manual{tool:codecogs,
-  title = {CodeCogs Equation Editor},
-  author = {Zyba Ltd.},
-  year = {Retrieved {July 7, 2023}},
-  url = {https://editor.codecogs.com/}
 }
 
 @masterthesis{ref:pollock2022bluefish,
@@ -4263,96 +4259,10 @@
   lastaccessed = {June 17, 2023}
 }
 
-@misc{ref:myst,
-  title = {My{ST}: {M}arkedly {S}tructured {T}ext},
-  author = {{Executable Book Project}},
-  url = {https://myst-parser.readthedocs.io},
-  lastaccessed = {June 15, 2023}
-}
-
-@misc{ref:nces2022number,
-  title = {Number and percentage distribution of science, technology, engineering, and mathematics ({STEM}) degrees/certificates conferred by postsecondary institutions, by race/ethnicity, level of degree/certificate, and sex of student: Academic years 2011--12 through 2020--21},
-  author = {{National Center for Education Statistics}},
-  year = 2022,
-  url = {https://nces.ed.gov/programs/digest/d22/tables/dt22_318.45.asp}
-}
-
-@misc{ref:python-pptx,
-  title = {python-pptx},
-  author = {Canny, Steve},
-  url = {https://python-pptx.readthedocs.io},
-  lastaccessed = {June 15, 2023}
-}
-
-@online{ref:3Blue1Brown,
-  title = {{3}Blue{1}Brown},
-  author = {Sanderson, Grant},
-  url = {https://www.youtube.com/c/3blue1brown},
-  lastaccessed = {September 8, 2021}
-}
-
-@online{ref:annotateequations,
-  title = {annotate-equations -- Easily annotate math equations using {TikZ}},
-  author = {John, {ST} and other contributors},
-  year = 2023,
-  address = {CTAN-Archive}
-}
-
-@online{ref:codewalkhowtowrite,
-  title = {Codewalk: How to write a Codewalk},
-  author = {Google},
-  url = {https://golang.org/doc/codewalk/codewalk/},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{ref:codewalksharemem,
-  title = {Codewalk: Share Memory By Communicating},
-  author = {{Google}},
-  url = {https://golang.org/doc/codewalk/sharemem/},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{ref:denero2014composing,
-  title = {Composing Programs},
-  author = {DeNero, John},
-  url = {https://composingprograms.com/},
-  lastaccessed = {May 5, 2020}
-}
-
-@online{ref:distill,
-  title = {Distill},
-  url = {https://distill.pub/},
-  key = {Distill},
-  editor = {Carter, Shan and Olah, Chris and Satyanarayan, Arvind},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{ref:eclipse,
-  title = {Quick Fix and Quick Assist},
-  author = {{Eclipse Foundation}},
-  url = {https://help.eclipse.org/2020-03/topic/org.eclipse.jdt.doc.user/concepts/concept-quickfix-assist.htm?cp=1_2_5},
-  lastaccessed = {May 6, 2020}
-}
-
 @misc{ref:fermatslibrary,
   url = {https://fermatslibrary.com/},
   key = {Fermat's Library},
   lastaccessed = {September 16, 2020}
-}
-
-@online{ref:hall2021illustrated,
-  title = {Illuminated equations},
-  author = {Hall, Matt},
-  year = 2021,
-  url = {https://agilescientific.com/blog/2021/1/14/illuminated-equations},
-  lastaccessed = {September 9, 2021}
-}
-
-@online{ref:javadoc,
-  title = {How to Write Doc Comments for the Javadoc Tool},
-  author = {Oracle},
-  url = {http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html},
-  lastaccessed = {February 12, 2018}
 }
 
 @misc{ref:jdi,
@@ -4373,23 +4283,9 @@
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:jonskeetshortcompleteprograms,
-  title = {Short but complete programs},
-  author = {Skeet, Jon},
-  url = {https://jonskeet.uk/csharp/complete.html},
-  lastaccessed = {May 6, 2020}
-}
-
 @misc{ref:jupyter,
   url = {https://jupyter.org/},
   key = {Jupyter},
-  lastaccessed = {May 6, 2020}
-}
-
-@online{ref:jupyterextensions,
-  title = {Unofficial Jupyter Notebook Extensions},
-  author = {{Jupyter Contrib Team}},
-  note = {https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/},
   lastaccessed = {May 6, 2020}
 }
 
@@ -4417,6 +4313,256 @@
   lastaccessed = {December 14, 2022}
 }
 
+@misc{ref:markdownpreviewenhanced,
+  url = {https://github.com/shd101wyy/markdown-preview-enhanced},
+  key = {Markdown Preview Enhanced},
+  lastaccessed = {May 6, 2020}
+}
+
+@misc{ref:materialui,
+  url = {https://material-ui.com/},
+  key = {Material-UI},
+  lastaccessed = {September 16, 2020}
+}
+
+@misc{ref:myst,
+  title = {My{ST}: {M}arkedly {S}tructured {T}ext},
+  author = {{Executable Book Project}},
+  url = {https://myst-parser.readthedocs.io},
+  lastaccessed = {June 15, 2023}
+}
+
+@misc{ref:nces2022number,
+  title = {Number and percentage distribution of science, technology, engineering, and mathematics ({STEM}) degrees/certificates conferred by postsecondary institutions, by race/ethnicity, level of degree/certificate, and sex of student: Academic years 2011--12 through 2020--21},
+  author = {{National Center for Education Statistics}},
+  year = 2022,
+  url = {https://nces.ed.gov/programs/digest/d22/tables/dt22_318.45.asp}
+}
+
+@misc{ref:observable,
+  url = {https://observablehq.com/},
+  key = {Observable},
+  lastaccessed = {May 6, 2020}
+}
+
+@misc{ref:peerlibrary,
+  url = {https://peerlibrary.org/},
+  key = {PeerLibrary},
+  lastaccessed = {September 16, 2020}
+}
+
+@misc{ref:processing,
+  url = {https://processing.org/},
+  key = {Processing},
+  lastaccessed = {May 6, 2020}
+}
+
+@misc{ref:pubmed,
+  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765694/},
+  note = {Example document},
+  key = {PubMed},
+  lastaccessed = {September 16, 2020}
+}
+
+@misc{ref:python-pptx,
+  title = {python-pptx},
+  author = {Canny, Steve},
+  url = {https://python-pptx.readthedocs.io},
+  lastaccessed = {June 15, 2023}
+}
+
+@misc{ref:raywenderlich,
+  url = {https://www.raywenderlich.com},
+  key = {Ray Wenderlich},
+  lastaccessed = {May 6, 2020}
+}
+
+@misc{ref:rstudio,
+  url = {https://rstudio.com/},
+  key = {RStudio},
+  lastaccessed = {May 6, 2020}
+}
+
+@misc{ref:scholarcy,
+  url = {https://www.scholarcy.com/scholarcy-features/},
+  key = {Scholarcy},
+  lastaccessed = {July 24, 2020}
+}
+
+@misc{ref:sciencedirect,
+  url = {https://sciencedirect.com/science/article/pii/S0939388918301181},
+  note = {Example document},
+  key = {ScienceDirect},
+  lastaccessed = {September 16, 2020}
+}
+
+@misc{ref:scihive,
+  url = {https://start.scihive.org/},
+  key = {SciHive},
+  lastaccessed = {September 16, 2020}
+}
+
+@misc{ref:springer,
+  url = {https://link.springer.com/chapter/10.1007/978-3-030-01424-7_27},
+  note = {Example document},
+  key = {Springer},
+  lastaccessed = {September 16, 2020}
+}
+
+@misc{ref:stackoverflow,
+  url = {https://stackoverflow.com},
+  key = {Stack Overflow},
+  lastaccessed = {May 10, 2020}
+}
+
+@misc{ref:streamlit,
+  url = {https://www.streamlit.io/about},
+  key = {Streamlit},
+  lastaccessed = {May 6, 2020}
+}
+
+@misc{ref:swagger,
+  url = {https://swagger.io/solutions/api-documentation/},
+  key = {Swagger},
+  lastaccessed = {May 6, 2020}
+}
+
+@misc{ref:vscode,
+  url = {https://code.visualstudio.com/},
+  key = {VSCode},
+  lastaccessed = {May 6, 2020}
+}
+
+@misc{ref:wala,
+  url = {http://wala.sourceforge.net},
+  key = {WALA},
+  lastaccessed = {May 6, 2020}
+}
+
+@misc{ref:inkscape,
+  url = {https://inkscape.org/},
+  key = {Inkscape},
+  lastaccessed = {March 29, 2023}
+}
+
+@misc{ref:latex,
+  url = {https://www.latex-project.org},
+  key = {The \LaTeX{} Project},
+  lastaccessed = {March 29, 2023}
+}
+
+@misc{ref:manim,
+  url = {https://3b1b.github.io/manim/},
+  key = {manim},
+  lastaccessed = {June 26, 2023}
+}
+
+@misc{ref:mathcha,
+  url = {https://www.mathcha.io/},
+  key = {Mathcha},
+  lastaccessed = {March 29, 2023}
+}
+
+@misc{ref:powerpoint,
+  url = {https://microsoft.com/powerpoint},
+  key = {Microsoft PowerPoint},
+  lastaccessed = {March 29, 2023}
+}
+
+@misc{ref:mathjax,
+  url = {https://mathjax.org/},
+  key = {MathJax},
+  lastaccessed = {January 8, 2021}
+}
+
+@online{ref:3Blue1Brown,
+  title = {{3}Blue{1}Brown},
+  author = {Sanderson, Grant},
+  url = {https://www.youtube.com/c/3blue1brown},
+  lastaccessed = {September 8, 2021}
+}
+
+@online{ref:annotateequations,
+  title = {annotate-equations -- Easily annotate math equations using {TikZ}},
+  author = {John, {ST} and other contributors},
+  year = 2023,
+  address = {CTAN-Archive},
+  url = {https://github.com/st--/annotate-equations},
+  lastaccessed = {July 6, 2023}
+}
+
+@online{ref:codewalkhowtowrite,
+  title = {Codewalk: How to write a Codewalk},
+  author = {Google},
+  url = {https://golang.org/doc/codewalk/codewalk/},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:codewalksharemem,
+  title = {Codewalk: Share Memory By Communicating},
+  author = {{Google}},
+  url = {https://golang.org/doc/codewalk/sharemem/},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:curvenote,
+  title = {Equation},
+  author = {{Curvenote}},
+  url = {https://curvenote.dev/article/equation},
+  lastaccessed = {July 12, 2023}
+}
+
+@online{ref:denero2014composing,
+  title = {Composing Programs},
+  author = {DeNero, John},
+  url = {https://composingprograms.com/},
+  lastaccessed = {May 5, 2020}
+}
+
+@online{ref:distill,
+  title = {Distill},
+  url = {https://distill.pub/},
+  key = {Distill},
+  editor = {Carter, Shan and Olah, Chris and Satyanarayan, Arvind},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:eclipse,
+  title = {Quick Fix and Quick Assist},
+  author = {{Eclipse Foundation}},
+  url = {https://help.eclipse.org/2020-03/topic/org.eclipse.jdt.doc.user/concepts/concept-quickfix-assist.htm?cp=1_2_5},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:hall2021illustrated,
+  title = {Illuminated equations},
+  author = {Hall, Matt},
+  year = 2021,
+  url = {https://agilescientific.com/blog/2021/1/14/illuminated-equations},
+  lastaccessed = {September 9, 2021}
+}
+
+@online{ref:javadoc,
+  title = {How to Write Doc Comments for the Javadoc Tool},
+  author = {Oracle},
+  url = {http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html},
+  lastaccessed = {February 12, 2018}
+}
+
+@online{ref:jonskeetshortcompleteprograms,
+  title = {Short but complete programs},
+  author = {Skeet, Jon},
+  url = {https://jonskeet.uk/csharp/complete.html},
+  lastaccessed = {May 6, 2020}
+}
+
+@online{ref:jupyterextensions,
+  title = {Unofficial Jupyter Notebook Extensions},
+  author = {{Jupyter Contrib Team}},
+  note = {https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/},
+  lastaccessed = {May 6, 2020}
+}
+
 @online{ref:litt2022potluck,
   title = {Potluck: Dynamic documents as personal software},
   author = {Litt, Geoffrey and Schoening, Max and Shen, Paul and Sonnentag, Paul},
@@ -4429,18 +4575,6 @@
   author = {Kamermans, Mike ``Pomax''},
   url = {http://processingjs.nihongoresources.com/test/PjsGameEngine/docs/tutorial/mario.html},
   lastaccessed = {May 6, 2020}
-}
-
-@misc{ref:markdownpreviewenhanced,
-  url = {https://github.com/shd101wyy/markdown-preview-enhanced},
-  key = {Markdown Preview Enhanced},
-  lastaccessed = {May 6, 2020}
-}
-
-@misc{ref:materialui,
-  url = {https://material-ui.com/},
-  key = {Material-UI},
-  lastaccessed = {September 16, 2020}
 }
 
 @online{ref:mathml,
@@ -4467,23 +4601,11 @@
   lastaccessed = {June 12, 2023}
 }
 
-@misc{ref:observable,
-  url = {https://observablehq.com/},
-  key = {Observable},
-  lastaccessed = {May 6, 2020}
-}
-
 @online{ref:pdfjs,
   title = {pdf.js},
   author = {{Mozilla and individual contributors}},
   url = {https://mozilla.github.io/pdf.js/},
   key = {pdf.js},
-  lastaccessed = {September 16, 2020}
-}
-
-@misc{ref:peerlibrary,
-  url = {https://peerlibrary.org/},
-  key = {PeerLibrary},
   lastaccessed = {September 16, 2020}
 }
 
@@ -4509,37 +4631,12 @@
   lastaccessed = {May 6, 2020}
 }
 
-@misc{ref:processing,
-  url = {https://processing.org/},
-  key = {Processing},
-  lastaccessed = {May 6, 2020}
-}
-
-@misc{ref:pubmed,
-  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765694/},
-  note = {Example document},
-  key = {PubMed},
-  lastaccessed = {September 16, 2020}
-}
-
 @online{ref:punchedcards,
   title = {Punched card program deck.agr.jpg},
   author = {Reinhold, Arnold},
   year = 2006,
   url = {https://en.wikipedia.org/wiki/File:Punched_card_program_deck.agr.jpg},
   note = {This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license}
-}
-
-@misc{ref:raywenderlich,
-  url = {https://www.raywenderlich.com},
-  key = {Ray Wenderlich},
-  lastaccessed = {May 6, 2020}
-}
-
-@misc{ref:rstudio,
-  url = {https://rstudio.com/},
-  key = {RStudio},
-  lastaccessed = {May 6, 2020}
 }
 
 @online{ref:rule2018explorationdata,
@@ -4550,37 +4647,11 @@
   organization = {UC San Diego Library Digital Collections}
 }
 
-@misc{ref:scholarcy,
-  url = {https://www.scholarcy.com/scholarcy-features/},
-  key = {Scholarcy},
-  lastaccessed = {July 24, 2020}
-}
-
-@misc{ref:sciencedirect,
-  url = {https://sciencedirect.com/science/article/pii/S0939388918301181},
-  note = {Example document},
-  key = {ScienceDirect},
-  lastaccessed = {September 16, 2020}
-}
-
-@misc{ref:scihive,
-  url = {https://start.scihive.org/},
-  key = {SciHive},
-  lastaccessed = {September 16, 2020}
-}
-
 @online{ref:snuggletex,
   title = {SnuggleTeX - Overview \& Features},
   author = {McKain, David},
   url = {https://www2.ph.ed.ac.uk/snuggletex},
   lastaccessed = {June 9, 2023}
-}
-
-@misc{ref:springer,
-  url = {https://link.springer.com/chapter/10.1007/978-3-030-01424-7_27},
-  note = {Example document},
-  key = {Springer},
-  lastaccessed = {September 16, 2020}
 }
 
 @online{ref:sscce,
@@ -4590,28 +4661,10 @@
   lastaccessed = {May 6, 2020}
 }
 
-@misc{ref:stackoverflow,
-  url = {https://stackoverflow.com},
-  key = {Stack Overflow},
-  lastaccessed = {May 10, 2020}
-}
-
 @online{ref:stackoverflowhow,
   title = {How to create a Minimal, Reproducible Example},
   author = {{Stack Overflow Help Center}},
   url = {https://stackoverflow.com/help/minimal-reproducible-example},
-  lastaccessed = {May 6, 2020}
-}
-
-@misc{ref:streamlit,
-  url = {https://www.streamlit.io/about},
-  key = {Streamlit},
-  lastaccessed = {May 6, 2020}
-}
-
-@misc{ref:swagger,
-  url = {https://swagger.io/solutions/api-documentation/},
-  key = {Swagger},
   lastaccessed = {May 6, 2020}
 }
 
@@ -4641,18 +4694,6 @@
   author = {Victor, Bret},
   url = {http://worrydream.com/Tangle/},
   lastaccessed = {August 15, 2021}
-}
-
-@misc{ref:vscode,
-  url = {https://code.visualstudio.com/},
-  key = {VSCode},
-  lastaccessed = {May 6, 2020}
-}
-
-@misc{ref:wala,
-  url = {http://wala.sourceforge.net},
-  key = {WALA},
-  lastaccessed = {May 6, 2020}
 }
 
 @online{ref:wattenberger2019interactive,
@@ -4693,20 +4734,6 @@
   lastaccessed = {June 9, 2023}
 }
 
-@online{tool:annotateequations,
-  title = {Annotate equations in LaTeX using {TikZ}},
-  author = {John, {ST} and other contributors},
-  url = {https://github.com/st--/annotate-equations},
-  lastaccessed = {July 6, 2023}
-}
-
-@online{tool:curvenote,
-  title = {Equation},
-  author = {{Curvenote}},
-  url = {https://curvenote.dev/article/equation},
-  lastaccessed = {July 12, 2023}
-}
-
 @phdthesis{ref:roy2014evaluating,
   title = {Evaluating novel pedagogy in higher education: A case study of e-Proofs},
   author = {Roy, Somali},
@@ -4731,41 +4758,6 @@
   doi = {10.5281/zenodo.4539666},
   url = {https://doi.org/10.5281/zenodo.4539666},
   version = {v0.10}
-}
-
-@software{tool:googleslides,
-  title = {Google Slides},
-  author = {Google},
-  year = {Retrieved {July 7, 2023}},
-  url = {https://slides.google.com}
-}
-
-@software{tool:inkscape,
-  title = {Inkscape},
-  author = {Open-source contributors},
-  year = {Retrieved {July 7, 2023}},
-  url = {https://inkscape.org/}
-}
-
-@software{tool:latex,
-  title = {\LaTeX{}},
-  author = {The \LaTeX{} Project},
-  year = {Retrieved {July 7, 2023}},
-  url = {https://www.latex-project.org}
-}
-
-@software{tool:mathcha,
-  title = {Mathcha},
-  author = {Bui Duc Nha},
-  year = {Retrieved {July 7, 2023}},
-  url = {https://www.mathcha.io/}
-}
-
-@software{tool:powerpoint,
-  title = {PowerPoint},
-  author = {Microsoft},
-  year = {Retrieved {July 7, 2023}},
-  url = {https://microsoft.com/powerpoint}
 }
 
 @techreport{ref:brandt2010rehearse,
@@ -4822,13 +4814,6 @@
   year = 1979,
   institution = {University of Michigan},
   type = {phdthesis}
-}
-
-@title{ref:curvenote,
-  title = {Equation | curvenote.dev},
-  author = {Curvenote},
-  url = {https://curvenote.dev/article/equation},
-  lastaccessed = {March 30, 2023}
 }
 
 @unpublished{ref:christensen2018cumulative,
