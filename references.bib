@@ -31,13 +31,17 @@
 % * Copy them into the end of this file.
 % * Tidy and de-duplicate the refereneces using the link just below.
 %
+% Additional debugging suggestions:
+% * Internet entries that only have a title and URL should be entered as "misc" (the '.bst' file seems to choke if it is entered as 'online')
+% * If there is an error reading "Missing number, treated as zero," consider wrapping the author in curly braces (if it is a single-word author). It might also be worth trying (though I haven't tried yet) making that entry into a "misc" or "manual" entry.
+%
 % Entries should be sorted, formatted, and de-duplicated using
 % https://flamingtempura.github.io/bibtex-tidy/index.html?opt=%7B%22curly%22%3Atrue%2C%22numeric%22%3Atrue%2C%22space%22%3A2%2C%22tab%22%3Afalse%2C%22align%22%3A1%2C%22blankLines%22%3Atrue%2C%22sort%22%3A%5B%22type%22%2C%22key%22%2C%22author%22%2C%22title%22%5D%2C%22duplicates%22%3A%5B%22key%22%5D%2C%22stripEnclosingBraces%22%3Afalse%2C%22dropAllCaps%22%3Afalse%2C%22escape%22%3Afalse%2C%22sortFields%22%3A%5B%22title%22%2C%22shorttitle%22%2C%22author%22%2C%22year%22%2C%22month%22%2C%22day%22%2C%22journal%22%2C%22booktitle%22%2C%22location%22%2C%22on%22%2C%22publisher%22%2C%22address%22%2C%22series%22%2C%22volume%22%2C%22number%22%2C%22pages%22%2C%22doi%22%2C%22isbn%22%2C%22issn%22%2C%22url%22%2C%22urldate%22%2C%22copyright%22%2C%22category%22%2C%22note%22%2C%22metadata%22%5D%2C%22stripComments%22%3Afalse%2C%22trailingCommas%22%3Afalse%2C%22encodeUrls%22%3Afalse%2C%22tidyComments%22%3Atrue%2C%22removeEmptyFields%22%3Afalse%2C%22removeDuplicateFields%22%3Afalse%2C%22lowercase%22%3Atrue%2C%22backup%22%3Atrue%7D
 @preamble{"
 \def\articleno#1{Article #1}
 \def\paperno#1{Paper #1}
 \def\toappear{To appear}
-\def\eatnexttoken#1{}  % Can eat punctuation after question mark in a title
+\def\eatnexttoken#1{}  % For natbib, may not work outside of 'title' field.
 \def\pubmit{The MIT Press}
 \def\pubieee{IEEE}
 \def\pubacm{ACM}
@@ -4185,18 +4189,6 @@
   address = {CTAN-Archive}
 }
 
-@manual{ref:googleslides,
-  url = {https://slides.google.com},
-  key = {Google Slides\eatnexttoken},
-  lastaccessed = {March 29, 2023}
-}
-
-@manual{ref:inkscape,
-  url = {https://inkscape.org/},
-  key = {Inkscape\eatnexttoken},
-  lastaccessed = {March 29, 2023}
-}
-
 @manual{ref:katex,
   title = {KaTeX},
   author = {Emily Eisenberg and Sophie Alpert},
@@ -4204,35 +4196,11 @@
   lastaccessed = {September 16, 2020}
 }
 
-@manual{ref:latex,
-  url = {https://www.latex-project.org},
-  key = {The \LaTeX{} Project\eatnexttoken},
-  lastaccessed = {March 29, 2023}
-}
-
 @manual{ref:madsen2014mathtools,
   title = {The mathtools package},
   author = {Madsen, Lars and Robertson, Will and Wright, Joseph},
   year = 2014,
   address = {CTAN-Archive}
-}
-
-@manual{ref:manim,
-  url = {https://3b1b.github.io/manim/},
-  key = {manim\eatnexttoken},
-  lastaccessed = {June 26, 2023}
-}
-
-@manual{ref:mathcha,
-  url = {https://www.mathcha.io/},
-  key = {Mathcha\eatnexttoken},
-  lastaccessed = {March 29, 2023}
-}
-
-@manual{ref:powerpoint,
-  url = {https://microsoft.com/powerpoint},
-  key = {Microsoft PowerPoint\eatnexttoken},
-  lastaccessed = {March 29, 2023}
 }
 
 @manual{ref:rougeuxeuclid,
@@ -4339,7 +4307,7 @@
 
 @online{ref:codewalksharemem,
   title = {Codewalk: Share Memory By Communicating},
-  author = {Google},
+  author = {{Google}},
   url = {https://golang.org/doc/codewalk/sharemem/},
   lastaccessed = {May 6, 2020}
 }
@@ -4366,8 +4334,7 @@
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:fermatslibrary,
-  title = {Fermat's Library},
+@misc{ref:fermatslibrary,
   url = {https://fermatslibrary.com/},
   key = {Fermat's Library},
   lastaccessed = {September 16, 2020}
@@ -4388,22 +4355,19 @@
   lastaccessed = {February 12, 2018}
 }
 
-@online{ref:jdi,
-  title = {Java Debug Interface},
+@misc{ref:jdi,
   url = {https://docs.oracle.com/javase/8/docs/jdk/api/jpda/jdi/index.html},
   key = {Java Debug Interface},
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:jetbrains,
-  title = {JetBrains},
+@misc{ref:jetbrains,
   url = {https://www.jetbrains.com/},
   key = {JetBrains},
   lastaccessed = {December 14, 2022}
 }
 
-@online{ref:jison,
-  title = {Jison},
+@misc{ref:jison,
   url = {http://jison.org},
   key = {Jison},
   lastaccessed = {May 6, 2020}
@@ -4416,8 +4380,7 @@
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:jupyter,
-  title = {Jupyter},
+@misc{ref:jupyter,
   url = {https://jupyter.org/},
   key = {Jupyter},
   lastaccessed = {May 6, 2020}
@@ -4430,29 +4393,25 @@
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:kindlewordwise,
-  title = {Look Up Words, People, and Places While You Read},
+@misc{ref:kindlewordwise,
   url = {https://www.amazon.com/b?ie=UTF8&node=17717476011},
   key = {Look Up Words, People, and Places While You Read},
   lastaccessed = {September 16, 2020}
 }
 
-@online{ref:knitr,
-  title = {Knitr},
+@misc{ref:knitr,
   url = {https://yihui.org/knitr/},
   key = {Knitr},
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:labella,
-  title = {Labella.js},
+@misc{ref:labella,
   url = {https://twitter.github.io/labella.js/},
   key = {Labella.js},
   lastaccessed = {September 16, 2020}
 }
 
-@online{ref:lighttable,
-  title = {Light Table},
+@misc{ref:lighttable,
   url = {http://lighttable.com/},
   key = {Light Table},
   lastaccessed = {December 14, 2022}
@@ -4472,24 +4431,16 @@
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:markdownpreviewenhanced,
-  title = {Markdown Preview Enhanced},
+@misc{ref:markdownpreviewenhanced,
   url = {https://github.com/shd101wyy/markdown-preview-enhanced},
   key = {Markdown Preview Enhanced},
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:materialui,
-  title = {Material-UI},
+@misc{ref:materialui,
   url = {https://material-ui.com/},
   key = {Material-UI},
   lastaccessed = {September 16, 2020}
-}
-
-@online{ref:mathjax,
-  url = {https://mathjax.org/},
-  key = {MathJax\eatnexttoken},
-  lastaccessed = {January 8, 2021}
 }
 
 @online{ref:mathml,
@@ -4516,8 +4467,7 @@
   lastaccessed = {June 12, 2023}
 }
 
-@online{ref:observable,
-  title = {Observable},
+@misc{ref:observable,
   url = {https://observablehq.com/},
   key = {Observable},
   lastaccessed = {May 6, 2020}
@@ -4531,8 +4481,7 @@
   lastaccessed = {September 16, 2020}
 }
 
-@online{ref:peerlibrary,
-  title = {PeerLibrary},
+@misc{ref:peerlibrary,
   url = {https://peerlibrary.org/},
   key = {PeerLibrary},
   lastaccessed = {September 16, 2020}
@@ -4560,15 +4509,13 @@
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:processing,
-  title = {Processing},
+@misc{ref:processing,
   url = {https://processing.org/},
   key = {Processing},
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:pubmed,
-  title = {PubMed},
+@misc{ref:pubmed,
   url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4765694/},
   note = {Example document},
   key = {PubMed},
@@ -4583,15 +4530,13 @@
   note = {This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license}
 }
 
-@online{ref:raywenderlich,
-  title = {Ray Wenderlich},
+@misc{ref:raywenderlich,
   url = {https://www.raywenderlich.com},
   key = {Ray Wenderlich},
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:rstudio,
-  title = {RStudio},
+@misc{ref:rstudio,
   url = {https://rstudio.com/},
   key = {RStudio},
   lastaccessed = {May 6, 2020}
@@ -4605,23 +4550,20 @@
   organization = {UC San Diego Library Digital Collections}
 }
 
-@online{ref:scholarcy,
-  title = {Scholarcy},
+@misc{ref:scholarcy,
   url = {https://www.scholarcy.com/scholarcy-features/},
   key = {Scholarcy},
   lastaccessed = {July 24, 2020}
 }
 
-@online{ref:sciencedirect,
-  title = {ScienceDirect},
+@misc{ref:sciencedirect,
   url = {https://sciencedirect.com/science/article/pii/S0939388918301181},
   note = {Example document},
   key = {ScienceDirect},
   lastaccessed = {September 16, 2020}
 }
 
-@online{ref:scihive,
-  title = {SciHive},
+@misc{ref:scihive,
   url = {https://start.scihive.org/},
   key = {SciHive},
   lastaccessed = {September 16, 2020}
@@ -4634,8 +4576,7 @@
   lastaccessed = {June 9, 2023}
 }
 
-@online{ref:springer,
-  title = {Springer},
+@misc{ref:springer,
   url = {https://link.springer.com/chapter/10.1007/978-3-030-01424-7_27},
   note = {Example document},
   key = {Springer},
@@ -4649,8 +4590,7 @@
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:stackoverflow,
-  title = {Stack Overflow},
+@misc{ref:stackoverflow,
   url = {https://stackoverflow.com},
   key = {Stack Overflow},
   lastaccessed = {May 10, 2020}
@@ -4663,15 +4603,13 @@
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:streamlit,
-  title = {Streamlit},
+@misc{ref:streamlit,
   url = {https://www.streamlit.io/about},
   key = {Streamlit},
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:swagger,
-  title = {Swagger},
+@misc{ref:swagger,
   url = {https://swagger.io/solutions/api-documentation/},
   key = {Swagger},
   lastaccessed = {May 6, 2020}
@@ -4705,15 +4643,13 @@
   lastaccessed = {August 15, 2021}
 }
 
-@online{ref:vscode,
-  title = {VSCode},
+@misc{ref:vscode,
   url = {https://code.visualstudio.com/},
   key = {VSCode},
   lastaccessed = {May 6, 2020}
 }
 
-@online{ref:wala,
-  title = {WALA},
+@misc{ref:wala,
   url = {http://wala.sourceforge.net},
   key = {WALA},
   lastaccessed = {May 6, 2020}
@@ -4766,7 +4702,7 @@
 
 @online{tool:curvenote,
   title = {Equation},
-  author = {Curvenote},
+  author = {{Curvenote}},
   url = {https://curvenote.dev/article/equation},
   lastaccessed = {July 12, 2023}
 }
