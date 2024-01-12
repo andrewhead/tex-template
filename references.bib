@@ -20,6 +20,8 @@
 %   - Online sources should generally use "online" (and not "misc")
 %   - Internet entries that only have a title and URL should be entered as "misc" (the '.bst' file seems to choke if it is entered as 'online')
 %   - The listing should include an author and a 'urlyear' or date or urldate
+% - General
+%   - If a title ends in punctuation and the bibliography is generated with an extra period after it, try putting the \eatnexttoken macro at the end of the title (which should eat up the period). (That said, I think this causes compilation to fail for natbib-based bibliographies, like those used in ACM conference proceedings around 2022)
 %
 % To merge a clean reference file with this one:
 % * Use the "find unused" shell script in Andrew's LaTeX utility repository.
@@ -36,7 +38,7 @@
 \def\articleno#1{Article #1}
 \def\paperno#1{Paper #1}
 \def\toappear{To appear}
-\def\eatnexttoken#1{}  % For natbib, may not work outside of 'title' field.
+\def\eatnexttoken#1{}
 \def\pubmit{The MIT Press}
 \def\pubieee{IEEE}
 \def\pubacm{ACM}
