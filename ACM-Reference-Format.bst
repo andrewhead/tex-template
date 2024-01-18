@@ -2410,8 +2410,8 @@ FUNCTION { misc }
 {
   output.bibitem
   format.authors "author" output.check
-  author format.key output            % added
-  output.year.check                   % added
+  author format.key output                         % added
+  year empty$ { skip$ } { output.year.check } if$  % added (year check courtesy of ChatGPT)
   title howpublished new.block.checkb
   format.title output
   new.block
